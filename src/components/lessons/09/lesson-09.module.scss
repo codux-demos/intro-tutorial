@@ -30,12 +30,12 @@
 .grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1px;
 
     .glow {
-        grid-column: 10;
-        grid-row: 5;
+        grid-column: 4 / 5;
+        grid-row: 4 / 5;
         display: grid;
     }
 }
