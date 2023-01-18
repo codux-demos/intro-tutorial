@@ -11,59 +11,21 @@
 
     .playground {
         overflow: hidden;
-        // workaround to fix background bleed (when border-radius)
-        background: linear-gradient(
-            $playground-bg-color,
-            $playground-bg-color 95%,
-            $lesson-bg-color 95%
-        );
+        background-color: $playground-bg-color;
         border-radius: $playground-border-radius;
         width: $playground-width;
         height: $playground-height;
 
         // lesson specific
+        background-image: url('../../../assets/golden-pot.svg');
+        background-repeat: no-repeat;
+        background-position: center;
         position: relative;
     }
 }
 
-// lesson specific
-.arcs {
-    position: absolute;
-    width: 702px;
-    height: 702px;
-    left: 50px;
-    top: 50px;
-    background: radial-gradient(
-        $charcoal-black 80px,
-        $olive-green 80px,
-        $olive-green 110px,
-        $dirty-white 110px,
-        $dirty-white 140px,
-        $turquoise-green 140px,
-        $turquoise-green 170px,
-        $rich-green 170px,
-        $rich-green 200px,
-        $aero-blue 200px,
-        $aero-blue 230px,
-        $dark-lavender 230px,
-        $dark-lavender 260px,
-        $hot-pink 260px,
-        $hot-pink 290px,
-        $pastel-pink 290px,
-        $pastel-pink 320px,
-        $hot-red 320px,
-        $hot-red 350px,
-        rgba(0, 0, 0, 0) 350px,
-        rgba(0, 0, 0, 0)
-    );
-}
-
-.cloud {
-    position: absolute;
-    fill: $dana-pink;
+.sparkles {
     width: $playground-width;
-    height: 260px;
-    left: 0px;
-    top: 300px;
-    z-index: 1;
+    height: $playground-height;
+    background-image: url('../../../assets/sparkels.gif');
 }

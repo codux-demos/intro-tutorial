@@ -21,7 +21,7 @@ export const Task01: React.FC = () => {
                     what’s behind?
                 </li>
                 <li>
-                    To reload and bring back the shapes, just click&nbsp;
+                    To reload and bring back the shapes, just click &nbsp;
                     <TaskSymbol name="reload" /> <b>Reload Preview</b>.
                 </li>
                 <li>
