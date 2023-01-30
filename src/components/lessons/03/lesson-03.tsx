@@ -15,7 +15,7 @@ export const Lesson03: React.FC = () => {
         <div className={styles.root}>
             <Task />
             <div className={styles.playground}>
-                <div id="top" className={`${styles.eye} ${styles.top}`}></div>
+                <div id="top" className={`${styles.eye} ${styles.top}`} />
                 <div id="bottom" className={`${styles.eye} ${styles.bottom}`}>
                     <Pupil color={'hotRed'} />
                 </div>

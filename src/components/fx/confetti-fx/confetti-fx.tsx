@@ -10,6 +10,23 @@ export interface ConfettiFxProps {
     style?: React.CSSProperties;
 }
 
+const animationColors = [
+    'dirtyWhite',
+    'lavender',
+    'lilac',
+    'darkLavender',
+    'oliveGreen',
+    'richGreen',
+    'turquoiseGreen',
+    'aeroBlue',
+    'goldYellow',
+    'danaPink',
+    'hotPink',
+    'pastelPink',
+    'hotRed',
+    'orangeRed',
+];
+
 export const ConfettiFx: React.FC<ConfettiFxProps> = ({
     show = false,
     dissolve = 200,
@@ -28,22 +45,7 @@ export const ConfettiFx: React.FC<ConfettiFxProps> = ({
             refAnimationInstance.current &&
                 refAnimationInstance.current({
                     ...config,
-                    colors: [
-                        vars.dirtyWhite,
-                        vars.lavender,
-                        vars.lilac,
-                        vars.darkLavender,
-                        vars.oliveGreen,
-                        vars.richGreen,
-                        vars.turquoiseGreen,
-                        vars.aeroBlue,
-                        vars.goldYellow,
-                        vars.danaPink,
-                        vars.hotPink,
-                        vars.pastelPink,
-                        vars.hotRed,
-                        vars.orangeRed,
-                    ],
+                    colors: getAnimationColorValues(),
                     gravity: 0.5,
                     ticks: dissolve,
                     origin: { y: 1.2 },
@@ -90,3 +92,16 @@ export const ConfettiFx: React.FC<ConfettiFxProps> = ({
         />
     );
 };
+
+function getAnimationColorValues(): string[] {
+    const colors: string[] = [];
+
+    for (const color of animationColors) {
+        const value = vars[color];
+        if (value) {
+            colors.push(value);
+        }
+    }
+
+    return colors;
+}
