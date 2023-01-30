@@ -1,4 +1,3 @@
-import React from 'react';
 import { createBoard } from '@wixc3/react-board';
 import { Lesson03 } from '../../../components/lessons/03/lesson-03';
 
