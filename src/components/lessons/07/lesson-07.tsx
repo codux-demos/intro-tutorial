@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './lesson-07.module.scss';
 import { Box } from '../../common/box/box';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
@@ -19,7 +19,7 @@ const solutionRoutes = [
     [2, 5, 6, 3, 0, 1, 4],
 ];
 
-export const Lesson07: React.FC = () => {
+export const Lesson07 = () => {
     // arrow animation vars
     const [arrowAnimSeq, setArrowAnimSeq] = useState([
         false,

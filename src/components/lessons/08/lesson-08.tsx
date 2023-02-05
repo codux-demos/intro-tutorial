@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './lesson-08.module.scss';
 import { Box } from '../../common/box/box';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
 import { Task08 as Task } from '../../tasks/08/task-08';
 
-export const Lesson08: React.FC = () => {
+export const Lesson08 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
 
     useEffect(() => {
@@ -63,7 +63,8 @@ function isSolved(): boolean {
     const isSolvedDirection =
         elem.getPropertyValue('flex-direction') === 'column';
     const isSolvedJustify =
-        elem.getPropertyValue('justify-content') === 'flex-end' || elem.getPropertyValue('justify-content') === 'end';
+        elem.getPropertyValue('justify-content') === 'flex-end' ||
+        elem.getPropertyValue('justify-content') === 'end';
     const isSolvedGap = getNumValue(elem.getPropertyValue('gap')) === 26;
     return isflex && isSolvedDirection && isSolvedJustify && isSolvedGap;
 }

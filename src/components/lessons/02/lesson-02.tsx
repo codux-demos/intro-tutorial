@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './lesson-02.module.scss';
 import { Box } from '../../common/box/box';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
 import { Task02 as Task } from '../../tasks/02/task-02';
 
-export const Lesson02: React.FC = () => {
+export const Lesson02 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
 
     useEffect(() => {

@@ -4,7 +4,7 @@ import { Box } from '../../common/box/box';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
 import { Task05 as Task } from '../../tasks/05/task-05';
 
-export const Lesson05: React.FC = () => {
+export const Lesson05 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
 
     useEffect(() => {
@@ -43,7 +43,7 @@ export const Lesson05: React.FC = () => {
                     </div>
                 </div>
                 <div className={styles.section}>
-                    <div className={styles.row} >
+                    <div className={styles.row}>
                         <Box
                             text="Give me some space"
                             color={'turquoiseGreen'}
