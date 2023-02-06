@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './lesson-01.module.scss';
 import type { ColorName } from '../../../globals/colors';
 import { Box } from '../../common/box/box';
@@ -32,7 +32,7 @@ const boxes: ColorName[] = [
     'hotPink',
 ];
 
-export const Lesson01: React.FC = () => {
+export const Lesson01 = () => {
     // on mouse enter fade-out box
     const [visible, setVisible] = useState<boolean[]>(
         boxes.map(() => {

@@ -1,4 +1,3 @@
-import type React from 'react';
 import styles from './task-tag.module.scss';
 import { TaskSymbol } from '../task-symbol/task-symbol';
 
@@ -10,11 +9,7 @@ export interface TaskTagProps {
     children: string;
 }
 
-export const TaskTag: React.FC<TaskTagProps> = ({
-    chevron = false,
-    type,
-    children,
-}) => {
+export const TaskTag = ({ chevron = false, type, children }: TaskTagProps) => {
     return (
         <span className={styles[type]}>
             {chevron && <TaskSymbol name="chevron" />}

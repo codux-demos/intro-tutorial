@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './lesson-04.module.scss';
 import img1 from '../../../assets/phto-1.png';
 import img2 from '../../../assets/phto-2.png';
@@ -10,7 +10,7 @@ import { Image } from '../../common/image/image';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
 import { Task04 as Task } from '../../tasks/04/task-04';
 
-export const Lesson04: React.FC = () => {
+export const Lesson04 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
 
     useEffect(() => {

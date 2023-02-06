@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './lesson-09.module.scss';
 import type { ColorName } from '../../../globals/colors';
 import { Box } from '../../common/box/box';
@@ -118,7 +118,7 @@ const boxes: ColorName[] = [
     'turquoiseGreen',
 ];
 
-export const Lesson09: React.FC = () => {
+export const Lesson09 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
 
     useEffect(() => {

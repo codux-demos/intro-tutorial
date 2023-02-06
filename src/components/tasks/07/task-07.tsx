@@ -1,8 +1,7 @@
-import type React from 'react';
 import styles from './task-07.module.scss';
 import { TaskSymbol } from '../../common/task-symbol/task-symbol';
 
-export const Task07: React.FC = () => {
+export const Task07 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>
