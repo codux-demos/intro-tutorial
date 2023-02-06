@@ -10,10 +10,9 @@ export interface NewComponentProps {
  * This component was generated using Codux's built-in Default new component template.
  * For details on on how to create custom new component templates, see https://help.codux.com/kb/en/article/configuration-for-new-components-and-templates
  */
-export const NewComponent = ({ className, children }: NewComponentProps) => {
-    return (
-        <div className={classNames(styles.root, className)}>
-            NewComponent {children}
-        </div>
-    );
+export const NewComponent = ({
+    className,
+    children = 'New Component',
+}: NewComponentProps) => {
+    return <div className={classNames(styles.root, className)}>{children}</div>;
 };
