@@ -1,9 +1,8 @@
-import type React from 'react';
 import styles from './lesson-05.module.scss';
 import { Box } from '../../common/box/box';
 import { Task05 as Task } from '../../tasks/05/task-05';
 
-export const Lesson05: React.FC = () => {
+export const Lesson05 = () => {
     return (
         <div className={styles.root}>
             <Task />
