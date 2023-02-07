@@ -1,4 +1,3 @@
-import type React from 'react';
 import styles from './lesson-09.module.scss';
 import type { ColorName } from '../../../globals/colors';
 import { Box } from '../../common/box/box';
@@ -117,7 +116,7 @@ const boxes: ColorName[] = [
     'turquoiseGreen',
 ];
 
-export const Lesson09: React.FC = () => {
+export const Lesson09 = () => {
     return (
         <div className={styles.root}>
             <Task />

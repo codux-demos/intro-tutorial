@@ -1,4 +1,3 @@
-import type React from 'react';
 import styles from './lesson-04.module.scss';
 import img1 from '../../../assets/phto-1.png';
 import img2 from '../../../assets/phto-2.png';
@@ -9,7 +8,7 @@ import img6 from '../../../assets/phto-6.png';
 import { Image } from '../../common/image/image';
 import { Task04 as Task } from '../../tasks/04/task-04';
 
-export const Lesson04: React.FC = () => {
+export const Lesson04 = () => {
     return (
         <div className={styles.root}>
             <Task />
