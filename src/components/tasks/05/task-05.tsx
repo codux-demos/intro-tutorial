@@ -1,9 +1,8 @@
-import type React from 'react';
 import styles from './task-05.module.scss';
 import { TaskSymbol } from '../../common/task-symbol/task-symbol';
 import { TaskTag } from '../../common/task-tag/task-tag';
 
-export const Task05: React.FC = () => {
+export const Task05 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>

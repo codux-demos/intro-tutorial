@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './lesson-07.module.scss';
 import { Box } from '../../common/box/box';
 import { Task07 as Task } from '../../tasks/07/task-07';
@@ -18,7 +18,7 @@ const solutionRoutes = [
     [2, 5, 6, 3, 0, 1, 4],
 ];
 
-export const Lesson07: React.FC = () => {
+export const Lesson07 = () => {
     // arrow animation vars
     const [arrowAnimSeq, setArrowAnimSeq] = useState([
         false,

@@ -18,7 +18,7 @@ export interface BoxProps {
     iconColor?: ColorName;
 }
 
-export const Box: React.FC<BoxProps> = ({
+export const Box = ({
     onMouseEnter,
     className,
     color = 'black',
@@ -29,7 +29,7 @@ export const Box: React.FC<BoxProps> = ({
     icon,
     iconDirection,
     iconColor = color,
-}) => {
+}: BoxProps) => {
     // css variable being used to set the box's background color (color prop)
     const boxColor = { '--box-color': vars[color] } as React.CSSProperties;
 

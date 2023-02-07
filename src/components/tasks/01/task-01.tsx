@@ -1,8 +1,7 @@
-import type React from 'react';
 import styles from './task-01.module.scss';
 import { TaskSymbol } from '../../common/task-symbol/task-symbol';
 
-export const Task01: React.FC = () => {
+export const Task01 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>
@@ -25,7 +24,8 @@ export const Task01: React.FC = () => {
                     <TaskSymbol name="reload" /> <b>Reload Preview</b>.
                 </li>
                 <li>
-                    When ready, go back to the <TaskSymbol name="home" /><b>Home</b> screen to find your next lessons.
+                    When ready, go back to the <TaskSymbol name="home" />
+                    <b>Home</b> screen to find your next lessons.
                 </li>
             </ol>
         </div>
