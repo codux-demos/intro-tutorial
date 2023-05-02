@@ -1,31 +1,31 @@
 @import '../../../globals/variables.module.scss';
 
 .root {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    background-color: $lesson-bg-color;
-    font-family: $font-family-text;
-    padding: $lesson-padding;
-    gap: $lesson-gap;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: $lesson-bg-color;
+  font-family: $font-family-text;
+  padding: $lesson-padding;
+  gap: $lesson-gap;
 
-    .playground {
-        overflow: hidden;
-        background-color: $playground-bg-color;
-        border-radius: $playground-border-radius;
-        width: $playground-width;
-        height: $playground-height;
+  .playground {
+    overflow: hidden;
+    background-color: $playground-bg-color;
+    border-radius: $playground-border-radius;
+    width: $playground-width;
+    height: $playground-height;
 
-        // lesson specific
-        background-image: url('../../../assets/golden-pot.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        position: relative;
-    }
+    // lesson specific
+    background-image: url('../../../assets/golden-pot.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
 }
 
 .sparkles {
-    width: $playground-width;
-    height: $playground-height;
-    background-image: url('../../../assets/sparkels.gif');
+  width: $playground-width;
+  height: $playground-height;
+  background-image: url('../../../assets/sparkels.gif');
 }

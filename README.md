@@ -11,6 +11,6 @@ Codux is an all-in-one visual development environment. Whether you’re starting
 
 This interactive tutorial project was designed to get you started with Codux. Each component in the project contains a fun lesson that teaches basic concepts of Codux.
 
--   Learn how to edit, render and compose apps that make use of React-based components.
--   Create React-based components with TypeScript, SCSS and CSS Modules support.
--   Visually edit in real-time and in an isolated environment.
+- Learn how to edit, render and compose apps that make use of React-based components.
+- Create React-based components with TypeScript, SCSS and CSS Modules support.
+- Visually edit in real-time and in an isolated environment.
