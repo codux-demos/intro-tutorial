@@ -22,7 +22,7 @@ export const Task05 = () => {
                     <b>Lesson05</b> and select any circle on the stage.
                 </li>
                 <li>
-                    Now,open the
+                    Now, open the
                     <TaskSymbol name="styles" />
                     <b>Styles Panel</b>. Notice that you're editing the {' '}
                     <TaskTag type="selector">.section .row .margin</TaskTag> selector.
