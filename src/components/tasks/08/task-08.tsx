@@ -24,14 +24,13 @@ export const Task08 = () => {
                     <b> Elements Panel</b>.
                 </li>
                 <li>
-                    On the <TaskSymbol name="styles" />
-                    <b>Styles Panel</b> choose the{' '}
-                    <TaskTag type="selector">.circles</TaskTag>selector and take
+                    Open the <TaskSymbol name="styles" />
+                    <b>Styles Panel</b>. Take
                     a look at the different flex properties under <b>Layout</b>.
                 </li>
                 <li>
-                    Change the <b>Flex Direction</b> and <b>Justify</b>{' '}
-                    properties to move the circles into their holes.
+                    To put the circles into their holes, change the <b>Flex Direction</b> and <b>Justify</b>{' '}
+                    properties .
                 </li>
             </ol>
         </div>
