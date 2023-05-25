@@ -27,9 +27,8 @@ export const Task06 = () => {
                     To apply new style, open the
                     <br />
                     <TaskSymbol name="styles" />
-                    <b>Styles Panel</b>&nbsp; and click{' '}
-                    <TaskSymbol name="add" />
-                    <br />
+                    <b>Styles Panel</b>&nbsp; and  click{' '}
+                    <br /><TaskSymbol name="add" />
                     <b>Manage Classes</b>.
                 </li>
                 <li>
