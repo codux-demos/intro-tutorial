@@ -30,7 +30,7 @@ export const Task08 = () => {
                 </li>
                 <li>
                     To put the circles into their holes, change the <b>Flex Direction</b> and <b>Justify</b>{' '}
-                    properties .
+                    properties.
                 </li>
             </ol>
         </div>
