@@ -30,7 +30,7 @@ export const Task03 = () => {
                     Finally, drag it from the <b>Add Elements Panel</b> into{' '}
                     <TaskTag type="tree">div.eye.top</TaskTag>
                     on the <br />
-                    <b>Elements Panel</b>.
+                    <b>Elements Panel</b>. You can also drag it directly into the upper eye, on the stage.
                 </li>
             </ol>
         </div>
