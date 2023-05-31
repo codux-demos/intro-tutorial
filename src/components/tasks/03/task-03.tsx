@@ -21,8 +21,8 @@ export const Task03 = () => {
                     <b>Lesson03</b> and <TaskSymbol name="edit" /> edit it.
                 </li>
                 <li>
-                    Now, open the <TaskSymbol name="add" />{' '}
-                    <b>Add Elements Panel</b> and find the
+                    Now, click <TaskSymbol name="add"/>{' '}
+                    <b>Add</b> and in the <b>Add Elements Panel</b> find the
                     <TaskSymbol name="component" />
                     <b>Pupil</b> component.
                 </li>
@@ -30,7 +30,7 @@ export const Task03 = () => {
                     Finally, drag it from the <b>Add Elements Panel</b> into{' '}
                     <TaskTag type="tree">div.eye.top</TaskTag>
                     on the <br />
-                    <b>Elements Panel</b>. You can also drag it directly into the upper eye, on the stage.
+                    <b>Elements Panel</b>. You can also drag it directly into the top eye, on the stage.
                 </li>
             </ol>
         </div>
