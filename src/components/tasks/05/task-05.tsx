@@ -17,26 +17,25 @@ export const Task05 = () => {
                 </li>
                 <li>
                     To bring the circles closer together, we need to adjust
-                    their margins. Edit <br></br>
+                    their margins. <br></br> Edit 
                     <TaskSymbol name="component" />
                     <b>Lesson05</b> and select any circle on the stage.
                 </li>
                 <li>
-                    Open the <TaskSymbol name="styles" />
-                    <b>Styles Panel</b> and choose the{' '}
-                    <TaskTag type="selector">.section .row .margin</TaskTag>
-                    selector.
+                    Now, open the
+                    <TaskSymbol name="styles" />
+                    <b>Styles Panel</b>. Notice that you're editing the {' '}
+                    <TaskTag type="selector">.section .row .margin</TaskTag> selector.
                 </li>
                 <li>
                     Scroll down to <b>Margin</b> and set it to <b>6px</b>.
-                    Notice how all circles change margins as they share the same
+                    See how all circles change margins as they share the same
                     selector.
                 </li>
                 <li>
-                    Now, let's adjust the padding of the button below. Select
-                    the button and choose the selector
-                    <TaskTag type="selector">.section .row .padding</TaskTag>
-                    Scroll to <b>Padding</b> and set it to
+                    Next, let's adjust the padding of the button below. Select
+                    the button and then 
+                    scroll to <b>Padding</b>. Set it to
                     <b> 15px</b>.
                 </li>
             </ol>
