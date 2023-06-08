@@ -11,7 +11,7 @@ export const Task04 = () => {
             <div className={styles.title}>Computed Styles Panel</div>
             <ol start={0} className={styles.desc}>
                 <li>
-                    In the <b>Computed Styles Panel</b> you can view the styles
+                    In the <b>Computed Styles Panel</b>, you can view the styles
                     applied to your element. <br></br>From there, you can
                     directly jump to the <b>Styles Panel</b> to edit them. Let's
                     change the size of these image tiles to fix the image.

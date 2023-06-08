@@ -24,22 +24,17 @@ export const Task09 = () => {
                     <b> Elements Panel.</b>
                 </li>
                 <li>
-                    On the <TaskSymbol name="styles" />
-                    <b>Styles Panel</b>, choose the
-                    <br />
-                    <TaskTag type="selector">.grid</TaskTag>selector. Then, add
+                    Open the
+                    <TaskSymbol name="styles" />
+                    <b>Styles Panel</b> and then add
                     a column (1fr).
                 </li>
                 <li>
-                    Select the white box on the stage and choose its
-                    <TaskTag type="selector">.grid .glow</TaskTag>
-                    selector on the <br />
-                    <TaskSymbol name="styles" />
-                    <b>Styles Panel</b>.
+                    Now, find the white box on the stage and select it.
                 </li>
                 <li>
-                    To move the white box in place, go to <br />
-                    <b>Self Layout</b> &gt; <b>Grid</b> and make the
+                    To move the white box in place, scroll to <br />
+                    <b>Self Layout</b> and go to <b>Grid</b>. Make the
                     <b> rows</b> and <b>columns</b> start at <b>4</b> and end at
                     <b> 5</b>.
                 </li>

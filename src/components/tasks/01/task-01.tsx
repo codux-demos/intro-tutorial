@@ -10,7 +10,7 @@ export const Task01 = () => {
             <div className={styles.title}>Let's Start!</div>
             <ol start={0} className={styles.desc}>
                 <li>
-                    In this tutorial, you'll learn how you can view and visually
+                    In this tutorial, you&apos;ll learn how to view and visually
                     edit <b>React</b> components using
                     <b>&nbsp;Codux</b>.
                 </li>
