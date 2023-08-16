@@ -26,12 +26,9 @@ export const Task09 = () => {
                 <li>
                     Open the
                     <TaskSymbol name="styles" />
-                    <b>Styles Panel</b> and then add
-                    a column (1fr).
+                    <b>Styles Panel</b> and then add a column (1fr).
                 </li>
-                <li>
-                    Now, find the white box on the stage and select it.
-                </li>
+                <li>Now, find the white box on the stage and select it.</li>
                 <li>
                     To move the white box in place, scroll to <br />
                     <b>Self Layout</b> and go to <b>Grid</b>. Make the

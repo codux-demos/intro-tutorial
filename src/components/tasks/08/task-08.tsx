@@ -25,12 +25,12 @@ export const Task08 = () => {
                 </li>
                 <li>
                     Open the <TaskSymbol name="styles" />
-                    <b>Styles Panel</b>. Take
-                    a look at the different flex properties under <b>Layout</b>.
+                    <b>Styles Panel</b>. Take a look at the different flex
+                    properties under <b>Layout</b>.
                 </li>
                 <li>
-                    To put the circles into their holes, change the <b>Flex Direction</b> and <b>Justify</b>{' '}
-                    properties.
+                    To put the circles into their holes, change the{' '}
+                    <b>Flex Direction</b> and <b>Justify</b> properties.
                 </li>
             </ol>
         </div>
