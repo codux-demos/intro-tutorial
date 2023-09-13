@@ -49,11 +49,8 @@ export const Lesson04 = () => {
 function isSolved(): boolean {
     let solved = true;
     const images = document.getElementsByTagName('img');
-    for (var i = 0; i < images.length; i++) {
-        solved =
-            solved &&
-            images[i]!.clientWidth === 160 &&
-            images[i]!.clientHeight === 160;
+    for (let i = 0; i < images.length; i++) {
+        solved = solved && images[i]!.clientWidth === 160 && images[i]!.clientHeight === 160;
     }
     return solved;
 }
