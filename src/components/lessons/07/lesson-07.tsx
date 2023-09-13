@@ -45,7 +45,7 @@ export const Lesson07 = () => {
 
     // animate arrows
     useEffect(() => {
-        let animInterval: NodeJS.Timer;
+        let animInterval: NodeJS.Timeout;
 
         if (solutionStatus.solved) {
             animInterval = setInterval(() => {
@@ -55,11 +55,7 @@ export const Lesson07 = () => {
                     setArrowAnimSeq(nextBlink);
                     setArrowAnimIdx(0);
                 } else {
-                    nextBlink[
-                        solutionRoutes[solutionStatus.solutionIndex]![
-                            arrowAnimIdx
-                        ]!
-                    ] = true;
+                    nextBlink[solutionRoutes[solutionStatus.solutionIndex]![arrowAnimIdx]!] = true;
                     setArrowAnimSeq(nextBlink);
                     setArrowAnimIdx(arrowAnimIdx + 1);
                 }
@@ -70,23 +66,14 @@ export const Lesson07 = () => {
     });
 
     const getColor = (idx: number) => {
-        return solutionStatus.solved
-            ? arrowAnimSeq[idx]
-                ? 'pastelPink'
-                : 'white'
-            : 'white';
+        return solutionStatus.solved ? (arrowAnimSeq[idx] ? 'pastelPink' : 'white') : 'white';
     };
 
     return (
         <div className={styles.root}>
             <Task />
             <div className={styles.playground}>
-                <Box
-                    outlined
-                    color="pastelPink"
-                    icon="heartOutline"
-                    className={styles.icon}
-                />
+                <Box outlined color="pastelPink" icon="heartOutline" className={styles.icon} />
                 <Box
                     outlined
                     color={getColor(0)}
@@ -136,12 +123,7 @@ export const Lesson07 = () => {
                     className={styles.icon}
                     iconDirection="right"
                 />
-                <Box
-                    outlined
-                    color="pastelPink"
-                    icon="heart"
-                    className={styles.icon}
-                />
+                <Box outlined color="pastelPink" icon="heart" className={styles.icon} />
                 <ConfettiFx
                     maxParticles={200}
                     show={solutionStatus.solved}
@@ -155,9 +137,8 @@ export const Lesson07 = () => {
 };
 
 function getSolutionStatus() {
-    const onStageDirections = Array.from(
-        document.querySelectorAll('[data-direction]'),
-        (icon) => icon.getAttribute('data-direction')
+    const onStageDirections = Array.from(document.querySelectorAll('[data-direction]'), (icon) =>
+        icon.getAttribute('data-direction')
     ).join('');
 
     const resolution: { solved: boolean; solutionIndex: number } = {
