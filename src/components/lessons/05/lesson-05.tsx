@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './lesson-05.module.scss';
 import { Box } from '../../common/box/box';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
@@ -19,27 +19,10 @@ export const Lesson05 = () => {
             <div className={styles.playground}>
                 <div className={styles.section}>
                     <div className={styles.row}>
-                        <Box
-                            text="N"
-                            color={'lavender'}
-                            className={styles.margin}
-                            id="margin"
-                        />
-                        <Box
-                            text="I"
-                            color={'lavender'}
-                            className={styles.margin}
-                        />
-                        <Box
-                            text="C"
-                            color={'lavender'}
-                            className={styles.margin}
-                        />
-                        <Box
-                            text="E"
-                            color={'lavender'}
-                            className={styles.margin}
-                        />
+                        <Box text="N" color={'lavender'} className={styles.margin} id="margin" />
+                        <Box text="I" color={'lavender'} className={styles.margin} />
+                        <Box text="C" color={'lavender'} className={styles.margin} />
+                        <Box text="E" color={'lavender'} className={styles.margin} />
                     </div>
                 </div>
                 <div className={styles.section}>
@@ -64,12 +47,8 @@ export const Lesson05 = () => {
 };
 
 function isSolved(): boolean {
-    const margin = getNumValue(
-        getComputed('margin').getPropertyValue('margin')
-    );
-    const padding = getNumValue(
-        getComputed('padding').getPropertyValue('padding')
-    );
+    const margin = getNumValue(getComputed('margin').getPropertyValue('margin'));
+    const padding = getNumValue(getComputed('padding').getPropertyValue('padding'));
     return margin <= 6 && margin >= 0 && padding <= 20 && padding >= 10;
 }
 
