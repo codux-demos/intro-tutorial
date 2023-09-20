@@ -8,9 +8,11 @@ export const Lesson05 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => {
+        const timeoutId = setTimeout(() => {
             setLessonSolved(isSolved());
         }, 750);
+
+        return () => clearTimeout(timeoutId);
     }, []);
 
     return (
