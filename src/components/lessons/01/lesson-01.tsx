@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import styles from './lesson-01.module.scss';
 import type { ColorName } from '../../../globals/colors';
 import { Box } from '../../common/box/box';
-import { CursorFx } from '../../fx/cursor-fx/cursor-fx';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
+import { CursorFx } from '../../fx/cursor-fx/cursor-fx';
 import { Task01 as Task } from '../../tasks/01/task-01';
+import styles from './lesson-01.module.scss';
 
 const boxes: ColorName[] = [
     'lavender',
@@ -48,9 +48,7 @@ export const Lesson01 = () => {
                     <Box
                         key={idx}
                         color={color}
-                        className={`${styles.boxes} ${
-                            visible[idx] || styles.fadeOut
-                        }`}
+                        className={`${styles.boxes} ${visible[idx] || styles.fadeOut}`}
                         onMouseEnter={() => {
                             const boxesVisibility = [...visible];
                             boxesVisibility[idx] = false;

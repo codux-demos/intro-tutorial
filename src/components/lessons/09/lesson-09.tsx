@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import styles from './lesson-09.module.scss';
 import type { ColorName } from '../../../globals/colors';
 import { Box } from '../../common/box/box';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
 import { Task09 as Task } from '../../tasks/09/task-09';
+import styles from './lesson-09.module.scss';
 
 const boxes: ColorName[] = [
     'turquoiseGreen',
@@ -155,20 +155,14 @@ function isSolved(): boolean {
     const pos = '445445';
     const grid = getComputed('grid');
     const isGrid = grid.getPropertyValue('display') === 'grid';
-    const gridCols = grid
-        .getPropertyValue('grid-template-columns')
-        .split(' ').length;
-    const gridRows = grid
-        .getPropertyValue('grid-template-rows')
-        .split(' ').length;
+    const gridCols = grid.getPropertyValue('grid-template-columns').split(' ').length;
+    const gridRows = grid.getPropertyValue('grid-template-rows').split(' ').length;
 
     const glow = getComputed('glow');
     const glowColPos =
-        glow.getPropertyValue('grid-column-start') +
-        glow.getPropertyValue('grid-column-end');
+        glow.getPropertyValue('grid-column-start') + glow.getPropertyValue('grid-column-end');
     const glowRowPos =
-        glow.getPropertyValue('grid-row-start') +
-        glow.getPropertyValue('grid-row-end');
+        glow.getPropertyValue('grid-row-start') + glow.getPropertyValue('grid-row-end');
 
     return (
         isGrid &&
