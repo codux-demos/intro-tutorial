@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import styles from './lesson-07.module.scss';
 import { Box } from '../../common/box/box';
 import { Task07 as Task } from '../../tasks/07/task-07';
+import styles from './lesson-07.module.scss';
 
 // lesson solutions
 // unsolved: right, right, up, down, right, left, right
