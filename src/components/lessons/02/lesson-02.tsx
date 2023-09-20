@@ -1,6 +1,6 @@
-import styles from './lesson-02.module.scss';
 import { Box } from '../../common/box/box';
 import { Task02 as Task } from '../../tasks/02/task-02';
+import styles from './lesson-02.module.scss';
 
 export const Lesson02 = () => {
     return (

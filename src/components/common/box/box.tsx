@@ -44,14 +44,8 @@ export const Box = ({
         ${outlined ? styles.outline : styles.fill} 
         ${className}`}
         >
-            {icon && (
-                <Icon name={icon} color={iconColor} direction={iconDirection} />
-            )}
-            {text && (
-                <span className={`${styles.text} ${icon && styles.margin}`}>
-                    {text}
-                </span>
-            )}
+            {icon && <Icon name={icon} color={iconColor} direction={iconDirection} />}
+            {text && <span className={`${styles.text} ${icon && styles.margin}`}>{text}</span>}
         </div>
     );
 };

@@ -1,7 +1,7 @@
-import styles from './lesson-09.module.scss';
 import type { ColorName } from '../../../globals/colors';
 import { Box } from '../../common/box/box';
 import { Task09 as Task } from '../../tasks/09/task-09';
+import styles from './lesson-09.module.scss';
 
 const boxes: ColorName[] = [
     'turquoiseGreen',
