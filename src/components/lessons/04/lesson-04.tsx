@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import styles from './lesson-04.module.scss';
 import img1 from '../../../assets/phto-1.png';
 import img2 from '../../../assets/phto-2.png';
 import img3 from '../../../assets/phto-3.png';
@@ -9,6 +8,7 @@ import img6 from '../../../assets/phto-6.png';
 import { Image } from '../../common/image/image';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
 import { Task04 as Task } from '../../tasks/04/task-04';
+import styles from './lesson-04.module.scss';
 
 export const Lesson04 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
