@@ -8,4 +8,5 @@ export default createBoard({
         windowWidth: 840,
         windowHeight: 630,
     },
+    isSnippet: true,
 });
