@@ -16,11 +16,11 @@ export const Lesson02 = () => {
             <Task />
             <div className={styles.playground} id="playground">
                 <div className={styles.row}>
-                    <Box text={'5'} className={styles.box05} color={'dirtyWhite'} />
-                </div>
-                <div className={styles.row}>
                     <Box text={'1'} className={styles.box01} color={'hotPink'} />
                     <Box text={'2'} className={styles.box02} color={'turquoiseGreen'} />
+                </div>
+                <div className={styles.row}>
+                    <Box text={'5'} className={styles.box05} color={'dirtyWhite'} />
                 </div>
                 <div className={styles.row}>
                     <Box text={'6'} className={styles.box06} color={'richGreen'} />
