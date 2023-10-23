@@ -29,7 +29,7 @@ export const Task06 = () => {
                     <TaskSymbol name="styles" />
                     <b>Styles Panel</b>{' '}and click on{' '}
                     <span style={{ fontSize: '13px', color: '#0000EE' }}>+ Add</span><br/>{' '}next to classes, to add a new class.</li>
-                <li>Start typing the name of the new class. After naming it, click ENTER to add it. <br/>The new class was added to <br/><b>lesson-06.module.scss</b> style
+                <li>Start typing the name of the new class. After naming it, click <b>ENTER</b> to add it. <br/>The new class was added to <br/><b>lesson-06.module.scss</b> style
                     file.
                 </li>
                 <li>
