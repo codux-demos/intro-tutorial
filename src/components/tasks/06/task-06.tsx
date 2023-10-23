@@ -27,17 +27,10 @@ export const Task06 = () => {
                     To apply new style, open the
                     <br />
                     <TaskSymbol name="styles" />
-                    <b>Styles Panel</b>&nbsp; and click <br />
-                    <TaskSymbol name="add" />
-                    <b>Manage Classes</b>.
-                </li>
-                <li>
-                    Click{' '}
-                    <span style={{ fontSize: '13px', color: '#0000EE' }}>
-                        + Create Class
-                    </span>
-                    . Name it and choose the <b>lesson-06.module.scss</b> style
-                    file to style this component.
+                    <b>Styles Panel</b>{' '}and click on{' '}
+                    <span style={{ fontSize: '13px', color: '#0000EE' }}>+ Add</span><br/>{' '}next to classes, to add a new class.</li>
+                <li>Start typing the name of the new class. After naming it, click <b>ENTER</b> to add it. <br/>The new class was added to <br/><b>lesson-06.module.scss</b> style
+                    file.
                 </li>
                 <li>
                     Scroll to <b>Backgrounds</b> and set the background to{' '}
