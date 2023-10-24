@@ -11,37 +11,32 @@ export const Task06 = () => {
             <div className={styles.title}>Create Class</div>
             <ol start={0} className={styles.desc}>
                 <li>
-                    <b>Classes</b> let you apply a set of styles to one or more
-                    elements. Let's change the background color by creating a
-                    class.
+                    <b>Classes</b> let you apply a set of styles to one or more elements. Let's
+                    change the background color by creating a class.
                 </li>
                 <li>
                     <TaskSymbol name="edit" />
                     Edit <TaskSymbol name="component" />
                     <b>Lesson06</b> and select
                     <br />
-                    <TaskTag type="tree">div.playground</TaskTag>on the{' '}
-                    <b>Elements Panel.</b>
+                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel.</b>
                 </li>
                 <li>
                     To apply new style, open the
                     <br />
                     <TaskSymbol name="styles" />
-                    <b>Styles Panel</b>&nbsp; and click <br />
-                    <TaskSymbol name="add" />
-                    <b>Manage Classes</b>.
+                    <b>Styles Panel</b> and click on{' '}
+                    <span style={{ fontSize: '13px', color: '#0000EE' }}>+ Add</span>
+                    <br /> next to classes, to add a new class.
                 </li>
                 <li>
-                    Click{' '}
-                    <span style={{ fontSize: '13px', color: '#0000EE' }}>
-                        + Create Class
-                    </span>
-                    . Name it and choose the <b>lesson-06.module.scss</b> style
-                    file to style this component.
+                    Start typing the name of the new class. After naming it, click <b>ENTER</b> to
+                    add it. <br />
+                    The new class was added to <br />
+                    <b>lesson-06.module.scss</b> style file.
                 </li>
                 <li>
-                    Scroll to <b>Backgrounds</b> and set the background to{' '}
-                    <b>$charcoal-black</b>.
+                    Scroll to <b>Backgrounds</b> and set the background to <b>$charcoal-black</b>.
                 </li>
             </ol>
         </div>
