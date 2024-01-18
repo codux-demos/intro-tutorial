@@ -1,8 +1,8 @@
-import React, { useRef, useEffect, useCallback } from 'react';
-import ReactCanvasConfetti from 'react-canvas-confetti';
-import styles from './confetti-fx.module.scss';
-import vars from '../../../globals/variables.module.scss';
 import { CreateTypes } from 'canvas-confetti';
+import React, { useCallback, useEffect, useRef } from 'react';
+import ReactCanvasConfetti from 'react-canvas-confetti';
+import vars from '../../../globals/variables.module.scss';
+import styles from './confetti-fx.module.scss';
 
 export interface ConfettiFxProps {
     show?: boolean;
