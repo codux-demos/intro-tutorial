@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useCallback } from 'react';
 import ReactCanvasConfetti from 'react-canvas-confetti';
 import styles from './confetti-fx.module.scss';
 import vars from '../../../globals/variables.module.scss';
+import { CreateTypes } from 'canvas-confetti';
 
 export interface ConfettiFxProps {
     show?: boolean;
@@ -27,17 +28,18 @@ const animationColors = [
     'orangeRed',
 ];
 
-export const ConfettiFx: React.FC<ConfettiFxProps> = ({
+export const ConfettiFx = ({
     show = false,
     dissolve = 200,
     maxParticles = 50,
     style,
-}) => {
+}: ConfettiFxProps) => {
     const refAnimationInstance = useRef<confetti.CreateTypes | null>(null);
-    const getInstance: (confetti: confetti.CreateTypes | null) => void = (
-        instance
-    ) => {
-        refAnimationInstance.current = instance;
+
+    const getInstance: (instance: { confetti: CreateTypes }) => void = (instance: {
+        confetti: CreateTypes;
+    }) => {
+        refAnimationInstance.current = instance.confetti;
     };
 
     const fire = useCallback(
@@ -84,13 +86,7 @@ export const ConfettiFx: React.FC<ConfettiFxProps> = ({
         }
     }, [show, fire]);
 
-    return (
-        <ReactCanvasConfetti
-            refConfetti={getInstance}
-            className={styles.root}
-            style={style}
-        />
-    );
+    return <ReactCanvasConfetti onInit={getInstance} className={styles.root} style={style} />;
 };
 
 function getAnimationColorValues(): string[] {
