@@ -8,12 +8,42 @@ export default createBoard({
         <div className={styles.root}>
             <div className={styles.header}>Title: description of this board</div>
             <div className={styles.gallery}>
-                <Card description="product description" price="$100" title="Product Title" />
-                <Card description="product description" price="$100" title="Product Title" />
-                <Card description="product description" price="$100" title="Product Title" />
-                <Card description="product description" price="$100" title="Product Title" />
-                <Card description="product description" price="$100" title="Product Title" />
-                <Card description="product description" price="$100" title="Product Title" />
+                <Card
+                    description="product description"
+                    price="$100"
+                    title="Product Title"
+                    className={styles.poster}
+                />
+                <Card
+                    description="product description"
+                    price="$100"
+                    title="Product Title"
+                    className={styles.poster}
+                />
+                <Card
+                    description="product description"
+                    price="$100"
+                    title="Product Title"
+                    className={styles.poster}
+                />
+                <Card
+                    description="product description"
+                    price="$100"
+                    title="Product Title"
+                    className={styles.poster}
+                />
+                <Card
+                    description="product description"
+                    price="$100"
+                    title="Product Title"
+                    className={styles.poster}
+                />
+                <Card
+                    description="product description"
+                    price="$100"
+                    title="Product Title"
+                    className={styles.poster}
+                />
             </div>
             <div className={styles.footer}>This is the footer</div>
         </div>
