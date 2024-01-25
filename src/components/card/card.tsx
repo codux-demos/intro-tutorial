@@ -30,7 +30,7 @@ export const Card = ({ className, title, description, price, added = false, imgS
                     <div className={styles.price}>
                         <span>$640</span></div>
                 </div>
-                <button className={styles.button}>{added ? 'Remove From Cart' : 'Add To Cart'}</button></div>
+                <button className={styles.button}>{added ? 'Remove From Cart' : 'Quickbuy'}</button></div>
         </div>
     );
 };
