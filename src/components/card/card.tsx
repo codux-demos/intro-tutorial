@@ -27,7 +27,7 @@ export const Card = ({ className, title, description, price, added = false, imgS
                     <div className={styles.details}>
                         <span className={styles.title}>Bauhaus </span>
                         <div className={styles.price}>
-                            <span>$640</span></div></div>
+                            <span>$6400</span></div></div>
                     <span className={styles.description}>Bauhaus Bauhaus</span>
                 </div>
                 <button className={styles.button}>{added ? 'Remove From Cart' : 'Quickbuy'}</button></div>
