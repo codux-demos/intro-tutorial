@@ -22,15 +22,15 @@ export const Card = ({ className, title, description, price, added = false, imgS
                 alt=""
                 className={styles.image}
             />
-            <div className={styles.footer}>
-                <span className={styles.title}>{title}
-                    <span className={styles.price}>{price}</span>
-                </span>
-                <span className={styles.description}>{description}</span>
-                <div className={styles['footer-bottom']}>
-                    <button className={styles.button}>{added ? 'Remove From Cart' : 'Add To Cart'}</button>
+            <div>
+                <div className={styles.details}>
+                    <div className={styles.description}>
+                        <span>text</span>
+                        <span>text</span></div>
+                    <div className={styles.price}>
+                        <span>text</span></div>
                 </div>
-            </div>
+                <button className={styles.button}>{added ? 'Remove From Cart' : 'Add To Cart'}</button></div>
         </div>
     );
 };

@@ -5,6 +5,7 @@
 
 .image {
     width: 100%;
+    padding: 0px;
 }
 
 .footer {
@@ -36,17 +37,25 @@
     background-clip: border-box;
 }
 
-.title {
-    font-size: 16px;
-    font-weight: 300;
+.details {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0em 0em 0em 2em;
 }
 
 .description {
-    font-size: 10px;
-    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .price {
-    font-size: 20px;
-    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: end;
+    padding-right: 2em;
 }
