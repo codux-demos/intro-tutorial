@@ -1,14 +1,14 @@
 import { createBoard } from '@wixc3/react-board';
 import styles from './playground.module.scss';
 import { Card } from '../../../components/card/card';
-import {Poster_01, Poster_02, Poster_03, Poster_04, Poster_05, Poster_06} from '../../../assets/posters';
+import { Poster_01, Poster_02, Poster_03, Poster_04, Poster_05, Poster_06 } from '../../../assets/posters';
 
 
 export default createBoard({
     name: '10 Playground',
     Board: () => (
         <div className={styles.root}>
-            <div className={styles.header}>Title: description of this board</div>
+            <div className={styles.header}>Unleash your creativity with Codux. Customize fonts, colors, and layouts to craft a masterpiece tailored to your vision. Switch to preview mode to view specific tasks. Your art, your rules.</div>
             <div className={styles.gallery}>
                 <Card
                     description="product description"
