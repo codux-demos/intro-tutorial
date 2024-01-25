@@ -39,12 +39,17 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0em 0em 0em 2em;
+    margin-top: 0.7em;
+    font-size: 1.2rem;
 }
 
 .description {
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    font-size: 0.8rem;
 }
 
 .price {
@@ -56,3 +61,5 @@
 }
 
 .title {}
+
+.cardetails {}
