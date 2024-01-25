@@ -26,17 +26,9 @@
 .button {
     padding: 0px 5px;
     font-size: 10px;
-    background-color: #ffffff;
     width: 90%;
     height: 3em;
     border-radius: 30px;
-    background-image: none;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    background-attachment: scroll;
-    background-origin: padding-box;
-    background-clip: border-box;
 }
 
 .details {
@@ -61,3 +53,5 @@
     align-items: end;
     padding-right: 2em;
 }
+
+.title {}

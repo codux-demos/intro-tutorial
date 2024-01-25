@@ -25,10 +25,10 @@ export const Card = ({ className, title, description, price, added = false, imgS
             <div>
                 <div className={styles.details}>
                     <div className={styles.description}>
-                        <span>text</span>
+                        <span className={styles.title}>text</span>
                         <span>text</span></div>
                     <div className={styles.price}>
-                        <span>text</span></div>
+                        <span>$640</span></div>
                 </div>
                 <button className={styles.button}>{added ? 'Remove From Cart' : 'Add To Cart'}</button></div>
         </div>
