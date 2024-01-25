@@ -1,65 +1,69 @@
 @import '../../globals/playground-variables';
 
 .root {
-    min-height: 400px;
-    width: 100%;
+  min-height: 400px;
+  width: 100%;
 }
 
 .image {
-    width: 100%;
-    padding: 0px;
+  width: 100%;
+  padding: 0px;
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
 
 .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
 }
 
 .button {
-    padding: 0px 5px;
-    font-size: 0.7rem;
-    width: 90%;
-    height: 3em;
-    border-radius: 30px;
-    border: #ffffff;
+  padding: 0px 5px;
+  font-size: 0.7rem;
+  width: 90%;
+  height: 3em;
+  border-radius: 30px;
+  border: #ffffff;
 }
 
 .details {
-    flex-direction: row;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 0em 0em 0em 2em;
-    margin-top: 0.7em;
-    font-size: 1.2rem;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0em 0em 0em 2em;
+  margin-top: 0.7em;
+  font-size: 1.2rem;
 }
 
 .description {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 1em;
-    margin-top: 0.2em;
-    font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1em;
+  margin-top: 0.2em;
+  font-size: 0.8rem;
+  padding-left: 2em;
+  box-sizing: border-box;
 }
 
 .price {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: end;
-    padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: end;
+  padding-right: 2em;
 }
 
-.title {}
+.title {
+}
 
-.cardetails {}
+.cardetails {
+}
