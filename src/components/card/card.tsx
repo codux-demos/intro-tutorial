@@ -13,7 +13,7 @@ export interface CardProps {
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const Card = ({ className, title, description, price, added=false }: CardProps) => {
+export const Card = ({ className, title, description, price, added = false }: CardProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <img
@@ -22,11 +22,12 @@ export const Card = ({ className, title, description, price, added=false }: Card
                 className={styles.image}
             />
             <div className={styles.footer}>
-                <span className={styles.title}>{title}</span>
+                <span className={styles.title}>{title}
+                    <span className={styles.price}>{price}</span>
+                </span>
                 <span className={styles.description}>{description}</span>
                 <div className={styles['footer-bottom']}>
-                    <span className={styles.price}>{price}</span>
-                    <button className={styles.button}>{added?'Remove From Cart':'Add To Cart'}</button>
+                    <button className={styles.button}>{added ? 'Remove From Cart' : 'Add To Cart'}</button>
                 </div>
             </div>
         </div>

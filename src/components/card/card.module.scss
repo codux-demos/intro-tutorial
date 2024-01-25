@@ -1,43 +1,52 @@
 .root {
-  min-height: 400px;
-  width: 100%;
+    min-height: 400px;
+    width: 100%;
 }
 
 .image {
-  width: 20vw;
+    width: 20vw;
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
 }
 
 .footer-bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
 }
 
 .button {
-  border: 1px solid black;
-  padding: 0px 5px;
-  font-size: 10px;
-  background-color: #ffffff;
+    padding: 0px 5px;
+    font-size: 10px;
+    background-color: #ffffff;
+    width: 90%;
+    height: 3em;
+    border-radius: 30px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
 }
 
 .title {
-  font-size: 16px;
-  font-weight: 300;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .description {
-  font-size: 10px;
-  font-weight: 300;
+    font-size: 10px;
+    font-weight: 300;
 }
 
 .price {
-  font-size: 20px;
-  font-weight: 300;
+    font-size: 20px;
+    font-weight: 300;
 }
