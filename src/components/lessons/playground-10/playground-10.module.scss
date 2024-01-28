@@ -30,7 +30,19 @@
 }
 
 .footer {
-  background-color: #488af8;
   min-height: 10vh;
   color: #ffffff;
+  width: 100vw;
+  margin: 3em 0em 0em;
+  background-color: #ffffff;
+}
+
+.divider {
+  width: 100vw;
+  background-color: $primary;
+  height: 2px;
+}
+
+.footer-text {
+  font-family: $font-alata;
 }

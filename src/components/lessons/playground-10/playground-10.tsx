@@ -67,7 +67,9 @@ export const Playground10 = ({ className }: Playground10Props) => {
                 />
             </div>
             <div className={styles.footer}>
-                <div />
+                <div className={styles.divider}>
+                    <span className={styles['footer-text']}>text</span>
+                </div>
                 This is the footer
             </div>
         </div>
