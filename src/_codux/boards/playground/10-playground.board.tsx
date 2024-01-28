@@ -2,6 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import styles from './playground.module.scss';
 import { Card } from '../../../components/card/card';
 import { Poster_01, Poster_02, Poster_03, Poster_04, Poster_05, Poster_06 } from '../../../assets/posters';
+import Card_module from '../../../components/card/card.module.scss';
 
 
 export default createBoard({
@@ -53,7 +54,8 @@ export default createBoard({
                     imgSrc={Poster_06}
                 />
             </div>
-            <div className={styles.footer}>This is the footer</div>
+            <div className={styles.footer}>
+                <div className={Card_module.devider} />This is the footer</div>
         </div>
     ),
     isSnippet: false,
