@@ -1,74 +1,81 @@
 @import '../../../globals/playground-variables';
 
 .root {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 
-    @media (min-width: 1400px) {
-        width: 1400px;
-    }
+  @media (min-width: 1400px) {
+    width: 1400px;
+  }
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
-    grid-template-rows: 1fr 1fr;
-    gap: 70px 50px;
-    text-align: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  grid-template-rows: 1fr 1fr;
+  gap: 5.5em 4.5em;
+  text-align: start;
+  margin: 2em 0em 0em;
 
-    @media (min-width: 1400px) {
-        gap: 60px;
-    }
+  @media (max-width: 900px) {
+    gap: 4.5em 2.5em;
+  }
 
-    margin: 2em 0em 0em;
+    @media (max-width: 420px) {
+  grid-template-columns: 1fr 1fr;
+
+  }
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    font-weight: 300;
-    padding: 15px;
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: $font-alata;
-    margin: 2em 0em 1em;
-    width: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: 300;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: $font-alata;
+  margin: 2em 0em 1em;
+  text-wrap: pretty;
+  max-width: 65vw;
 
-    @media (min-width: 1400px) {
-        width: 40vw;
-    }
+  @media (min-width: 1400px) {
+    max-width: 50vw;
+    place-content: center;
+  }
 }
 
 .footer {
-    min-height: 6vh;
-    color: $primary;
-    width: 100vw;
-    background-color: #ffffff;
-    font-family: $font-geo;
-    display: flex;
-    flex-direction: column;
-    margin-top: 8em;
-    margin-right: 0em;
-    margin-left: 0em;
+  min-height: 6vh;
+  color: $primary;
+  width: 100vw;
+  background-color: #ffffff;
+  font-family: $font-geo;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8em;
+  margin-right: 0em;
+  margin-left: 0em;
 }
 
 .divider {
-    width: 100vw;
-    background-color: $primary;
-    height: 1px;
+  width: 100vw;
+  background-color: $primary;
+  height: 1px;
+  position: sticky;
 }
 
 .footer-text {
-    font-family: $font-geo;
-    font-size: 1rem;
-    margin-right: 0em;
-    margin-bottom: 0em;
-    margin-left: 2em;
-    margin-top: 1.4em;
+  font-family: $font-geo;
+  font-size: 1rem;
+  margin-right: 0em;
+  margin-bottom: 0em;
+  margin-left: 2em;
+  margin-top: 1.2em;
 }
