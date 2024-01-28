@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import styles from './card.module.scss';
-import Playground_module from '../../_codux/boards/playground/playground.module.scss';
 
 export interface CardProps {
     className?: string;

@@ -1,0 +1,86 @@
+@import '../../../globals/variables.module.scss';
+@import '../../../globals/playground-variables.scss';
+
+.root {
+  min-height: 400px;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  padding: 0px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.button {
+  font-size: 0.7rem;
+  height: 3em;
+  border-radius: 30px;
+  border: #ffffff;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.details {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 0.7em;
+  font-size: 1.7rem;
+  font-family: $font-italiana;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1em;
+  margin-top: 0.2em;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: end;
+  font-family: $font-geo;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.title {
+  font-family: $font-italiana;
+}
+
+.cardetails {
+  flex-direction: column;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin: 0em 0em 1em;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  size: 2px;
+}

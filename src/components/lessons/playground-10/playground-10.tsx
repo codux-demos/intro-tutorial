@@ -1,15 +1,27 @@
-import { createBoard } from '@wixc3/react-board';
-import styles from './playground.module.scss';
-import { Card } from '../../../components/card/card';
-import { Poster_01, Poster_02, Poster_03, Poster_04, Poster_05, Poster_06 } from '../../../assets/posters';
-import Card_module from '../../../components/card/card.module.scss';
+import classNames from 'classnames';
+import styles from './playground-10.module.scss';
+import {
+    Poster_01,
+    Poster_02,
+    Poster_03,
+    Poster_04,
+    Poster_05,
+    Poster_06,
+} from '../../../assets/posters';
+import { Card } from '../card/card';
 
+export interface Playground10Props {
+    className?: string;
+}
 
-export default createBoard({
-    name: '10 Playground',
-    Board: () => (
-        <div className={styles.root}>
-            <div className={styles.header}>Unleash your creativity with Codux. Customize fonts, colors, and layouts to craft a masterpiece tailored to your vision. Switch to preview mode to view specific tasks. Your art, your rules.</div>
+export const Playground10 = ({ className }: Playground10Props) => {
+    return (
+        <div className={classNames(styles.root, className)}>
+            <div className={styles.header}>
+                Unleash your creativity with Codux. Customize fonts, colors, and layouts to craft a
+                masterpiece tailored to your vision. Switch to preview mode to view specific tasks.
+                Your art, your rules.
+            </div>
             <div className={styles.gallery}>
                 <Card
                     description="product description"
@@ -55,15 +67,9 @@ export default createBoard({
                 />
             </div>
             <div className={styles.footer}>
-                <div className={Card_module.divider} />This is the footer</div>
+                <div />
+                This is the footer
+            </div>
         </div>
-    ),
-    isSnippet: false,
-    environmentProps: {
-        windowWidth: 1146,
-        windowHeight: 780,
-        canvasMargin: {
-            top: 0, right: 0, bottom: 0, left: 0
-        }
-    },
-});
+    );
+};
