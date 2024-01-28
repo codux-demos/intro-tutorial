@@ -21,13 +21,12 @@
   text-align: start;
   margin: 2em 0em 0em;
 
-  @media (max-width: 900px) {
-    gap: 4.5em 2.5em;
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr 1fr;
   }
 
-    @media (max-width: 420px) {
-  grid-template-columns: 1fr 1fr;
-
+  @media (max-width: 900px) {
+    gap: 4.5em 2.5em;
   }
 }
 
@@ -52,7 +51,7 @@
 }
 
 .footer {
-  min-height: 6vh;
+  min-height: 5vh;
   color: $primary;
   width: 100vw;
   background-color: #ffffff;
@@ -62,6 +61,18 @@
   margin-top: 8em;
   margin-right: 0em;
   margin-left: 0em;
+  box-shadow: 0 -1px $primary;
+  justify-content: center;
+
+  @media (max-width: 420px) {
+    font-size: 0.8rem;
+    margin-top: 6em;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 0.8rem;
+    margin-top: 6em;
+  }
 }
 
 .divider {
@@ -74,8 +85,18 @@
 .footer-text {
   font-family: $font-geo;
   font-size: 1rem;
-  margin-right: 0em;
-  margin-bottom: 0em;
   margin-left: 2em;
-  margin-top: 1.2em;
+  margin-right: 2em;
+
+  @media (max-width: 420px) {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 0.8rem;
+  }
+}
+
+a:link {
+  color: $primary;
 }

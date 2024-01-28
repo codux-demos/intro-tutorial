@@ -9,6 +9,7 @@ import {
     Poster_06,
 } from '../../../assets/posters';
 import { Card } from '../card/card';
+import { Icon } from '../../common/icon/icon';
 
 export interface Playground10Props {
     className?: string;
@@ -67,11 +68,10 @@ export const Playground10 = ({ className }: Playground10Props) => {
                 />
             </div>
             <div className={styles.footer}>
-                <div className={styles.divider}></div>
                 <span className={styles['footer-text']}>
-                   
                     This Gallery is powered by Codux. Explore new ways to design on real, and learn
-                    more about working on Codux  <a href="https://help.codux.com/kb/en/article/kb21821">here</a>;
+                    more about working on Codux{' '}
+                    <a href="https://help.codux.com/kb/en/article/kb21821">here</a>;
                 </span>
             </div>
         </div>
