@@ -55,7 +55,7 @@ export default createBoard({
                 />
             </div>
             <div className={styles.footer}>
-                <div className={Card_module.devider} />This is the footer</div>
+                <div className={Card_module.divider} />This is the footer</div>
         </div>
     ),
     isSnippet: false,

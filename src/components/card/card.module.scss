@@ -29,7 +29,9 @@
     border-radius: 30px;
     border: #ffffff;
     width: 80%;
+    display: block;
     margin: auto;
+
 }
 
 .details {
@@ -38,7 +40,6 @@
     width: 100%;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 0em 0em 0em 1em;
     margin-top: 0.7em;
     font-size: 1.7rem;
     font-family: $font-italiana;
@@ -51,7 +52,6 @@
     margin-bottom: 1em;
     margin-top: 0.2em;
     font-size: 0.8rem;
-    padding-left: 2em;
     box-sizing: border-box;
 }
 
@@ -60,7 +60,6 @@
     flex-direction: column;
     width: 50%;
     align-items: end;
-    padding-right: 1em;
     font-family: $font-geo;
     font-size: 1.8rem;
     line-height: 1.8rem;
@@ -70,8 +69,19 @@
     font-family: $font-italiana;
 }
 
-.cardetails {}
+.cardetails {
+    flex-direction: column;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin: 0em 0em 1em;
 
-.layout {}
+}
 
-.devider {}
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    size: 2px;
+}
