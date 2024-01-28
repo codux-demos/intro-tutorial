@@ -68,9 +68,11 @@ export const Playground10 = ({ className }: Playground10Props) => {
             </div>
             <div className={styles.footer}>
                 <div className={styles.divider}>
-                    <span className={styles['footer-text']}>text</span>
+                    <span className={styles['footer-text']}>
+                        This Gallery is powered by Codux. Explore new ways to design on real, and
+                        learn more about working on Codux here &lt;link&gt;
+                    </span>
                 </div>
-                This is the footer
             </div>
         </div>
     );
