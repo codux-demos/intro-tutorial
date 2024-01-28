@@ -24,12 +24,12 @@
 }
 
 .button {
-    padding: 0px 5px;
     font-size: 0.7rem;
-    width: 90%;
     height: 3em;
     border-radius: 30px;
     border: #ffffff;
+    width: 80%;
+    margin: auto;
 }
 
 .details {
@@ -66,6 +66,10 @@
     line-height: 1.8rem;
 }
 
-.title {}
+.title {
+    font-family: $font-geo;
+}
 
 .cardetails {}
+
+.layout {}
