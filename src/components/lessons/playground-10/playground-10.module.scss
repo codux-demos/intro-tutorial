@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
+
+  @media (min-width: 1400px) {
+    width: 1400px;
+  }
 }
 
 .gallery {
@@ -14,6 +19,12 @@
   grid-template-rows: 1fr 1fr;
   gap: 50px;
   text-align: start;
+
+  @media (min-width: 1400px) {
+    gap: 60px;
+  }
+
+  margin: 2em 0em 0em;
 }
 
 .header {
@@ -24,9 +35,14 @@
   font-weight: 300;
   padding: 15px;
   font-size: 1.5rem;
-  width: 60vw;
   text-align: center;
   font-family: $font-alata;
+  margin: 2em 0em 1em;
+  width: 70vw;
+
+  @media (min-width: 1400px) {
+    width: 40vw;
+  }
 }
 
 .footer {

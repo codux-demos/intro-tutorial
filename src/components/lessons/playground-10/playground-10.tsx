@@ -19,8 +19,8 @@ export const Playground10 = ({ className }: Playground10Props) => {
         <div className={classNames(styles.root, className)}>
             <div className={styles.header}>
                 Unleash your creativity with Codux. Customize fonts, colors, and layouts to craft a
-                masterpiece tailored to your vision. Switch to preview mode to view specific tasks.
-                Your art, your rules.
+                masterpiece tailored to your vision. Give your posters unique names and make it
+                yours. Your art, your rules.
             </div>
             <div className={styles.gallery}>
                 <Card

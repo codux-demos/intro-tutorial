@@ -2,68 +2,71 @@
 @import '../../../globals/playground-variables.scss';
 
 .root {
-  min-height: 400px;
-  width: 100%;
+    min-height: 400px;
+    width: 100%;
 }
 
 .image {
-  width: 100%;
-  padding: 0px;
+    width: 100%;
+    padding: 0px;
 }
 
 .button {
-  font-size: 0.7rem;
-  height: 3em;
-  border-radius: 30px;
-  border: #ffffff;
-  width: 80%;
-  display: block;
-  margin: auto;
+    font-size: 0.7rem;
+    height: 3.4em;
+    border-radius: 30px;
+    border: #ffffff;
+    display: block;
+    margin: auto;
+    font-family: $font-dm-sans;
+    text-transform: uppercase;
+    width: 85%;
 }
 
 .details {
-  flex-direction: row;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  box-sizing: border-box;
-  margin-top: 0.7em;
-  font-size: 1.7rem;
-  font-family: $font-italiana;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 0.7em;
+    font-size: 1.7rem;
+    font-family: $font-italiana;
 }
 
 .description {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-bottom: 1em;
-  margin-top: 0.2em;
-  font-size: 0.8rem;
-  box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    font-family: $font-dm-sans;
 }
 
 .price {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: end;
-  font-family: $font-geo;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: end;
+    font-family: $font-geo;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
 }
 
 .title {
-  font-family: $font-italiana;
+    font-family: $font-italiana;
 }
 
 .cardetails {
-  flex-direction: column;
-  padding-right: 2em;
-  padding-left: 2em;
-  margin: 0em 0em 1em;
+    flex-direction: column;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin: 0.8em 0em 1em;
 }
 
 .layout {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }

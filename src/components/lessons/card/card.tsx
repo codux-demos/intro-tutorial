@@ -33,7 +33,7 @@ export const Card = ({
                             <span>$6400</span>
                         </div>
                     </div>
-                    <span className={styles.description}>Bauhaus Bauhaus</span>
+                    <span className={styles.description}>BAUHAUS BAUHAUS</span>
                 </div>
                 <div>
                     <button className={styles.button}>
