@@ -8,6 +8,7 @@ export interface CardProps {
     price?: string;
     added?: boolean;
     imgSrc: string;
+    hint?: JSX.Element;
 }
 
 /**
@@ -16,8 +17,8 @@ export interface CardProps {
  */
 export const Card = ({
     className,
-    title,
-    description,
+    title = 'Bauhaus',
+    description = 'BAUHAUS BAUHAUS',
     price,
     added = false,
     imgSrc,
@@ -28,12 +29,12 @@ export const Card = ({
             <div className={styles.layout}>
                 <div className={styles.cardetails}>
                     <div className={styles.details}>
-                        <span className={styles.title}>Bauhaus </span>
+                        <span className={styles.title}>{title} </span>
                         <div className={styles.price}>
-                            <span>$6400</span>
+                            <span>${price}</span>
                         </div>
                     </div>
-                    <span className={styles.description}>BAUHAUS BAUHAUS</span>
+                    <span className={styles.description}>{description}</span>
                 </div>
                 <div>
                     <button className={styles.button}>
