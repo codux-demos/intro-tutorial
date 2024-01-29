@@ -1,2 +1,23 @@
+@import '../../globals/playground-variables';
+
 .root {
+    position: absolute;
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    font-size: 0.8rem;
+    font-family: $font-alata;
+    text-align: center;
+    white-space: pre;
+    width: 65%;
+    top: 48%;
+}
+
+.container {
+    position: absolute;
 }

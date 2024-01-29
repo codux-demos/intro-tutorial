@@ -22,6 +22,7 @@ export const Card = ({
     price,
     added = false,
     imgSrc,
+    hint
 }: CardProps) => {
     return (
         <div className={classNames(styles.root, className)}>
@@ -36,6 +37,7 @@ export const Card = ({
                     </div>
                     <span className={styles.description}>{description}</span>
                 </div>
+                {hint}
                 <div>
                     <button className={styles.button}>
                         {added ? 'Remove From Cart' : 'Quickbuy'}

@@ -14,8 +14,10 @@ export interface HintProps {
 export const Hint = ({ className, svg, text }: HintProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <img src={svg} />
-            <p>{text}</p>
+            <div className={styles.container}>
+                <p className={styles.text}>{text}</p>
+                <img src={svg} />
+            </div>
         </div>
     );
 };
