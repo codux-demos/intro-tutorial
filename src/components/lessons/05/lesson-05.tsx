@@ -1,19 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import styles from './lesson-05.module.scss';
 import { Box } from '../../common/box/box';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
 import { Task05 as Task } from '../../tasks/05/task-05';
+import { useRequestAnimationFrame } from '../../hooks';
 
 export const Lesson05 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
 
-    useEffect(() => {
-        const timeoutId = setTimeout(() => {
-            setLessonSolved(isSolved());
-        }, 750);
-
-        return () => clearTimeout(timeoutId);
+    const checkSolution = useCallback(() => {
+        setLessonSolved(isSolved());
     }, []);
+
+    useRequestAnimationFrame(checkSolution);
 
     return (
         <div className={styles.root}>
