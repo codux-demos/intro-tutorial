@@ -10,14 +10,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: auto;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-family: $font-alata;
     text-align: center;
     white-space: pre;
     width: 65%;
-    top: 48%;
 }
 
 .container {
     position: absolute;
+}
+
+.image {
+    width: 220px;
 }

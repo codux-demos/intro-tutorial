@@ -1,128 +1,150 @@
 @import '../../../globals/playground-variables';
 
 .root {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 
-    @media (min-width: 1400px) {
-        width: 1400px;
-    }
+  @media (min-width: 1400px) {
+    width: 1400px;
+  }
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
-    grid-template-rows: 1fr 1fr;
-    gap: 4.5em 4 em;
-    text-align: start;
-    margin: 2em 0em 0em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  grid-template-rows: 1fr 1fr;
+  gap: 4.5em 4 em;
+  text-align: start;
+  margin: 2em 0em 0em;
+  column-gap: 3em;
+  row-gap: 4em;
 
-    @media (max-width: 420px) {
-        grid-template-columns: 1fr 1fr;
-    }
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    @media (max-width: 900px) {
-        gap: 4.5em 2.5em;
-    }
-
-    column-gap:3em;
-    row-gap:4em;
+  @media (max-width: 900px) {
+    gap: 4.5em 2.5em;
+  }
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    font-weight: 300;
-    padding: 15px;
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: $font-alata;
-    margin: 2em 0em 1em;
-    text-wrap: pretty;
-    max-width: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: 300;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: $font-alata;
+  margin: 2em 0em 1em;
+  text-wrap: pretty;
+  max-width: 65vw;
 
-    @media (min-width: 1400px) {
-        max-width: 50vw;
-        place-content: center;
-    }
+  @media (min-width: 1400px) {
+    max-width: 50vw;
+    place-content: center;
+  }
 }
 
 .footer {
-    min-height: 5vh;
-    color: $primary;
-    width: 100vw;
-    background-color: #ffffff;
-    font-family: $font-geo;
-    display: flex;
-    flex-direction: column;
-    margin-top: 8em;
-    margin-right: 0em;
-    margin-left: 0em;
-    box-shadow: 0 -1px $primary;
-    justify-content: center;
+  min-height: 5vh;
+  color: $primary;
+  width: 100vw;
+  background-color: #ffffff;
+  font-family: $font-geo;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8em;
+  margin-right: 0em;
+  margin-left: 0em;
+  box-shadow: 0 -1px $primary;
+  justify-content: center;
 
-    @media (max-width: 420px) {
-        font-size: 0.8rem;
-        margin-top: 6em;
-    }
+  @media (max-width: 420px) {
+    font-size: 0.8rem;
+    margin-top: 6em;
+  }
 
-    @media (max-width: 900px) {
-        font-size: 0.8rem;
-        margin-top: 6em;
-    }
+  @media (max-width: 900px) {
+    font-size: 0.8rem;
+    margin-top: 6em;
+  }
 }
 
 .divider {
-    width: 100vw;
-    background-color: $primary;
-    height: 1px;
-    position: sticky;
+  width: 100vw;
+  background-color: $primary;
+  height: 1px;
+  position: sticky;
 }
 
 .footer-text {
-    font-family: $font-geo;
-    font-size: 1rem;
-    margin-left: 2em;
-    margin-right: 2em;
+  font-family: $font-geo;
+  font-size: 1rem;
+  margin-left: 2em;
+  margin-right: 2em;
 
-    @media (max-width: 420px) {
-        font-size: 0.8rem;
-    }
+  @media (max-width: 420px) {
+    font-size: 0.8rem;
+  }
 
-    @media (max-width: 900px) {
-        font-size: 0.8rem;
-    }
+  @media (max-width: 900px) {
+    font-size: 0.8rem;
+  }
 }
 
 a:link {
-    color: $primary;
+  color: $primary;
 }
 
 .hint {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #B52D2D;
-    left: -30px;
-    top: 380px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #b52d2d;
+  left: -30px;
+  top: 380px;
 }
 
 .componentHint {
-    top: 10px;
-    left: 100px;
+  right: 22px;
+  top: 42px;
 }
 
-.fontHint {}
+.componentHintText {
+  top: 100px;
+}
 
-.buttonHint {}
+.fontHint {
+  left: -190px;
+  bottom: 300px;
+}
+
+.fontHintText {
+  top: 100px;
+}
+
+.buttonHint {
+  left: 70px;
+  bottom: 240px;
+}
+
+.buttonHintText {
+  left: 70px;
+  bottom: 240px;
+}
 
 .layoutHint {
-    top: -12%;
-    right: 180px;
+  right: 80px;
+  top: -150px;
+}
+
+.layoutHintText {
+  top: 100px;
 }
