@@ -7,9 +7,6 @@
   align-items: center;
   margin: auto;
 
-  @media (min-width: 1400px) {
-    width: 1400px;
-  }
 }
 
 .gallery {
@@ -23,13 +20,6 @@
   column-gap: 3em;
   row-gap: 4em;
 
-  @media (max-width: 420px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 900px) {
-    gap: 4.5em 2.5em;
-  }
 }
 
 .header {
@@ -46,10 +36,7 @@
   text-wrap: pretty;
   max-width: 65vw;
 
-  @media (min-width: 1400px) {
-    max-width: 50vw;
-    place-content: center;
-  }
+
 }
 
 .footer {
@@ -66,15 +53,7 @@
   box-shadow: 0 -1px $primary;
   justify-content: center;
 
-  @media (max-width: 420px) {
-    font-size: 0.8rem;
-    margin-top: 6em;
-  }
 
-  @media (max-width: 900px) {
-    font-size: 0.8rem;
-    margin-top: 6em;
-  }
 }
 
 .footer-text {
@@ -83,13 +62,6 @@
   margin-left: 2em;
   margin-right: 2em;
 
-  @media (max-width: 420px) {
-    font-size: 0.8rem;
-  }
-
-  @media (max-width: 900px) {
-    font-size: 0.8rem;
-  }
 }
 
 a:link {
@@ -142,7 +114,7 @@ a:link {
   top: 100px;
 }
 
-// ------------------
+// --- MEDIA QUERIES ---
 
 @media (min-width: 1400px) {
   .root {
