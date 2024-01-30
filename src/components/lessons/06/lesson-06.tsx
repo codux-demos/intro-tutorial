@@ -1,15 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import vars from '../../../globals/variables.module.scss';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
 import { Task06 as Task } from '../../tasks/06/task-06';
 import styles from './lesson-06.module.scss';
+import { useRequestAnimationFrame } from '../../hooks';
 
 export const Lesson06 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
 
-    useEffect(() => {
+    const checkSolution = useCallback(() => {
         setLessonSolved(isSolved());
     }, []);
+
+    useRequestAnimationFrame(checkSolution);
 
     return (
         <div className={styles.root}>
