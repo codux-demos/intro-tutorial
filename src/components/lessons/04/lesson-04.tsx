@@ -7,9 +7,9 @@ import img5 from '../../../assets/phto-5.png';
 import img6 from '../../../assets/phto-6.png';
 import { Image } from '../../common/image/image';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
+import { useRequestAnimationFrame } from '../../hooks';
 import { Task04 as Task } from '../../tasks/04/task-04';
 import styles from './lesson-04.module.scss';
-import { useRequestAnimationFrame } from '../../hooks';
 
 export const Lesson04 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);

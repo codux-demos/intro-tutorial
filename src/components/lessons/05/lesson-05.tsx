@@ -1,9 +1,9 @@
 import { useCallback, useState } from 'react';
-import styles from './lesson-05.module.scss';
 import { Box } from '../../common/box/box';
 import { ConfettiFx } from '../../fx/confetti-fx/confetti-fx';
-import { Task05 as Task } from '../../tasks/05/task-05';
 import { useRequestAnimationFrame } from '../../hooks';
+import { Task05 as Task } from '../../tasks/05/task-05';
+import styles from './lesson-05.module.scss';
 
 export const Lesson05 = () => {
     const [lessonSolved, setLessonSolved] = useState(false);
