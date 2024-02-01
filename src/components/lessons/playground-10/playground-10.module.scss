@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-
 }
 
 .gallery {
@@ -19,7 +18,6 @@
   margin: 2em 0em 0em;
   column-gap: 3em;
   row-gap: 4em;
-
 }
 
 .header {
@@ -35,8 +33,6 @@
   margin: 2em 0em 1em;
   text-wrap: pretty;
   max-width: 65vw;
-
-
 }
 
 .footer {
@@ -52,8 +48,6 @@
   margin-left: 0em;
   box-shadow: 0 -1px $primary;
   justify-content: center;
-
-
 }
 
 .footer-text {
@@ -61,7 +55,6 @@
   font-size: 1rem;
   margin-left: 2em;
   margin-right: 2em;
-
 }
 
 a:link {
@@ -150,4 +143,58 @@ a:link {
   .footer-text {
     font-size: 0.8rem;
   }
+}
+
+// --- HINTS ---
+
+.textComponent {
+  position: absolute;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  font-size: 0.67rem;
+  font-family: $font-alata;
+  text-align: center;
+  white-space: pre;
+  width: 75%;
+  top: 35px;
+}
+
+.textFont {
+  position: absolute;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  font-size: 0.67rem;
+  font-family: $font-alata;
+  text-align: center;
+  white-space: pre;
+  width: 80%;
+  top: 90px;
+}
+
+.textLayout {
+  position: absolute;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  font-size: 0.67rem;
+  font-family: $font-alata;
+  text-align: center;
+  white-space: pre;
+  width: 75%;
+  top: 92px;
+}
+
+.textButton {
+  position: absolute;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  font-size: 0.67rem;
+  font-family: $font-alata;
+  text-align: center;
+  white-space: pre;
+  width: 75%;
+  top: 80px;
 }

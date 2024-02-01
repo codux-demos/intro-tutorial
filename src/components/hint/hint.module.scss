@@ -1,26 +1,14 @@
 @import '../../globals/playground-variables';
 
 .root {
-    position: absolute;
-    z-index: 1;
-}
-
-.text {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-    font-size: 0.7rem;
-    font-family: $font-alata;
-    text-align: center;
-    white-space: pre;
-    width: 65%;
+  position: absolute;
+  z-index: 1;
 }
 
 .container {
-    position: absolute;
+  position: absolute;
 }
 
 .image {
-    width: 220px;
+  width: 220px;
 }

@@ -34,7 +34,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             text={content.fontHintText}
                             svg={Hint_02}
                             className={styles.fontHint}
-                            textClassName={styles.fontHintText}
+                            textClassName={styles.textFont}
                         />
                     }
                     price="100"
@@ -48,7 +48,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             text={content.componentHintText}
                             svg={Hint_01}
                             className={styles.componentHint}
-                            textClassName={styles.componentHintText}
+                            textClassName={styles.textComponent}
                         />
                     }
                     price="100"
@@ -61,7 +61,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             text={content.buttonHintText}
                             svg={Hint_04}
                             className={styles.buttonHint}
-                            textClassName={styles.buttonHintText}
+                            textClassName={styles.textButton}
                         />
                     }
                     price="100"
@@ -75,7 +75,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             text={content.layoutHintText}
                             svg={Hint_03}
                             className={styles.layoutHint}
-                            textClassName={styles.layoutHintText}
+                            textClassName={styles.textLayout}
                         />
                     }
                     price="100"
