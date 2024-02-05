@@ -6,13 +6,13 @@ export default createBoard({
     Board: () => <Playground10 />,
     isSnippet: false,
     environmentProps: {
-        windowWidth: 1146,
+        windowWidth: 1400,
         canvasMargin: {
             top: 0,
             right: 0,
             bottom: 0,
             left: 0,
         },
-        windowHeight: 890,
+        windowHeight: 800,
     },
 });

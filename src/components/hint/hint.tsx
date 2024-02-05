@@ -16,7 +16,9 @@ export const Hint = ({ className, svg, text, textClassName }: HintProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.container}>
-                <p className={textClassName}>{text}</p>
+                <p className={classNames(textClassName)}>
+                    {text}
+                </p>
                 <img src={svg} className={styles.image} />
             </div>
         </div>
