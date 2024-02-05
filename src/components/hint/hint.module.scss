@@ -10,3 +10,14 @@
     color: $primary;
 }
 
+.hintText{
+    position: absolute;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    font-size: 0.78rem;
+    font-family: $font-alata;
+    text-align: center;
+    white-space: pre;
+}
+

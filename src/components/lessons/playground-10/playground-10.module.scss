@@ -76,52 +76,51 @@ a:active {
 }
 
 .componentHint {
-  right: 20px;
-  top: 42px;
+  right: 22px;
+  top: 20%;
 }
 
 .componentHint img {
-  width: 250px;
+  width: 265px;
 }
 
 .componentHintText {
-  top: 120px;
+  top: 42px;
 }
 
 .fontHint {
-  left: -175px;
-  top: 195px;
+  left: -174px;
+  top: 47%;
 }
 
 .fontHint img {
-  width: 220px;
+  width: 225px;
 }
 
 .fontHintText {
-  top: 100px;
+  top: 92px;
 }
 
 .buttonHint {
   right: 170px;
-  bottom: 240px;
+  bottom: 45%;
 }
 
 .buttonHint img {
-  width: 230px;
+  width: 220px;
 }
 
 .buttonHintText {
-  left: 70px;
-  bottom: 240px;
+  bottom: 40px;
 }
 
 .layoutHint {
-  top: -70px;
-  right: 60px;
+  top: -18%;
+  right: 65px;
 }
 
 .layoutHint img {
-  width: 230px;
+  width: 272px;
 }
 
 .layoutHintText {
@@ -168,60 +167,6 @@ a:active {
   .footer-text {
     font-size: 0.8rem;
   }
-}
-
-// --- HINTS ---
-
-.textComponent {
-  position: absolute;
-  left: 52%;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  font-size: 0.67rem;
-  font-family: $font-alata;
-  text-align: center;
-  white-space: pre;
-  width: 75%;
-  top: 35px;
-}
-
-.textFont {
-  position: absolute;
-  left: 52%;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  font-size: 0.67rem;
-  font-family: $font-alata;
-  text-align: center;
-  white-space: pre;
-  width: 80%;
-  top: 90px;
-}
-
-.textLayout {
-  position: absolute;
-  left: 52%;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  font-size: 0.67rem;
-  font-family: $font-alata;
-  text-align: center;
-  white-space: pre;
-  width: 75%;
-  top: 92px;
-}
-
-.textButton {
-  position: absolute;
-  left: 52%;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  font-size: 0.67rem;
-  font-family: $font-alata;
-  text-align: center;
-  white-space: pre;
-  width: 75%;
-  top: 80px;
 }
 
 .dark {
