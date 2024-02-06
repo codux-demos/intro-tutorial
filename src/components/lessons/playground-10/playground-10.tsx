@@ -1,13 +1,5 @@
 import classNames from 'classnames';
 import styles from './playground-10.module.scss';
-import {
-    Poster_01,
-    Poster_02,
-    Poster_03,
-    Poster_04,
-    Poster_05,
-    Poster_06,
-} from '../../../assets/posters';
 
 import { Hint_01, Hint_02, Hint_03, Hint_04 } from '../../../assets/hints';
 
@@ -37,11 +29,19 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             textClassName={styles.fontHintText}
                         />
                     }
-                    price="100"
+                    price="640"
                     className={styles.poster}
-                    imgSrc={Poster_01}
+                    imgSrc={
+                        'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_01.svg'
+                    }
                 />
-                <Card price="100" className={styles.poster} imgSrc={Poster_02} />
+                <Card
+                    price="1300"
+                    className={styles.poster}
+                    imgSrc={
+                        'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_02.svg'
+                    }
+                />
 
                 <Card
                     hint={
@@ -52,9 +52,11 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             textClassName={styles.componentHintText}
                         />
                     }
-                    price="100"
+                    price="3640"
                     className={styles.poster}
-                    imgSrc={Poster_03}
+                    imgSrc={
+                        'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_03.svg'
+                    }
                 />
                 <Card
                     hint={
@@ -65,11 +67,19 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             textClassName={styles.buttonHintText}
                         />
                     }
-                    price="100"
+                    price="1000"
                     className={styles.poster}
-                    imgSrc={Poster_04}
+                    imgSrc={
+                        'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_04.svg'
+                    }
                 />
-                <Card price="100" className={styles.poster} imgSrc={Poster_05} />
+                <Card
+                    price="6348"
+                    className={styles.poster}
+                    imgSrc={
+                        'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_05.svg'
+                    }
+                />
                 <Card
                     hint={
                         <Hint
@@ -79,9 +89,11 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             textClassName={styles.layoutHintText}
                         />
                     }
-                    price="100"
+                    price="582"
                     className={styles.poster}
-                    imgSrc={Poster_06}
+                    imgSrc={
+                        'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_06.svg'
+                    }
                 />
             </div>
             <div className={styles.footer}>
