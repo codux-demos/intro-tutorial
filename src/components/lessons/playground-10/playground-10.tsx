@@ -42,6 +42,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                     imgSrc={Poster_01}
                 />
                 <Card price="100" className={styles.poster} imgSrc={Poster_02} />
+
                 <Card
                     hint={
                         <Hint
