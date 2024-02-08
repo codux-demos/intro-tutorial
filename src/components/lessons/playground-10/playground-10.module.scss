@@ -143,6 +143,9 @@ a:active {
     grid-template-columns: 1fr 1fr;
   }
 
+  .layoutHint img {
+    width: 180px;
+  }
   .footer {
     font-size: 0.8rem;
     margin-top: 6em;
