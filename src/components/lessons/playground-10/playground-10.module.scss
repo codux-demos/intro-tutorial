@@ -75,7 +75,7 @@ a:active {
 
 .componentHint {
   right: 22px;
-  top: 110px;
+  top: 20%;
 }
 
 .componentHint img {
@@ -88,7 +88,7 @@ a:active {
 
 .fontHint {
   left: -174px;
-  top: 245px
+  top: 50%;
 }
 
 .fontHint img {
@@ -101,7 +101,7 @@ a:active {
 
 .buttonHint {
   right: 170px;
-  bottom: 236px
+  bottom: 20%;
 }
 
 .buttonHint img {
@@ -113,7 +113,7 @@ a:active {
 }
 
 .layoutHint {
-  top: -100px;
+  top: -38%;
   right: 65px;
 }
 
@@ -137,9 +137,10 @@ a:active {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .gallery {
     gap: 4.5em 2.5em;
+    grid-template-columns: 1fr 1fr;
   }
 
   .footer {
@@ -154,7 +155,7 @@ a:active {
 
 @media (max-width: 420px) {
   .gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .footer {

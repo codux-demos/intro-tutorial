@@ -18,11 +18,14 @@ export const Card = ({
     price,
     added = false,
     imgSrc,
-    hint
+    hint,
 }: CardProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <img src={imgSrc} alt="" className={styles.image} />
+            <div className={styles.hintposition}>
+                {hint}
+                <img src={imgSrc} alt="" className={styles.image} />
+            </div>
             <div className={styles.layout}>
                 <div className={styles.cardetails}>
                     <div className={styles.details}>
@@ -33,7 +36,6 @@ export const Card = ({
                     </div>
                     <span className={styles.description}>{description}</span>
                 </div>
-                {hint}
                 <div>
                     <button className={styles.button}>
                         {added ? 'Remove From Cart' : 'Quickbuy'}
