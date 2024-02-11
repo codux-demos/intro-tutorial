@@ -1,234 +1,253 @@
 @import '../../../globals/playground-variables';
 
 .root {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    background-color: $secondary;
+  // width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin: auto;
+  // background-color: $secondary;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-    margin: 2em 0em 0em;
-    column-gap: 4.5em;
-    row-gap: 4.8em;
-    gap: 5.5em 4em;
-    padding-right: 20vw;
-    padding-left: 20vw;
+  // max-width: 65vw; ??
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  // text-align: center;
+  // margin: 2em 0em 0em;
+  // column-gap: 4.5em;
+  // row-gap: 4.8em;
+  gap: 5.5em 4em;
+  padding-right: 20vw;
+  padding-left: 20vw;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    font-weight: 300;
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: $font-alata;
-    margin: 2.8em 0em 1.8em;
-    text-wrap: pretty;
-    max-width: 65vw;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: row;
+  // font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: $font-alata;
+  margin: 2.8em 0em 3.8em;
+  text-wrap: pretty;
+  max-width: 65vw;
 }
 
 .footer {
-    min-height: 5vh;
-    color: $primary;
-    width: 100vw;
-    background-color: #ffffff;
-    font-family: $font-geo;
-    display: flex;
-    flex-direction: column;
-    margin-top: 8em;
-    margin-right: 0em;
-    margin-left: 0em;
-    box-shadow: 0 -1px $primary;
-    justify-content: center;
+  min-height: 5vh;
+  // color: $primary;
+  width: 100vw;
+  // background-color: #ffffff;
+  font-family: $font-geo;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8em;
+  // margin-right: 0em;
+  // margin-left: 0em;
+  box-shadow: 0 -1px $primary;
+  justify-content: center;
 }
 
 .footer-text {
-    font-family: $font-geo;
-    font-size: 1rem;
-    margin-left: 2em;
-    margin-right: 2em;
+  font-family: $font-geo;
+  font-size: 1rem;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 a:link {
-    color: $primary;
+  color: $primary;
 }
 
 a:active {
-    color: $primary;
+  color: $primary;
 }
 
 .hint {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #b52d2d;
+  position: absolute;
+  // width: 100px;
+  // height: 100px;
 }
 
 .componentHint {
-    right: 22px;
-    top: 20%;
+  right: 22px;
+  top: 20%;
 }
 
 .componentHint img {
-    width: 265px;
+  width: 265px;
 }
 
 .componentHintText {
-    top: 42px;
+  top: 42px;
 }
 
 .fontHint {
-    left: -174px;
-    top: 50%;
+  left: -174px;
+  top: 50%;
 }
 
 .fontHint img {
-    width: 225px;
+  width: 225px;
 }
 
 .fontHintText {
-    top: 92px;
+  top: 92px;
 }
 
 .buttonHint {
-    right: 170px;
-    bottom: 20%;
+  right: 170px;
+  bottom: 20%;
 }
 
 .buttonHint img {
-    width: 220px;
+  width: 220px;
 }
 
 .buttonHintText {
-    bottom: 40px;
+  bottom: 40px;
 }
 
 .layoutHint {
-    top: -38%;
-    right: 65px;
+  top: -38%;
+  right: 65px;
 }
 
 .layoutHint img {
-    width: 272px;
+  width: 272px;
 }
 
 .layoutHintText {
-    top: 110px;
+  top: 110px;
 }
 
 // --- MEDIA QUERIES ---
 
 @media (min-width: 1400px) {
-    .root {
-        max-width: 1400px;
-    }
+  .root {
+    width: 1400px;
+  }
 
-    .header {
-        max-width: 800px;
-    }
+  .header {
+    max-width: 800px;
+  }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .gallery {
+    // grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
-    .root {
-        background-color: #b52d2d;
-    }
+  .root {
+    background-color: #b52d2d;
+  }
 
-    .header {
-        max-width: 800px;
-    }
+  .header {
+    max-width: 700px;
+  }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 7.5em 3.5em;
-        margin-right: 5em;
-        margin-left: 5em;
-    }
+  .gallery {
+    // grid-template-columns: 1fr 1fr 1fr;
+    gap: 7.5em 3em;
+    // margin-right: 5em;
+  }
+
+  .componentHint{
+    right: 40px;
+  }
 }
 
 @media (max-width: 1200px) {
-      .root {
-        background-color:aqua ;
-    }
-    .gallery {
-        gap: 8.5em 5.5em;
-        grid-template-columns: 1fr 1fr;
-        padding-right: 20vw;
-        padding-left: 20vw;
-    }
+  .root {
+    background-color: aqua;
+  }
 
-    .layoutHint img {
-        width: 250px;
-    }
+  .gallery {
+    gap: 8.5em 5.5em;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 20vw;
+    padding-left: 20vw;
+  }
 
-    .footer {
-        font-size: 0.8rem;
-        margin-top: 6em;
-    }
+  .layoutHint img {
+    width: 250px;
+  }
 
-    .footer-text {
-        font-size: 0.8rem;
-    }
+  .footer {
+    font-size: 0.8rem;
+    margin-top: 6em;
+  }
 
-    .componentHint {
-        left: 180px;
-        top: -16%;
-    }
+  .footer-text {
+    font-size: 0.8rem;
+  }
+
+  .componentHint {
+    left: 180px;
+    top: -16%;
+  }
 }
 
 @media (max-width: 800px) {
-    .gallery {
-        gap: 1.5em 0.5em;
-        grid-template-columns: 1fr 1fr;
-    }
+  .root {
+    background-color: gold;
+  }
+  .gallery {
+    gap: 1.5em 2.5em;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .layoutHint img {
-        width: 180px;
-    }
+  .layoutHint img {
+    width: 180px;
+  }
 
-    .footer {
-        font-size: 0.8rem;
-        margin-top: 6em;
-    }
+  .componentHint img {
+    width: 180px;
+  }
 
-    .footer-text {
-        font-size: 0.8rem;
-    }
+  .fontHint img {
+    width: 180px;
+  }
 
-    .componentHint {
-        right: 30px;
-        top: 5%;
-    }
+  .buttonHint img {
+    width: 180px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    margin-top: 6em;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+
+  .componentHint {
+    right: 30px;
+    top: 5%;
+  }
 }
 
 @media (max-width: 420px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 
-    .footer {
-        font-size: 0.8rem;
-        margin-top: 6em;
-    }
+  .footer {
+    font-size: 0.8rem;
+    margin-top: 6em;
+  }
 
-    .footer-text {
-        font-size: 0.8rem;
-    }
+  .footer-text {
+    font-size: 0.8rem;
+  }
 }
 
 .dark {
-    color: $secondary;
-    background-color: $bauhaus-charcoalblack;
+  color: $secondary;
+  background-color: $bauhaus-charcoalblack;
 }
