@@ -43,6 +43,7 @@
   font-size: 0.7rem;
   box-sizing: border-box;
   font-family: $font-dm-sans;
+  padding-left: 2px;
 }
 
 .price {
@@ -51,7 +52,7 @@
   width: 50%;
   align-items: end;
   font-family: $font-geo;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.8rem;
 }
 
@@ -61,8 +62,8 @@
 
 .cardetails {
   flex-direction: column;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
   margin: 0.8em 0em 1em;
 }
 
@@ -100,9 +101,7 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
-
   .layout {
-    
   }
 }
 
