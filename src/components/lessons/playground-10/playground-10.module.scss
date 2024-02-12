@@ -3,6 +3,10 @@
 .root {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 80px;
+  overflow: hidden;
 }
 
 .content {
@@ -13,41 +17,26 @@
 }
 
 .gallery {
-  // max-width: 65vw; ??
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  // text-align: center;
-  // margin: 2em 0em 0em;
-  // column-gap: 4.5em;
-  // row-gap: 4.8em;
 }
 
 .header {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // flex-direction: row;
-  // font-weight: 300;
   font-size: 1.5rem;
   text-align: center;
   font-family: $font-alata;
-  margin: 2.8em 0em 3.8em;
+  padding: 5rem 2.5rem 7rem;
   text-wrap: pretty;
-  max-width: 900px;
 }
 
 .footer {
-  min-height: 5vh;
-  // color: $primary;
   width: 100vw;
-  // background-color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-family: $font-geo;
   display: flex;
   flex-direction: column;
-  margin-top: 8em;
-  // margin-right: 0em;
-  // margin-left: 0em;
   box-shadow: 0 -1px $primary;
   justify-content: center;
 }
@@ -69,60 +58,55 @@ a:active {
 
 .hint {
   position: absolute;
-  // width: 100px;
-  // height: 100px;
+  z-index: 1;
 }
 
 .componentHint {
-  top: 20%;
-  right: 22px;
 }
 
 .componentHint img {
-  width: 265px;
+  width: 95%;
 }
 
 .componentHintText {
-  top: 42px;
+  top: -3%;
+  left: 2%;
 }
 
 .fontHint {
-  left: -174px;
-  top: 50%;
 }
 
 .fontHint img {
-  width: 225px;
+  // width: 225px;
+  width: 90%;
 }
 
 .fontHintText {
-  top: 92px;
+  // top: 85px;
 }
 
 .buttonHint {
-  right: 170px;
-  bottom: 20%;
 }
 
 .buttonHint img {
-  width: 220px;
+  // width: 220px;
+  width: 90%;
 }
 
 .buttonHintText {
-  bottom: 40px;
+  // bottom: 40px;
 }
 
 .layoutHint {
-  top: -38%;
-  right: 65px;
 }
 
 .layoutHint img {
-  width: 272px;
+  // width: 272px;
+  width: 100%;
 }
 
 .layoutHintText {
-  top: 110px;
+  // top: 110px;
 }
 
 // --- MEDIA QUERIES ---
@@ -134,40 +118,40 @@ a:active {
   }
 
   .content {
-    background-color: palegoldenrod;
+    // background-color: palegoldenrod;
     max-width: 1400px;
   }
+  .header {
+    max-width: 800px;
+  }
+
   .gallery {
     // gap: 5.5em 4em;
-    gap: 6vw 3vw;
+    gap: 120px 7%;
     padding-left: 240px;
     padding-right: 240px;
   }
+  .componentHint {
+    width: 300px;
+    top: 80px;
+    right: -260px;
+  }
+  .fontHint {
+    width: 285px;
+    bottom: -50px;
+    left: -220px;
+  }
+  .buttonHint {
+    width: 250px;
+    bottom: -90px;
+    right: -70px;
+  }
+  .layoutHint {
+    width: 275px;
+    top: -90px;
+    right: -200px;
+  }
 }
-
-// @media (1200px <= width < 1400px) {
-//   .root {
-//     padding-right: 40px;
-//     padding-left: 40px;
-//   }
-
-//   .content {
-//     background-color: lightgreen;
-//   }
-//   .header {
-//     max-width: 700px;
-//   }
-
-//   .gallery {
-//     gap: 7.5em 3em;
-//     padding-left: 240px;
-//     padding-right: 240px;
-//   }
-
-//   .componentHint {
-//     right: 40px;
-//   }
-// }
 
 @media (980px <= width < 1400px) {
   .root {
@@ -176,37 +160,64 @@ a:active {
   }
 
   .content {
-    background-color: whitesmoke;
+    // background-color: whitesmoke;
     max-width: 1200px;
+  }
+  .header {
+    max-width: 600px;
   }
 
   .gallery {
     grid-template-columns: 1fr 1fr;
-    gap: 7vw 5vw;
-    padding-left: 160px;
-    padding-right: 160px;
+    gap: 120px 10%;
+    padding-left: 180px;
+    padding-right: 180px;
   }
-
-  .layoutHint img {
+  .componentHint {
+    width: 310px;
+    top: -56px;
+    right: -250px;
+  }
+  .fontHint {
+    width: 285px;
+    bottom: 40px;
+    left: -150px;
+  }
+  .buttonHint {
     width: 250px;
+    bottom: -90px;
+    right: -70px;
+  }
+  .layoutHint {
+    width: 275px;
+    top: -90px;
+    left: -180px;
   }
 
-  .fontHint img {
-    width: 210px;
-  }
+  // .fontHint {
+  //   top: 75%;
+  //   left: 200px;
+  // }
+
+  // .fontHint img {
+  //   width: 280px;
+  // }
+
+  // .componentHint {
+  //   left: 180px;
+  //   top: -12%;
+  // }
+
+  // .layoutHint img {
+  //   width: 250px;
+  // }
 
   .footer {
     font-size: 0.8rem;
-    margin-top: 6em;
   }
 
   .footer-text {
     font-size: 0.8rem;
-  }
-
-  .componentHint {
-    left: 180px;
-    top: -12%;
   }
 
   // .componentHint img {
@@ -221,60 +232,96 @@ a:active {
   }
 
   .content {
-    background-color: gold;
+    // background-color: gold;
     max-width: 650px;
   }
+
   .gallery {
     grid-template-columns: 1fr 1fr;
-    gap: 14vw 6vw;
-  }
-
-  .fontHint img {
-    width: 210px;
-  }
-
-  .fontHint {
-    top: 55%;
-    left: 110px;
-  }
-
-  .fontHintText {
-    top: 85px;
-  }
-
-  .componentHint img {
-    width: 210px;
-  }
-
-  .componentHintText {
-    top: 18px;
+    gap: 130px 10%;
   }
 
   .componentHint {
-    top: -60%;
-    left: 50px;
+    width: 230px;
+    top: -43px;
+    right: -186px;
   }
 
-  .layoutHint img {
-    width: 180px;
+  .fontHint {
+    width: 220px;
+    bottom: -50px;
+    right: -110px;
   }
+  .buttonHint {
+    width: 210px;
+    bottom: -80px;
+    right: -50px;
+  }
+  .layoutHint {
+    width: 235px;
+    top: -90px;
+    left: -150px;
+  }
+  .componentHintText,
+  .fontHintText,
+  .layoutHintText,
+  .buttonHintText {
+    font-size: 0.67rem;
+  }
+  // .fontHint {
+  //   top: 55%;
+  //   left: 110px;
+  // }
 
-  .buttonHint img {
-    width: 180px;
-  }
+  // .fontHint img {
+  //   width: 210px;
+  // }
+
+  // .fontHintText {
+  //   top: 85px;
+  // }
+
+  // .componentHint {
+  //   top: -24%;
+  //   left: 90px;
+  // }
+
+  // .componentHint img {
+  //   width: 255px;
+  // }
+
+  // .componentHintText {
+  //   top: 42px;
+  // }
+
+  // .buttonHint img {
+  //   width: 220px;
+  // }
+
+  // .buttonHint {
+  //   top: 80%;
+  //   right: 250px;
+  // }
+
+  // .layoutHint img {
+  //   width: 250px;
+  // }
+
+  // .layoutHint {
+  //   top: 52%;
+  //   right: 350px;
+  // }
+
+  // .layoutHintText {
+  //   top: 100px;
+  // }
 
   .footer {
     font-size: 0.8rem;
-    margin-top: 6em;
   }
 
   .footer-text {
     font-size: 0.8rem;
-  }
-
-  .componentHint {
-    right: 30px;
-    top: 5%;
   }
 }
 
@@ -284,17 +331,53 @@ a:active {
     padding-right: 24px;
   }
 
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .gallery {
     grid-template-columns: 1fr;
+    row-gap: 120px;
+    max-width: 300px;
   }
 
   .footer {
     font-size: 0.8rem;
-    margin-top: 6em;
   }
 
   .footer-text {
     font-size: 0.8rem;
+  }
+
+  .componentHint {
+    width: 230px;
+    top: -43px;
+    right: -15px;
+  }
+
+  .fontHint {
+    width: 220px;
+    bottom: -50px;
+    right: -30px;
+  }
+
+  .buttonHint {
+    width: 210px;
+    bottom: -100px;
+    right: -50px;
+  }
+  .layoutHint {
+    width: 235px;
+    top: -110px;
+    left: -35px;
+  }
+
+  .componentHintText,
+  .fontHintText,
+  .layoutHintText,
+  .buttonHintText {
+    font-size: 0.67rem;
   }
 }
 

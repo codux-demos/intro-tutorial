@@ -1,11 +1,10 @@
-import classNames from 'classnames';
-import styles from './playground-10.module.scss';
-
 import { Hint_01, Hint_02, Hint_03, Hint_04 } from '../../../assets/hints';
 
 import { Card } from '../card/card';
 import { Hint } from '../../hint/hint';
 import { content } from '../../../content';
+import classNames from 'classnames';
+import styles from './playground-10.module.scss';
 
 export interface Playground10Props {
     className?: string;
@@ -26,7 +25,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             <Hint
                                 text={content.fontHintText}
                                 svg={Hint_02}
-                                className={styles.fontHint}
+                                className={classNames(styles.fontHint, styles.hint)}
                                 textClassName={styles.fontHintText}
                             />
                         }
@@ -49,7 +48,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             <Hint
                                 text={content.componentHintText}
                                 svg={Hint_01}
-                                className={styles.componentHint}
+                                className={classNames(styles.componentHint, styles.hint)}
                                 textClassName={styles.componentHintText}
                             />
                         }
@@ -64,7 +63,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             <Hint
                                 text={content.buttonHintText}
                                 svg={Hint_04}
-                                className={styles.buttonHint}
+                                className={classNames(styles.buttonHint, styles.hint)}
                                 textClassName={styles.buttonHintText}
                             />
                         }
@@ -86,7 +85,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                             <Hint
                                 text={content.layoutHintText}
                                 svg={Hint_03}
-                                className={styles.layoutHint}
+                                className={classNames(styles.layoutHint, styles.hint)}
                                 textClassName={styles.layoutHintText}
                             />
                         }
@@ -97,13 +96,13 @@ export const Playground10 = ({ className }: Playground10Props) => {
                         }
                     />
                 </div>
-                <div className={styles.footer}>
-                    <span className={styles['footer-text']}>
-                        This Gallery is powered by Codux. Explore new ways to design on real, and
-                        learn more about working on Codux{' '}
-                        <a href="https://help.codux.com/kb/en/article/kb21821">here</a>;
-                    </span>
-                </div>
+            </div>
+            <div className={styles.footer}>
+                <span className={styles['footer-text']}>
+                    This Gallery is powered by Codux. Explore new ways to design on real, and learn
+                    more about working on Codux{' '}
+                    <a href="https://help.codux.com/kb/en/article/kb21821">here</a>;
+                </span>
             </div>
         </div>
     );

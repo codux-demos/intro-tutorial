@@ -28,19 +28,14 @@ export const Card = ({
             </div>
             <div className={styles.layout}>
                 <div className={styles.cardetails}>
-                    <div className={styles.details}>
-                        <span className={styles.title}>{title} </span>
-                        <div className={styles.price}>
-                            <span>${price}</span>
-                        </div>
+                    <span className={styles.title}>{title} </span>
+                    <div className={styles.price}>
+                        <span>${price}</span>
                     </div>
+
                     <span className={styles.description}>{description}</span>
                 </div>
-                <div>
-                    <button className={styles.button}>
-                        {added ? 'Remove From Cart' : 'Quickbuy'}
-                    </button>
-                </div>
+                <button className={styles.button}>{added ? 'Remove From Cart' : 'Quickbuy'}</button>
             </div>
         </div>
     );
