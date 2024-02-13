@@ -68,6 +68,11 @@ a:active {
   width: 95%;
 }
 
+.componentHintText {
+  bottom: 5.5%;
+  left: 2%;
+}
+
 .fontHint {
 }
 
@@ -92,17 +97,10 @@ a:active {
   width: 100%;
 }
 
-.componentHintText {
-  bottom: 5.5%;
-  left: 2%;
-}
-
-
 .layoutHintText {
   top: 2%;
   left: 1%;
 }
-
 
 // --- MEDIA QUERIES ---
 
@@ -113,7 +111,6 @@ a:active {
   }
 
   .content {
-    // background-color: palegoldenrod;
     max-width: 1400px;
   }
   .header {
@@ -121,7 +118,6 @@ a:active {
   }
 
   .gallery {
-    // gap: 5.5em 4em;
     gap: 120px 7%;
     padding-left: 240px;
     padding-right: 240px;
@@ -155,7 +151,6 @@ a:active {
   }
 
   .content {
-    // background-color: whitesmoke;
     max-width: 1200px;
   }
   .header {
@@ -190,24 +185,6 @@ a:active {
     left: -180px;
   }
 
-  // .fontHint {
-  //   top: 75%;
-  //   left: 200px;
-  // }
-
-  // .fontHint img {
-  //   width: 280px;
-  // }
-
-  // .componentHint {
-  //   left: 180px;
-  //   top: -12%;
-  // }
-
-  // .layoutHint img {
-  //   width: 250px;
-  // }
-
   .footer {
     font-size: 0.8rem;
   }
@@ -216,9 +193,6 @@ a:active {
     font-size: 0.8rem;
   }
 
-  // .componentHint img {
-  //   // transform: skewY(180deg);
-  // }
 }
 
 @media (420px <= width < 980px) {

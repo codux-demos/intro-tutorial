@@ -9,21 +9,32 @@
   row-gap: 1.8rem;
 }
 
+.layout {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.8rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+
 .image {
   width: 100%;
   padding: 0px;
 }
 
-.button {
-  font-size: 0.7rem;
-  height: 3.4em;
-  border-radius: 30px;
-  border: #ffffff;
+.cardetails {
+  flex-direction: column;
+  font-size: 1.7rem;
+  font-family: $font-italiana;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: 1fr auto;
+  column-gap: 16px;
+}
+
+.title {
+  font-family: $font-italiana;
   display: block;
-  font-family: $font-dm-sans;
-  text-transform: uppercase;
-  width: 100%;
-  margin: 0px -2px;
 }
 
 .description {
@@ -45,27 +56,16 @@
   line-height: 1.8rem;
 }
 
-.title {
-  font-family: $font-italiana;
+.button {
+  font-size: 0.7rem;
+  height: 3.4em;
+  border-radius: 30px;
+  border: #ffffff;
   display: block;
-}
-
-.cardetails {
-  flex-direction: column;
-  font-size: 1.7rem;
-  font-family: $font-italiana;
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  grid-template-rows: 1fr auto;
-  column-gap: 16px;
-}
-
-.layout {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.8rem;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
+  font-family: $font-dm-sans;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0px -2px;
 }
 
 // --- MEDIA QUERIES ---
@@ -95,8 +95,9 @@
 }
 
 @media (980px <= width < 1400px) {
-  .layout {
-  }
+  // .layout {
+  // }
+
   .description {
     grid-column-start: 1;
     grid-column-end: span 2;
