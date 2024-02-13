@@ -68,21 +68,12 @@ a:active {
   width: 95%;
 }
 
-.componentHintText {
-  top: -3%;
-  left: 2%;
-}
-
 .fontHint {
 }
 
 .fontHint img {
   // width: 225px;
   width: 90%;
-}
-
-.fontHintText {
-  // top: 85px;
 }
 
 .buttonHint {
@@ -93,10 +84,6 @@ a:active {
   width: 90%;
 }
 
-.buttonHintText {
-  // bottom: 40px;
-}
-
 .layoutHint {
 }
 
@@ -105,9 +92,17 @@ a:active {
   width: 100%;
 }
 
-.layoutHintText {
-  // top: 110px;
+.componentHintText {
+  bottom: 5.5%;
+  left: 2%;
 }
+
+
+.layoutHintText {
+  top: 2%;
+  left: 1%;
+}
+
 
 // --- MEDIA QUERIES ---
 
@@ -172,6 +167,7 @@ a:active {
     gap: 120px 10%;
     padding-left: 180px;
     padding-right: 180px;
+    max-width: 600px;
   }
   .componentHint {
     width: 310px;
@@ -254,7 +250,7 @@ a:active {
   }
   .buttonHint {
     width: 210px;
-    bottom: -80px;
+    bottom: -120px;
     right: -50px;
   }
   .layoutHint {
@@ -268,53 +264,6 @@ a:active {
   .buttonHintText {
     font-size: 0.67rem;
   }
-  // .fontHint {
-  //   top: 55%;
-  //   left: 110px;
-  // }
-
-  // .fontHint img {
-  //   width: 210px;
-  // }
-
-  // .fontHintText {
-  //   top: 85px;
-  // }
-
-  // .componentHint {
-  //   top: -24%;
-  //   left: 90px;
-  // }
-
-  // .componentHint img {
-  //   width: 255px;
-  // }
-
-  // .componentHintText {
-  //   top: 42px;
-  // }
-
-  // .buttonHint img {
-  //   width: 220px;
-  // }
-
-  // .buttonHint {
-  //   top: 80%;
-  //   right: 250px;
-  // }
-
-  // .layoutHint img {
-  //   width: 250px;
-  // }
-
-  // .layoutHint {
-  //   top: 52%;
-  //   right: 350px;
-  // }
-
-  // .layoutHintText {
-  //   top: 100px;
-  // }
 
   .footer {
     font-size: 0.8rem;
