@@ -36,7 +36,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                         }
                     />
                     <Card
-                        price="1300"
+                        price="$1300"
                         className={styles.poster}
                         imgSrc={
                             'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_02.svg'
