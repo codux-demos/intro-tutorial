@@ -24,7 +24,7 @@
 
 .cardetails {
     flex-direction: column;
-    font-size: 1.7rem;
+    font-size: 27px;
     font-family: $font-italiana;
     display: grid;
     grid-template-columns: 1fr min-content;
@@ -35,16 +35,18 @@
 .title {
     font-family: $font-italiana;
     display: block;
+    color: $primary;
 }
 
 .description {
     display: flex;
     flex-direction: row;
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 10px;
     box-sizing: border-box;
     font-family: $font-dm-sans;
     padding-left: 2px;
+    color: $primary;
 }
 
 .price {
@@ -52,8 +54,9 @@
     flex-direction: column;
     align-items: end;
     font-family: $font-geo;
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+    font-size: 29px;
+    line-height: 29px;
+    color: $primary;
 }
 
 .button {
