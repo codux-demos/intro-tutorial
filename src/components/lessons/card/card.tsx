@@ -29,9 +29,7 @@ export const Card = ({
             <div className={styles.layout}>
                 <div className={styles.cardetails}>
                     <span className={styles.title}>{title} </span>
-                    <div className={styles.price}>
-                        <span>${price}</span>
-                    </div>
+                    <div className={styles.price}>{price}</div>
 
                     <span className={styles.description}>{description}</span>
                 </div>

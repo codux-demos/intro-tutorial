@@ -2,134 +2,140 @@
 @import '../../../globals/playground-variables.scss';
 
 .root {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.8rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8rem;
 }
 
 .layout {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.8rem;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
 }
 
 .image {
-  width: 100%;
-  padding: 0px;
+    width: 100%;
+    padding: 0px;
 }
 
 .cardetails {
-  flex-direction: column;
-  font-size: 1.7rem;
-  font-family: $font-italiana;
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  grid-template-rows: 1fr auto;
-  column-gap: 16px;
+    flex-direction: column;
+    font-size: 27px;
+    font-family: $font-italiana;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 1fr auto;
+    column-gap: 16px;
 }
 
 .title {
-  font-family: $font-italiana;
-  display: block;
+    font-family: $font-italiana;
+    display: block;
+    color: $primary;
 }
 
 .description {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  font-size: 0.7rem;
-  box-sizing: border-box;
-  font-family: $font-dm-sans;
-  padding-left: 2px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: $font-dm-sans;
+    padding-left: 2px;
+    color: $primary;
 }
 
 .price {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  font-family: $font-geo;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-family: $font-geo;
+    font-size: 29px;
+    line-height: 29px;
+    color: $primary;
 }
 
 .button {
-  font-size: 0.7rem;
-  height: 3.4em;
-  border-radius: 30px;
-  border: #ffffff;
-  display: block;
-  font-family: $font-dm-sans;
-  text-transform: uppercase;
-  width: 100%;
-  margin: 0px -2px;
+    font-size: 10px;
+    height: 3.4em;
+    border-radius: 30px;
+    border: #ffffff;
+    display: block;
+    font-family: $font-dm-sans;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0px -2px;
+    background-color: $disabled;
+    color: $primary;
 }
 
 // --- MEDIA QUERIES ---
 
-@media (1400px <= width) {
-  .button {
-    background-color: $disabled;
-  }
+@media (1400px <=width) {
+    .button {
+        background-color: $disabled;
+    }
 
-  .description {
-    font-size: 0.7rem;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-  }
+    .description {
+        font-size: 0.7rem;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
 
-  .price {
-    font-size: 1.4rem;
-    font-size: 1.7rem;
-  }
+    .price {
+        font-size: 1.4rem;
+        font-size: 1.7rem;
+    }
 
-  .title {
-    font-size: 1.8rem;
-  }
+    .title {
+        font-size: 1.8rem;
+    }
 
-  .cardetails {
-  }
+    .cardetails {}
 }
 
-@media (980px <= width < 1400px) {
-  // .layout {
-  // }
+@media (980px <=width < 1400px) {
+    // .layout {
+    // }
 
-  .description {
-    grid-column-start: 1;
-    grid-column-end: span 2;
-  }
+    .description {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
 }
 
-@media (420px <= width < 980px) {
-  .cardetails {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto;
-  }
-  .price {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-items: start;
-    margin-bottom: 0.8rem;
-  }
+@media (420px <=width < 980px) {
+    .cardetails {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+
+    .price {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-items: start;
+        margin-bottom: 0.8rem;
+    }
 }
 
 @media (width < 420px) {
-  .cardetails {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto;
-  }
-  .price {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-items: start;
-    margin-bottom: 0.8rem;
-  }
+    .cardetails {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+
+    .price {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-items: start;
+        margin-bottom: 0.8rem;
+    }
 }
 
 .hintposition {
-  position: relative;
+    position: relative;
 }
