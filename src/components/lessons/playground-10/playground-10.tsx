@@ -29,14 +29,14 @@ export const Playground10 = ({ className }: Playground10Props) => {
                                 textClassName={styles.fontHintText}
                             />
                         }
-                        price="640"
+                        price="$640"
                         className={styles.poster}
                         imgSrc={
                             'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_01.svg'
                         }
                     />
                     <Card
-                        price="1300"
+                        price="$1300"
                         className={styles.poster}
                         imgSrc={
                             'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_02.svg'
@@ -52,7 +52,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                                 textClassName={styles.componentHintText}
                             />
                         }
-                        price="3640"
+                        price="$3640"
                         className={styles.poster}
                         imgSrc={
                             'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_03.svg'
@@ -67,14 +67,14 @@ export const Playground10 = ({ className }: Playground10Props) => {
                                 textClassName={styles.buttonHintText}
                             />
                         }
-                        price="1000"
+                        price="$1000"
                         className={styles.poster}
                         imgSrc={
                             'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_04.svg'
                         }
                     />
                     <Card
-                        price="6348"
+                        price="$6348"
                         className={styles.poster}
                         imgSrc={
                             'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_05.svg'
@@ -89,7 +89,7 @@ export const Playground10 = ({ className }: Playground10Props) => {
                                 textClassName={styles.layoutHintText}
                             />
                         }
-                        price="582"
+                        price="$582"
                         className={styles.poster}
                         imgSrc={
                             'https://wixmp-b7f7090100b13623109851bc.wixmp.com/posters/poster_06.svg'
