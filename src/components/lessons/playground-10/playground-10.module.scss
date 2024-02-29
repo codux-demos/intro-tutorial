@@ -1,310 +1,310 @@
 @import '../../../globals/playground-variables';
 
 .root {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 80px;
-  overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+    overflow: hidden;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .header {
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: $font-alata;
-  padding: 5rem 2.5rem 7rem;
-  text-wrap: pretty;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: $font-alata;
+    padding: 5rem 2.5rem 7rem;
+    text-wrap: pretty;
 }
 
 .footer {
-  width: 100vw;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-family: $font-geo;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 -1px $primary;
-  justify-content: center;
+    width: 100vw;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: $font-geo;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -1px $primary;
+    justify-content: center;
 }
 
 .footer-text {
-  font-family: $font-geo;
-  font-size: 1rem;
-  margin-left: 2em;
-  margin-right: 2em;
+    font-family: $font-geo;
+    font-size: 1rem;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 a:link {
-  color: $primary;
+    color: $primary;
 }
 
 a:active {
-  color: $primary;
+    color: $primary;
 }
 
 .hint {
-  position: absolute;
-  z-index: 1;
-}
-
-.componentHint {
+    position: absolute;
+    z-index: 1;
 }
 
 .componentHint img {
-  width: 95%;
+    width: 95%;
 }
 
 .componentHintText {
-  bottom: 5.5%;
-  left: 2%;
-}
-
-.fontHint {
+    bottom: 5.5%;
+    left: 2%;
 }
 
 .fontHint img {
-  // width: 225px;
-  width: 90%;
-}
-
-.buttonHint {
+    width: 90%;
 }
 
 .buttonHint img {
-  // width: 220px;
-  width: 90%;
-}
-
-.layoutHint {
+    // width: 220px;
+    width: 90%;
 }
 
 .layoutHint img {
-  // width: 272px;
-  width: 100%;
+    width: 100%;
 }
 
 .layoutHintText {
-  top: 2%;
-  left: 1%;
+    top: 2%;
+    left: 1%;
 }
 
 // --- MEDIA QUERIES ---
 
-@media (1400px <= width) {
-  .root {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
+@media (1400px <=width) {
+    .root {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
 
-  .content {
-    max-width: 1400px;
-  }
-  .header {
-    max-width: 800px;
-  }
+    .content {
+        max-width: 1400px;
+    }
 
-  .gallery {
-    gap: 120px 7%;
-    padding-left: 240px;
-    padding-right: 240px;
-  }
-  .componentHint {
-    width: 300px;
-    top: 80px;
-    right: -260px;
-  }
-  .fontHint {
-    width: 285px;
-    bottom: -50px;
-    left: -220px;
-  }
-  .buttonHint {
-    width: 250px;
-    bottom: -90px;
-    right: -70px;
-  }
-  .layoutHint {
-    width: 275px;
-    top: -90px;
-    right: -200px;
-  }
+    .header {
+        max-width: 800px;
+    }
+
+    .gallery {
+        gap: 120px 7%;
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+
+    .componentHint {
+        width: 300px;
+        top: 80px;
+        right: -260px;
+    }
+
+    .fontHint {
+        width: 285px;
+        bottom: -50px;
+        left: -220px;
+    }
+
+    .buttonHint {
+        width: 250px;
+        bottom: -90px;
+        right: -70px;
+    }
+
+    .layoutHint {
+        width: 275px;
+        top: -90px;
+        right: -200px;
+    }
 }
 
-@media (980px <= width < 1400px) {
-  .root {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
+@media (980px <=width < 1400px) {
+    .root {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
 
-  .content {
-    max-width: 1200px;
-  }
-  .header {
-    max-width: 600px;
-  }
+    .content {
+        max-width: 1200px;
+    }
 
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-    gap: 120px 10%;
-    padding-left: 180px;
-    padding-right: 180px;
-    max-width: 600px;
-  }
-  .componentHint {
-    width: 310px;
-    top: -56px;
-    right: -250px;
-  }
-  .fontHint {
-    width: 285px;
-    bottom: 40px;
-    left: -150px;
-  }
-  .buttonHint {
-    width: 250px;
-    bottom: -90px;
-    right: -70px;
-  }
-  .layoutHint {
-    width: 275px;
-    top: -90px;
-    left: -180px;
-  }
+    .header {
+        max-width: 600px;
+        font-size: 1.5rem;
+    }
 
-  .footer {
-    font-size: 0.8rem;
-  }
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 120px 10%;
+        padding-left: 180px;
+        padding-right: 180px;
+        max-width: 600px;
+    }
 
-  .footer-text {
-    font-size: 0.8rem;
-  }
+    .componentHint {
+        width: 310px;
+        top: -56px;
+        right: -250px;
+    }
+
+    .fontHint {
+        width: 285px;
+        bottom: 40px;
+        left: -150px;
+    }
+
+    .buttonHint {
+        width: 250px;
+        bottom: -90px;
+        right: -70px;
+    }
+
+    .layoutHint {
+        width: 275px;
+        top: -90px;
+        left: -180px;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+    }
 
 }
 
-@media (420px <= width < 980px) {
-  .root {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
+@media (420px <=width < 980px) {
+    .root {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
 
-  .content {
-    // background-color: gold;
-    max-width: 650px;
-  }
+    .content {
+        max-width: 650px;
+    }
 
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-    gap: 130px 10%;
-  }
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 130px 10%;
+    }
 
-  .componentHint {
-    width: 230px;
-    top: -43px;
-    right: -186px;
-  }
+    .componentHint {
+        width: 230px;
+        top: -43px;
+        right: -186px;
+    }
 
-  .fontHint {
-    width: 220px;
-    bottom: -50px;
-    right: -110px;
-  }
-  .buttonHint {
-    width: 210px;
-    bottom: -120px;
-    right: -50px;
-  }
-  .layoutHint {
-    width: 235px;
-    top: -90px;
-    left: -150px;
-  }
-  .componentHintText,
-  .fontHintText,
-  .layoutHintText,
-  .buttonHintText {
-    font-size: 0.67rem;
-  }
+    .fontHint {
+        width: 220px;
+        bottom: -50px;
+        right: -110px;
+    }
 
-  .footer {
-    font-size: 0.8rem;
-  }
+    .buttonHint {
+        width: 210px;
+        bottom: -120px;
+        right: -50px;
+    }
 
-  .footer-text {
-    font-size: 0.8rem;
-  }
+    .layoutHint {
+        width: 235px;
+        top: -90px;
+        left: -150px;
+    }
+
+    .componentHintText,
+    .fontHintText,
+    .layoutHintText,
+    .buttonHintText {
+        font-size: 0.67rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+    }
 }
 
 @media (width < 420px) {
-  .root {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+    .root {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 
-  .header {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+    .header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-  .gallery {
-    grid-template-columns: 1fr;
-    row-gap: 120px;
-    max-width: 300px;
-  }
+    .gallery {
+        grid-template-columns: 1fr;
+        row-gap: 120px;
+        max-width: 300px;
+    }
 
-  .footer {
-    font-size: 0.8rem;
-  }
+    .footer {
+        font-size: 0.8rem;
+    }
 
-  .footer-text {
-    font-size: 0.8rem;
-  }
+    .footer-text {
+        font-size: 0.8rem;
+    }
 
-  .componentHint {
-    width: 230px;
-    top: -43px;
-    right: -15px;
-  }
+    .componentHint {
+        width: 230px;
+        top: -43px;
+        right: -15px;
+    }
 
-  .fontHint {
-    width: 220px;
-    bottom: -50px;
-    right: -30px;
-  }
+    .fontHint {
+        width: 220px;
+        bottom: -50px;
+        right: -30px;
+    }
 
-  .buttonHint {
-    width: 210px;
-    bottom: -100px;
-    right: -50px;
-  }
-  .layoutHint {
-    width: 235px;
-    top: -110px;
-    left: -35px;
-  }
+    .buttonHint {
+        width: 210px;
+        bottom: -100px;
+        right: -50px;
+    }
 
-  .componentHintText,
-  .fontHintText,
-  .layoutHintText,
-  .buttonHintText {
-    font-size: 0.67rem;
-  }
+    .layoutHint {
+        width: 235px;
+        top: -110px;
+        left: -35px;
+    }
+
+    .componentHintText,
+    .fontHintText,
+    .layoutHintText,
+    .buttonHintText {
+        font-size: 0.67rem;
+    }
 }
 
 .dark {
-  color: $secondary;
-  background-color: $bauhaus-charcoalblack;
+    color: $secondary;
+    background-color: $bauhaus-charcoalblack;
 }
