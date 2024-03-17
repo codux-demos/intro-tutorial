@@ -1,4 +1,4 @@
-import { ReactComponent as Cloud } from '../../../assets/cloud.svg';
+import Cloud from '../../../assets/cloud.svg?react';
 import { Task10 as Task } from '../../tasks/10/task-10';
 import styles from './lesson-10.module.scss';
 
