@@ -1,20 +1,20 @@
-import { ReactComponent as EmptySymbol } from '../../../assets/empty-symbol.svg';
-import { ReactComponent as AddSymbol } from '../../../assets/add-symbol.svg';
-import { ReactComponent as ComponentSymbol } from '../../../assets/component-symbol.svg';
-import { ReactComponent as InspectSymbol } from '../../../assets/inspect-symbol.svg';
-import { ReactComponent as EditSymbol } from '../../../assets/edit-symbol.svg';
-import { ReactComponent as HomeSymbol } from '../../../assets/home-symbol.svg';
-import { ReactComponent as PropsSymbol } from '../../../assets/props-symbol.svg';
-import { ReactComponent as ReloadSymbol } from '../../../assets/reload-symbol.svg';
-import { ReactComponent as StylesSymbol } from '../../../assets/styles-symbol.svg';
-import { ReactComponent as DivSymbol } from '../../../assets/div-symbol.svg';
-import { ReactComponent as ChevronSymbol } from '../../../assets/chevron-symbol.svg';
-import { ReactComponent as PreviewSymbol } from '../../../assets/preview-symbol.svg';
-import { ReactComponent as HamburgerSymbol } from '../../../assets/hamburger-symbol.svg';
-import { ReactComponent as MoreSymbol } from '../../../assets/more-symbol.svg';
-import { ReactComponent as BranchSymbol } from '../../../assets/branch-symbol.svg';
-import { ReactComponent as CommitSymbol } from '../../../assets/commit-symbol.svg';
-import { ReactComponent as SyncSymbol } from '../../../assets/sync-symbol.svg';
+import EmptySymbol from '../../../assets/empty-symbol.svg?react';
+import AddSymbol from '../../../assets/add-symbol.svg?react';
+import ComponentSymbol from '../../../assets/component-symbol.svg?react';
+import InspectSymbol from '../../../assets/inspect-symbol.svg?react';
+import EditSymbol from '../../../assets/edit-symbol.svg?react';
+import HomeSymbol from '../../../assets/home-symbol.svg?react';
+import PropsSymbol from '../../../assets/props-symbol.svg?react';
+import ReloadSymbol from '../../../assets/reload-symbol.svg?react';
+import StylesSymbol from '../../../assets/styles-symbol.svg?react';
+import DivSymbol from '../../../assets/div-symbol.svg?react';
+import ChevronSymbol from '../../../assets/chevron-symbol.svg?react';
+import PreviewSymbol from '../../../assets/preview-symbol.svg?react';
+import HamburgerSymbol from '../../../assets/hamburger-symbol.svg?react';
+import MoreSymbol from '../../../assets/more-symbol.svg?react';
+import BranchSymbol from '../../../assets/branch-symbol.svg?react';
+import CommitSymbol from '../../../assets/commit-symbol.svg?react';
+import SyncSymbol from '../../../assets/sync-symbol.svg?react';
 
 export const symbols = {
     empty: EmptySymbol,
