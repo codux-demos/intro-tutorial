@@ -8,9 +8,10 @@ import { content } from '../../../content';
 
 export default createBoard({
     name: '10 Playground',
-    Board: () => 
-    <div className={styles.root}>
+    Board: () => (
+        <div className={styles.root}>
             <div className={styles.content}>
+                <h1 className={styles['page-title']}>Welcome to Designers *Playground*</h1>
                 <div className={styles.header}>
                     Unleash your creativity with Codux. Customize fonts, colors, and layouts to
                     craft a masterpiece tailored to your vision. Rename these posters and don&apos;t
@@ -102,8 +103,7 @@ export default createBoard({
                 </span>
             </div>
         </div>
-    ,
-
+    ),
     isSnippet: false,
     environmentProps: {
         windowWidth: 1024,
