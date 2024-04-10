@@ -16,18 +16,18 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.4",
-    "@types/react": "^18.2.74",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "@typescript-eslint/parser": "^7.5.0",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "@wixc3/react-board": "^2.4.1",
+    "@wixc3/react-board": "^2.5.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "sass": "^1.74.1",
-    "typescript": "~5.4.3",
+    "typescript": "~5.4.5",
     "vite": "^5.2.8",
     "vite-plugin-svgr": "^4.2.0"
   }
