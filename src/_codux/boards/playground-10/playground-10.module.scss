@@ -25,11 +25,14 @@
 }
 
 .header {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   font-family: $font-alata;
-  padding: 0rem 2.5rem 5rem;
   text-wrap: pretty;
+  padding-top: 0rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .gallery {
@@ -109,7 +112,7 @@ a:active {
   }
 
   .page-title {
-    font-size: 6rem;
+    font-size: 4rem;
     width: 100vw;
   }
 
@@ -159,7 +162,7 @@ a:active {
   }
 
   .page-title {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .header {
@@ -220,8 +223,14 @@ a:active {
   }
 
   .page-title {
-    font-size: 2.3rem;
+    font-size: 1.6rem;
     width: 100vw;
+  }
+
+  .header {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .gallery {
@@ -276,13 +285,14 @@ a:active {
   }
 
   .page-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-top: 1.2em;
   }
 
   .header {
     padding-left: 1rem;
     padding-right: 1rem;
+    font-size: 1.3rem;
   }
 
   .gallery {
