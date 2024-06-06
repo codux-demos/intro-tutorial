@@ -1,0 +1,27 @@
+@import '../../globals/playground-variables';
+
+.root {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.hintText {
+  position: relative;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  font-size: 0.78rem;
+  font-family: $font-alata;
+  text-align: center;
+  white-space: pre;
+  margin: 0px;
+}
+
+.image {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
