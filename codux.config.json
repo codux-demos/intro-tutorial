@@ -28,6 +28,5 @@
   },
   "styling": {
     "solution": "scss modules"
-  },
-  "svgLoader": "svgr"
+  }
 }
