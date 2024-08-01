@@ -11,23 +11,23 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
-    "react": "^18.2.0",
-    "react-canvas-confetti": "^1.4.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-canvas-confetti": "^2.0.7",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/node": "^20.11.0",
-    "@types/react": "^18.2.47",
-    "@types/react-dom": "^18.2.18",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "@typescript-eslint/parser": "^6.18.1",
-    "@vitejs/plugin-react": "^4.2.1",
-    "@wixc3/react-board": "^2.3.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@wixc3/react-board": "^3.0.1",
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "sass": "^1.69.7",
-    "typescript": "~5.3.3",
+    "sass": "^1.77.8",
+    "typescript": "~5.5.4",
     "vite": "^4.5.0",
     "vite-plugin-svgr": "^3.2.0"
   }
