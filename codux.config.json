@@ -29,5 +29,8 @@
   "styling": {
     "solution": "scss modules"
   },
+  "styleFilesConfig": {
+    "commonStyleFilePattern": "**/variables.module.scss"
+  },
   "svgLoader": "svgr"
 }
