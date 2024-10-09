@@ -1,0 +1,69 @@
+@import './theme.module.scss';
+
+.intro-button {
+    text-align: center;
+    font: $small-font;
+    background-color: $snow-white;
+    padding: 10px;
+    width: 160px;
+    color: $charcoal-black;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: #b6c1f0;
+        color: $black;
+    }
+}
+
+.primaryButton {
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    font: $small-font;
+    color: $snow-white;
+    border-radius: 35px;
+    height: 42px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: 1px solid $charcoal-black;
+    z-index: 1;
+
+    &:hover {
+        background-color: $charcoal-black;
+        cursor: pointer;
+    }
+}
+
+.secondaryButton {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font: $small-font;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding-right: 22px;
+    padding-left: 22px;
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.numberInput {
+    border: 1px solid $black;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 25px;
+    width: 60px;
+    padding-right: 10px;
+    font: $small-font;
+}
+
+.price {
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.loading {
+    padding: 30px;
+    font: $large-font;
+}
