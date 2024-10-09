@@ -1,5 +1,5 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
-import '~/styles/index.scss';
+import '../src/styles/index.scss';
 
 export function Layout({ children }: { children: React.ReactNode }) {
     return (
