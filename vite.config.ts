@@ -1,8 +1,25 @@
+import { vitePlugin as remix } from '@remix-run/dev';
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import tsconfigPaths from 'vite-tsconfig-paths';
 import svgr from 'vite-plugin-svgr';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [react(), svgr({ include: '**/*.svg?react' })],
+    plugins: [
+        remix({
+            future: {
+                v3_fetcherPersist: true,
+                v3_relativeSplatPath: true,
+                v3_throwAbortReason: true,
+            },
+        }),
+        tsconfigPaths(),
+        svgr({ include: '**/*.svg?react' }),
+    ],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                silenceDeprecations: ['legacy-js-api'],
+            },
+        },
+    },
 });

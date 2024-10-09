@@ -1,8 +1,9 @@
-import { CreateTypes } from 'canvas-confetti';
+import type { CreateTypes } from 'canvas-confetti';
 import React, { useCallback, useEffect, useRef } from 'react';
 import ReactCanvasConfetti from 'react-canvas-confetti';
 import vars from '../../../globals/variables.module.scss';
 import styles from './confetti-fx.module.scss';
+import { ClientOnly } from 'remix-utils/client-only';
 
 export interface ConfettiFxProps {
     show?: boolean;
@@ -35,7 +36,6 @@ export const ConfettiFx = ({
     style,
 }: ConfettiFxProps) => {
     const refAnimationInstance = useRef<confetti.CreateTypes | null>(null);
-
     const getInstance: (instance: { confetti: CreateTypes }) => void = (instance: {
         confetti: CreateTypes;
     }) => {
@@ -86,7 +86,13 @@ export const ConfettiFx = ({
         }
     }, [show, fire]);
 
-    return <ReactCanvasConfetti onInit={getInstance} className={styles.root} style={style} />;
+    return (
+        <ClientOnly>
+            {() => (
+                <ReactCanvasConfetti onInit={getInstance} className={styles.root} style={style} />
+            )}
+        </ClientOnly>
+    );
 };
 
 function getAnimationColorValues(): string[] {
