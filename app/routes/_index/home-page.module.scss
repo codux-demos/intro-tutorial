@@ -1,3 +1,4 @@
+@import '../../../src/globals/variables.module.scss';
 $card-width: 342px;
 
 .gridContainer {
@@ -7,8 +8,27 @@ $card-width: 342px;
 
 .gridItem {
     height: 450px;
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .gridItemLarge {
     grid-column: span 2;
+    padding: 0;
+}
+
+.cardTitle {
+    text-align: center;
+    font: $card-title;
+    font-weight: 800;
+    line-height: 50px;
+    padding: 18px;
+}
+
+.cardNumber {
+    font: $card-number;
 }

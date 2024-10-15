@@ -51,6 +51,8 @@ $playground-height: 560px;
 // Home page
 $header: normal 800 3.625rem/5.715rem $font-family-display;
 $description: normal 400 18px $font-family-display;
+$card-title: normal 800 40px $font-family-display;
+$card-number: normal 400 12px $font-family-text;
 
 :export {
     white: $white;
