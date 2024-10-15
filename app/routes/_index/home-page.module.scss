@@ -1,0 +1,14 @@
+$card-width: 342px;
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, $card-width);
+}
+
+.gridItem {
+    height: 450px;
+}
+
+.gridItemLarge {
+    grid-column: span 2;
+}

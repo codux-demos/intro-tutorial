@@ -1,0 +1,52 @@
+@import '../../globals/variables.module.scss';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $charcoal-black;
+    height: 100%;
+    color: $white;
+    padding: 0 60px 30px;
+}
+
+.body {
+    flex-grow: 1;
+}
+
+.title {
+    font: $header;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.description {
+    font: $description;
+    line-height: 28px;
+    margin-bottom: 30px;
+    width: 436px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 24px;
+    padding-top: 30px;
+}
+
+.footerSection {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.boldText {
+    font-weight: 800;
+}

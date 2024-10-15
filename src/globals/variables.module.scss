@@ -48,24 +48,27 @@ $playground-bg-color: $charcoal-black;
 $playground-border-radius: 1.25rem;
 $playground-width: 400px;
 $playground-height: 560px;
+// Home page
+$header: normal 800 3.625rem/5.715rem $font-family-display;
+$description: normal 400 18px $font-family-display;
 
 :export {
-  white: $white;
-  dirtyWhite: $dirty-white;
-  snowWhite: $snow-white;
-  black: $black;
-  charcoalBlack: $charcoal-black;
-  lavender: $lavender;
-  lilac: $lilac;
-  darkLavender: $dark-lavender;
-  oliveGreen: $olive-green;
-  richGreen: $rich-green;
-  turquoiseGreen: $turquoise-green;
-  aeroBlue: $aero-blue;
-  goldYellow: $gold-yellow;
-  danaPink: $dana-pink;
-  hotPink: $hot-pink;
-  pastelPink: $pastel-pink;
-  hotRed: $hot-red;
-  orangeRed: $orange-red;
+    white: $white;
+    dirtyWhite: $dirty-white;
+    snowWhite: $snow-white;
+    black: $black;
+    charcoalBlack: $charcoal-black;
+    lavender: $lavender;
+    lilac: $lilac;
+    darkLavender: $dark-lavender;
+    oliveGreen: $olive-green;
+    richGreen: $rich-green;
+    turquoiseGreen: $turquoise-green;
+    aeroBlue: $aero-blue;
+    goldYellow: $gold-yellow;
+    danaPink: $dana-pink;
+    hotPink: $hot-pink;
+    pastelPink: $pastel-pink;
+    hotRed: $hot-red;
+    orangeRed: $orange-red;
 }
