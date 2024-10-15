@@ -16,6 +16,7 @@
     "@remix-run/serve": "^2.12.1",
     "@wixc3/define-remix-app": "^4.3.3",
     "classnames": "^2.5.1",
+    "isbot": "^4",
     "react": "^18.2.0",
     "react-canvas-confetti": "^2.0.7",
     "react-dom": "^18.2.0",
