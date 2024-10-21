@@ -1,10 +1,10 @@
 import styles from './introduction-card.module.scss';
-import CoduxLogo from '~/assets/codux-logo.svg?react';
-import Facebook from '~/assets/facebook.svg?react';
-import XLogo from '~/assets/x.svg?react';
-import DiscordLogo from '~/assets/discord.svg?react';
-import YoutubeLogo from '~/assets/youtube.svg?react';
-import MediumLogo from '~/assets/medium.svg?react';
+import CoduxLogo from '../../assets/codux-logo.svg?react';
+import Facebook from '../../assets/facebook.svg?react';
+import XLogo from '../../assets/x.svg?react';
+import DiscordLogo from '../../assets/discord.svg?react';
+import YoutubeLogo from '../../assets/youtube.svg?react';
+import MediumLogo from '../../assets/medium.svg?react';
 
 export const IntroductionCard = () => (
     <div className={styles.root}>
