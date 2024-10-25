@@ -30,12 +30,12 @@
     height: 280px;
 
     &.top {
-        background-image: url('../../../assets/eye.svg');
+        background-image: url('../../../src/assets/eye.svg');
         background-color: $charcoal-black;
     }
 
     &.bottom {
-        background-image: url('../../../assets/eye.svg');
+        background-image: url('../../../src/assets/eye.svg');
         background-color: $gold-yellow;
     }
 }
