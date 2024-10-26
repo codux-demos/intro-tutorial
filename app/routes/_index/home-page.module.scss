@@ -1,5 +1,6 @@
 @import '../../../src/globals/variables.module.scss';
 $card-width: 342px;
+$cover-fade-in-animation: fadeInAnimation linear 500ms forwards 300ms;
 
 @keyframes fadeInAnimation {
   0% {
@@ -53,6 +54,11 @@ $card-width: 342px;
   opacity: 0;
 }
 
+.cardNumber {
+  font: $card-number;
+  padding: 12px;
+}
+
 .gridItem:hover {
   background-image: var(--lesson-cover-image);
   background-repeat: no-repeat;
@@ -68,16 +74,17 @@ $card-width: 342px;
     padding: 12px 21px;
     letter-spacing: 0.05em;
     flex-grow: 0;
+    opacity: 0;
+    animation: $cover-fade-in-animation;
   }
 
   & .startLessonButton {
     display: block;
-    animation: fadeInAnimation linear 500ms forwards;
-    animation-delay: 200ms;
+    animation: $cover-fade-in-animation;
   }
-}
 
-.cardNumber {
-  font: $card-number;
-  padding: 12px;
+  & .cardNumber {
+    opacity: 0;
+    animation: $cover-fade-in-animation;
+  }
 }
