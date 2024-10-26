@@ -18,10 +18,15 @@ export default function HomePage() {
                 <Link to={item.url} key={index}>
                     <div
                         className={styles.gridItem}
-                        style={{ backgroundColor: `${item.backgroundColor}` }}
+                        style={
+                            {
+                                '--lesson-cover-image': item.lessonCoverImage,
+                                '--lesson-bg-color': item.backgroundColor,
+                            } as React.CSSProperties
+                        }
                     >
-                        <span />
                         <p className={styles.cardTitle}>{item.title}</p>
+                        <button className={styles.startLessonButton}>Start Lesson</button>
                         <p className={styles.cardNumber}>{`LESSON ${item.lessonNumber}`}</p>
                     </div>
                 </Link>

@@ -1,34 +1,83 @@
 @import '../../../src/globals/variables.module.scss';
 $card-width: 342px;
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .gridContainer {
-    display: grid;
-    grid-template-columns: repeat(3, $card-width);
+  display: grid;
+  grid-template-columns: repeat(3, $card-width);
 }
 
 .gridItem {
-    height: 450px;
-    width: 100%;
-    display: flex;
-    padding: 12px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  // padding: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lesson-bg-color);
 }
 
 .gridItemLarge {
-    grid-column: span 2;
-    padding: 0;
+  grid-column: span 2;
+  padding: 0;
 }
 
 .cardTitle {
-    text-align: center;
-    font: $card-title;
-    font-weight: 800;
-    line-height: 50px;
-    padding: 18px;
+  text-align: center;
+  font: $card-title;
+  font-weight: 800;
+  line-height: 50px;
+  padding: 18px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startLessonButton {
+  display: none;
+  font: $card-button-text;
+  padding: 9px 46px 11px;
+  background-color: $white;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.gridItem:hover {
+  background-image: var(--lesson-cover-image);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+
+  & .cardTitle {
+    background-color: rgba(40, 43, 45, 0.3);
+    font: $card-title-hover;
+    align-self: stretch;
+    color: $white;
+    text-transform: uppercase;
+    padding: 12px 21px;
+    letter-spacing: 0.05em;
+    flex-grow: 0;
+  }
+
+  & .startLessonButton {
+    display: block;
+    animation: fadeInAnimation linear 500ms forwards;
+    animation-delay: 200ms;
+  }
 }
 
 .cardNumber {
-    font: $card-number;
+  font: $card-number;
+  padding: 12px;
 }
