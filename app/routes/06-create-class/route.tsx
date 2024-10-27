@@ -5,7 +5,7 @@ import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useRequestAnimationFrame } from '~/components/hooks';
 import { Task06 as Task } from '~/components/tasks/06/task-06';
 import styles from './lesson-06.module.scss';
-import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_05, LESSON_07 } from '~/router/config';
 
 export default function Lesson06() {

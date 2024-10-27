@@ -3,7 +3,7 @@ import { Box } from '~/components/common/box/box';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { Task02 as Task } from '~/components/tasks/02/task-02';
 import styles from './lesson-02.module.scss';
-import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_01, LESSON_03 } from '~/router/config';
 
 export default function Lesson02() {
@@ -15,7 +15,6 @@ export default function Lesson02() {
 
     return (
         <div>
-            {' '}
             <div className={styles.root}>
                 <Task />
                 <div className={styles.playground} id="playground">

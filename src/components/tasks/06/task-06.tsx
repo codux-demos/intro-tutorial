@@ -15,12 +15,9 @@ export const Task06 = () => {
                     change the background color by creating a class.
                 </li>
                 <li>
-                    <TaskSymbol name="edit" />
-                    Edit <TaskSymbol name="component" />
-                    <b>Lesson06</b> and select
-                    <br />
-                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
+                <li>Select the red quote to the right.</li>
                 <li>
                     To apply new style, open the
                     <br />

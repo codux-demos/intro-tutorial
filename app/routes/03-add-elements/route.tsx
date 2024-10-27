@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { Task03 as Task } from '~/components/tasks/03/task-03';
-import { Pupil } from './pupil/pupil';
 import styles from './lesson-03.module.scss';
-import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_02, LESSON_04 } from '~/router/config';
+import { Pupil } from '~/components/pupil/pupil';
 
 export default function Lesson03() {
     const [lessonSolved, setLessonSolved] = useState(false);

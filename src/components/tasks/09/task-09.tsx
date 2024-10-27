@@ -11,17 +11,17 @@ export const Task09 = () => {
             <div className={styles.title}>Grid Layout</div>
             <ol start={0} className={styles.desc}>
                 <li>
-                    <b>Grid Layout</b> lets you manage your layout using rows
-                    and columns. It defines how elements relate to each other.
-                    Let’s turn this tile puzzle into a heart using the grid
-                    layout.
+                    <b>Grid Layout</b> lets you manage your layout using rows and columns. It
+                    defines how elements relate to each other. Let’s turn this tile puzzle into a
+                    heart using the grid layout.
                 </li>
                 <li>
-                    Edit <TaskSymbol name="component" />
-                    <b>Lesson09</b> and select
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                </li>
+                <li>
+                    Open the Elements Panel and select
                     <br />
-                    <TaskTag type="tree">div.grid</TaskTag>on the
-                    <b> Elements Panel.</b>
+                    <TaskTag type="tree">div.grid</TaskTag>.
                 </li>
                 <li>
                     Open the

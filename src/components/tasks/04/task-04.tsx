@@ -17,9 +17,7 @@ export const Task04 = () => {
                     change the size of these image tiles to fix the image.
                 </li>
                 <li>
-                    Double click on the <b>stage</b> to edit <br></br> the{' '}
-                    <TaskSymbol name="component" />
-                    <b>Lesson04</b> component.
+                    Make sure you are on <TaskSymbol name="preview" /> <b>Edit Mode.</b>
                 </li>
                 <li>
                     Select any

@@ -15,11 +15,9 @@ export const Task07 = () => {
                     hearts using <b>component properties</b>.
                 </li>
                 <li>
-                    Edit <TaskSymbol name="component" />
-                    <b>Lesson07</b>. On the stage, select any{' '}
-                    <TaskSymbol name="component" />
-                    <b>Box.icon</b> component with an arrow.
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
+                <li>Select one of the circle icons to the right.</li>
                 <li>
                     Open the <TaskSymbol name="props" />
                     <b>Properties Panel</b> on the right. Change the{' '}

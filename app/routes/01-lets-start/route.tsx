@@ -5,7 +5,7 @@ import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { CursorFx } from '~/components/fx/cursor-fx/cursor-fx';
 import { Task01 as Task } from '~/components/tasks/01/task-01';
 import styles from './lesson-01.module.scss';
-import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_02 } from '~/router/config';
 
 const boxes: ColorName[] = [

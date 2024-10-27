@@ -15,7 +15,8 @@ export const Task01 = () => {
                     <b>&nbsp;Codux</b>.
                 </li>
                 <li>
-                    Switch to <TaskSymbol name="preview" /> <b>Preview Mode</b>
+                    Make sure you are on 
+                    <TaskSymbol name="preview" /> <b>Preview Mode</b>
                     &nbsp;and hover over the shapes to erase them. Can you see what’s behind?
                 </li>
                 <li>
@@ -23,8 +24,9 @@ export const Task01 = () => {
                     <TaskSymbol name="reload" /> <b>Reload Preview</b>.
                 </li>
                 <li>
-                    When ready, go to <TaskSymbol name="pages" />
-                    <b>Pages</b> panel on the left sidebar to find your next lessons.
+                    When ready, open
+                    <TaskSymbol name="pages" />
+                    <b>Pages</b> panel on the left sidebar, or click NEXT to find your next lesson.
                 </li>
             </ol>
         </div>

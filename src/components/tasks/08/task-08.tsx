@@ -16,13 +16,9 @@ export const Task08 = () => {
                     circles into their holes using flex properties.
                 </li>
                 <li>
-                    Edit <TaskSymbol name="component" />
-                    <b>Lesson08</b> and select
-                    <br />
-                    <TaskTag type="tree">div.section.circles</TaskTag>on the{' '}
-                    <br />
-                    <b> Elements Panel</b>.
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
+                <li>Select one of the circle icons to the right.</li>
                 <li>
                     Open the <TaskSymbol name="styles" />
                     <b>Styles Panel</b>. Take a look at the different flex

@@ -3,7 +3,7 @@ import styles from './lesson-07.module.scss';
 import { Box } from '~/components/common/box/box';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { Task07 as Task } from '~/components/tasks/07/task-07';
-import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_06, LESSON_08 } from '~/router/config';
 
 // lesson solutions

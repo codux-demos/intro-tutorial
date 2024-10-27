@@ -16,6 +16,7 @@ import BranchSymbol from '../../../assets/branch-symbol.svg?react';
 import CommitSymbol from '../../../assets/commit-symbol.svg?react';
 import SyncSymbol from '../../../assets/sync-symbol.svg?react';
 import PagesSymbol from '../../../assets/pages-symbol.svg?react';
+import EditModeSymbol from '../../../assets/edit-mode.svg?react';
 
 export const symbols = {
     empty: EmptySymbol,
@@ -36,6 +37,7 @@ export const symbols = {
     commit: CommitSymbol,
     sync: SyncSymbol,
     pages: PagesSymbol,
+    editMode: EditModeSymbol,
 };
 
 export type SymbolName = keyof typeof symbols;
