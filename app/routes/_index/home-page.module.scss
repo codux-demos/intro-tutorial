@@ -26,7 +26,7 @@ $cover-fade-in-animation: fadeInAnimation linear 500ms forwards 300ms;
     justify-content: center;
     align-items: center;
     position: relative;
-    perspective: 1000px; // Enable 3D space for the flip effect
+    perspective: 1000px;
     cursor: pointer;
     transition: transform 0.3s, z-index;
 
@@ -97,6 +97,10 @@ $cover-fade-in-animation: fadeInAnimation linear 500ms forwards 300ms;
 .cardNumber {
     font: $card-number;
     color: $black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px;
 }
 
 .footer {
