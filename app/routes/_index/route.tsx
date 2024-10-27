@@ -59,9 +59,15 @@ export default function HomePage() {
                     </p>
                 </div>
                 <div className={styles.socials}>
-                    <XLogo />
-                    <DiscordLogo />
-                    <YoutubeLogo />
+                    <a href="https://x.com/coduxide" target="_blank">
+                        <XLogo />
+                    </a>
+                    <a href="https://discord.com/channels/1047628695675863150" target="_blank">
+                        <DiscordLogo />
+                    </a>
+                    <a href="https://www.youtube.com/@CoduxIDE" target="_blank">
+                        <YoutubeLogo />
+                    </a>
                 </div>
             </footer>
         </div>
