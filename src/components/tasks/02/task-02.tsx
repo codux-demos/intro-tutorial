@@ -17,8 +17,7 @@ export const Task02 = () => {
                     see how to put these numbers in the correct order.
                 </li>
                 <li>
-                    Make sure you are on {' '}
-                    <TaskSymbol name="preview" /> <b>Edit Mode.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
                 <li>
                     {' '}

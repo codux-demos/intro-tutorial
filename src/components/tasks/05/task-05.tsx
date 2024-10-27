@@ -16,11 +16,9 @@ export const Task05 = () => {
                     <b> selectors</b>. Let's use them to adjust spacing.
                 </li>
                 <li>
-                    Make sure you are on <TaskSymbol name="preview" /> <b>Edit Mode.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
-                <li>
-                    Select one of the circles to the right.
-                </li>
+                <li>Select one of the circles to the right.</li>
                 <li>
                     To bring the circles closer together, we need to adjust their margins. <br></br>{' '}
                 </li>
