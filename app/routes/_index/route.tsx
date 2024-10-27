@@ -32,9 +32,19 @@ export default function HomePage() {
                                 } as React.CSSProperties
                             }
                         >
-                            <p className={styles.cardTitle}>{item.title}</p>
-                            <button className={styles.startLessonButton}>Start Lesson</button>
-                            <p className={styles.cardNumber}>{`LESSON ${item.lessonNumber}`}</p>
+                            <div className={styles.flipCardInner}>
+                                <div className={styles.flipCardFront}>
+                                    <p className={styles.cardTitle}>{item.title}</p>
+                                    <p
+                                        className={styles.cardNumber}
+                                    >{`LESSON ${item.lessonNumber}`}</p>
+                                </div>
+                                <div className={styles.flipCardBack}>
+                                    <button className={styles.startLessonButton}>
+                                        Start Lesson
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </Link>
                 ))}
