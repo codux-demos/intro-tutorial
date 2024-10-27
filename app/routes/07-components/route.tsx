@@ -3,6 +3,8 @@ import styles from './lesson-07.module.scss';
 import { Box } from '~/components/common/box/box';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { Task07 as Task } from '~/components/tasks/07/task-07';
+import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LESSON_06, LESSON_08 } from '~/router/config';
 
 // lesson solutions
 // unsolved: right, right, up, down, right, left, right
@@ -70,68 +72,71 @@ export default function Lesson07() {
     };
 
     return (
-        <div className={styles.root}>
-            <Task />
-            <div className={styles.playground}>
-                <Box outlined color="pastelPink" icon="heartOutline" className={styles.icon} />
-                <Box
-                    outlined
-                    color={getColor(0)}
-                    icon="arrow"
-                    className={styles.icon}
-                    iconDirection="right"
-                />
-                <Box
-                    outlined
-                    color={getColor(1)}
-                    icon="arrow"
-                    className={styles.icon}
-                    iconDirection="right"
-                />
-                <Box
-                    outlined
-                    color={getColor(2)}
-                    icon="arrow"
-                    className={styles.icon}
-                    iconDirection="up"
-                />
-                <Box
-                    outlined
-                    color={getColor(3)}
-                    icon="arrow"
-                    className={styles.icon}
-                    iconDirection="down"
-                />
-                <Box
-                    outlined
-                    color={getColor(4)}
-                    icon="arrow"
-                    className={styles.icon}
-                    iconDirection="right"
-                />
-                <Box
-                    outlined
-                    color={getColor(5)}
-                    icon="arrow"
-                    className={styles.icon}
-                    iconDirection="left"
-                />
-                <Box
-                    outlined
-                    color={getColor(6)}
-                    icon="arrow"
-                    className={styles.icon}
-                    iconDirection="right"
-                />
-                <Box outlined color="pastelPink" icon="heart" className={styles.icon} />
-                <ConfettiFx
-                    maxParticles={200}
-                    show={solutionStatus.solved}
-                    style={{
-                        display: solutionStatus.solved ? 'block' : 'none',
-                    }}
-                />
+        <div>
+            <div className={styles.root}>
+                <Task />
+                <div className={styles.playground}>
+                    <Box outlined color="pastelPink" icon="heartOutline" className={styles.icon} />
+                    <Box
+                        outlined
+                        color={getColor(0)}
+                        icon="arrow"
+                        className={styles.icon}
+                        iconDirection="right"
+                    />
+                    <Box
+                        outlined
+                        color={getColor(1)}
+                        icon="arrow"
+                        className={styles.icon}
+                        iconDirection="right"
+                    />
+                    <Box
+                        outlined
+                        color={getColor(2)}
+                        icon="arrow"
+                        className={styles.icon}
+                        iconDirection="up"
+                    />
+                    <Box
+                        outlined
+                        color={getColor(3)}
+                        icon="arrow"
+                        className={styles.icon}
+                        iconDirection="down"
+                    />
+                    <Box
+                        outlined
+                        color={getColor(4)}
+                        icon="arrow"
+                        className={styles.icon}
+                        iconDirection="right"
+                    />
+                    <Box
+                        outlined
+                        color={getColor(5)}
+                        icon="arrow"
+                        className={styles.icon}
+                        iconDirection="left"
+                    />
+                    <Box
+                        outlined
+                        color={getColor(6)}
+                        icon="arrow"
+                        className={styles.icon}
+                        iconDirection="right"
+                    />
+                    <Box outlined color="pastelPink" icon="heart" className={styles.icon} />
+                    <ConfettiFx
+                        maxParticles={200}
+                        show={solutionStatus.solved}
+                        style={{
+                            display: solutionStatus.solved ? 'block' : 'none',
+                        }}
+                    />
+                </div>
             </div>
+            <LessonsFooter previousUrl={LESSON_06} nextUrl={LESSON_08} />
         </div>
     );
 }

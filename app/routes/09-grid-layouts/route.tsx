@@ -5,6 +5,8 @@ import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useRequestAnimationFrame } from '~/components/hooks';
 import { Task09 as Task } from '~/components/tasks/09/task-09';
 import styles from './lesson-09.module.scss';
+import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LESSON_08, LESSON_10 } from '~/router/config';
 
 const boxes: ColorName[] = [
     'turquoiseGreen',
@@ -129,27 +131,30 @@ export default function Lesson09() {
     useRequestAnimationFrame(checkSolution);
 
     return (
-        <div className={styles.root}>
-            <Task />
-            <div className={styles.playground}>
-                <div className={styles.grid} id="grid">
-                    {boxes.map((color, idx) => (
-                        <Box
-                            key={idx}
-                            color={color}
-                            {...(color === 'snowWhite'
-                                ? { className: styles.glow, id: 'glow' }
-                                : '')}
-                        />
-                    ))}
+        <div>
+            <div className={styles.root}>
+                <Task />
+                <div className={styles.playground}>
+                    <div className={styles.grid} id="grid">
+                        {boxes.map((color, idx) => (
+                            <Box
+                                key={idx}
+                                color={color}
+                                {...(color === 'snowWhite'
+                                    ? { className: styles.glow, id: 'glow' }
+                                    : '')}
+                            />
+                        ))}
+                    </div>
+                    <ConfettiFx
+                        maxParticles={400}
+                        dissolve={315}
+                        show={lessonSolved}
+                        style={{ display: lessonSolved ? 'block' : 'none' }}
+                    />
                 </div>
-                <ConfettiFx
-                    maxParticles={400}
-                    dissolve={315}
-                    show={lessonSolved}
-                    style={{ display: lessonSolved ? 'block' : 'none' }}
-                />
             </div>
+            <LessonsFooter previousUrl={LESSON_08} nextUrl={LESSON_10} />
         </div>
     );
 }

@@ -10,6 +10,8 @@ import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useRequestAnimationFrame } from '~/components/hooks';
 import { Task04 as Task } from '~/components/tasks/04/task-04';
 import styles from './lesson-04.module.scss';
+import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LESSON_03, LESSON_05 } from '~/router/config';
 
 export default function Lesson04() {
     const [lessonSolved, setLessonSolved] = useState(false);
@@ -21,30 +23,33 @@ export default function Lesson04() {
     useRequestAnimationFrame(checkSolution);
 
     return (
-        <div className={styles.root}>
-            <Task />
-            <div className={styles.playground}>
-                <div className={styles.column}>
-                    <div className={styles.images}>
-                        <Image src={img1} className={styles.left} />
-                        <Image src={img3} className={styles.left} />
-                        <Image src={img5} className={styles.left} />
+        <div>
+            <div className={styles.root}>
+                <Task />
+                <div className={styles.playground}>
+                    <div className={styles.column}>
+                        <div className={styles.images}>
+                            <Image src={img1} className={styles.left} />
+                            <Image src={img3} className={styles.left} />
+                            <Image src={img5} className={styles.left} />
+                        </div>
                     </div>
-                </div>
-                <div className={styles.column}>
-                    <div className={styles.images}>
-                        <Image src={img2} className={styles.right} />
-                        <Image src={img4} className={styles.right} />
-                        <Image src={img6} className={styles.right} />
+                    <div className={styles.column}>
+                        <div className={styles.images}>
+                            <Image src={img2} className={styles.right} />
+                            <Image src={img4} className={styles.right} />
+                            <Image src={img6} className={styles.right} />
+                        </div>
                     </div>
+                    <ConfettiFx
+                        maxParticles={400}
+                        dissolve={315}
+                        show={lessonSolved}
+                        style={{ display: lessonSolved ? 'block' : 'none' }}
+                    />
                 </div>
-                <ConfettiFx
-                    maxParticles={400}
-                    dissolve={315}
-                    show={lessonSolved}
-                    style={{ display: lessonSolved ? 'block' : 'none' }}
-                />
             </div>
+            <LessonsFooter previousUrl={LESSON_03} nextUrl={LESSON_05} />
         </div>
     );
 }

@@ -5,6 +5,8 @@ import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { CursorFx } from '~/components/fx/cursor-fx/cursor-fx';
 import { Task01 as Task } from '~/components/tasks/01/task-01';
 import styles from './lesson-01.module.scss';
+import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LESSON_02 } from '~/router/config';
 
 const boxes: ColorName[] = [
     'lavender',
@@ -41,28 +43,31 @@ export default function Lesson01() {
     );
 
     return (
-        <div className={styles.root}>
-            <Task />
-            <div className={styles.playground}>
-                {boxes.map((color, idx) => (
-                    <Box
-                        key={idx}
-                        color={color}
-                        className={`${styles.boxes} ${visible[idx] || styles.fadeOut}`}
-                        onMouseEnter={() => {
-                            const boxesVisibility = [...visible];
-                            boxesVisibility[idx] = false;
-                            setVisible(boxesVisibility);
-                        }}
+        <div>
+            <div className={styles.root}>
+                <Task />
+                <div className={styles.playground}>
+                    {boxes.map((color, idx) => (
+                        <Box
+                            key={idx}
+                            color={color}
+                            className={`${styles.boxes} ${visible[idx] || styles.fadeOut}`}
+                            onMouseEnter={() => {
+                                const boxesVisibility = [...visible];
+                                boxesVisibility[idx] = false;
+                                setVisible(boxesVisibility);
+                            }}
+                        />
+                    ))}
+                    <CursorFx />
+                    <ConfettiFx
+                        maxParticles={400}
+                        dissolve={315}
+                        show={visible.every((value) => value === false)}
                     />
-                ))}
-                <CursorFx />
-                <ConfettiFx
-                    maxParticles={400}
-                    dissolve={315}
-                    show={visible.every((value) => value === false)}
-                />
+                </div>
             </div>
+            <LessonsFooter nextUrl={LESSON_02} />
         </div>
     );
 }

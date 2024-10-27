@@ -5,6 +5,8 @@ import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useRequestAnimationFrame } from '~/components/hooks';
 import { Task06 as Task } from '~/components/tasks/06/task-06';
 import styles from './lesson-06.module.scss';
+import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LESSON_05, LESSON_07 } from '~/router/config';
 
 export default function Lesson06() {
     const [lessonSolved, setLessonSolved] = useState(false);
@@ -16,20 +18,23 @@ export default function Lesson06() {
     useRequestAnimationFrame(checkSolution);
 
     return (
-        <div className={styles.root}>
-            <Task />
-            <div className={`${styles.playground}`} id="playground">
-                <div className={styles.quote}>
-                    “Creativity is <span>nothing but a mind set</span> free.”
+        <div>
+            <div className={styles.root}>
+                <Task />
+                <div className={`${styles.playground}`} id="playground">
+                    <div className={styles.quote}>
+                        “Creativity is <span>nothing but a mind set</span> free.”
+                    </div>
+                    <div className={styles.author}>Torrie T. Asai</div>
+                    <ConfettiFx
+                        maxParticles={400}
+                        dissolve={315}
+                        show={lessonSolved}
+                        style={{ display: lessonSolved ? 'block' : 'none' }}
+                    />
                 </div>
-                <div className={styles.author}>Torrie T. Asai</div>
-                <ConfettiFx
-                    maxParticles={400}
-                    dissolve={315}
-                    show={lessonSolved}
-                    style={{ display: lessonSolved ? 'block' : 'none' }}
-                />
             </div>
+            <LessonsFooter previousUrl={LESSON_05} nextUrl={LESSON_07} />
         </div>
     );
 }

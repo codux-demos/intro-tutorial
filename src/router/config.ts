@@ -1,16 +1,16 @@
 import { generatePath } from '@remix-run/react';
 
 const HOME = '/';
-const LESSON_01 = '/01-lets-start';
-const LESSON_02 = '/02-elements-panel';
-const LESSON_03 = '/03-add-elements';
-const LESSON_04 = '/04-computed-styles';
-const LESSON_05 = '/05-styles-panel';
-const LESSON_06 = '/06-create-class';
-const LESSON_07 = '/07-components';
-const LESSON_08 = '/08-flex-layout';
-const LESSON_09 = '/09-grid-layout';
-const LESSON_10 = '/10-work-with-git';
+export const LESSON_01 = '/01-lets-start';
+export const LESSON_02 = '/02-elements-panel';
+export const LESSON_03 = '/03-add-elements';
+export const LESSON_04 = '/04-computed-styles';
+export const LESSON_05 = '/05-styles-panel';
+export const LESSON_06 = '/06-create-class';
+export const LESSON_07 = '/07-components';
+export const LESSON_08 = '/08-flex-layouts';
+export const LESSON_09 = '/09-grid-layouts';
+export const LESSON_10 = '/10-work-with-git';
 
 export const ROUTES = {
     home: { path: HOME, to: () => HOME },

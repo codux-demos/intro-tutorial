@@ -3,6 +3,8 @@ import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { Task03 as Task } from '~/components/tasks/03/task-03';
 import { Pupil } from './pupil/pupil';
 import styles from './lesson-03.module.scss';
+import { LessonsFooter } from '~/components/lessons-footer/lessones-footer';
+import { LESSON_02, LESSON_04 } from '~/router/config';
 
 export default function Lesson03() {
     const [lessonSolved, setLessonSolved] = useState(false);
@@ -12,20 +14,23 @@ export default function Lesson03() {
     }, []);
 
     return (
-        <div className={styles.root}>
-            <Task />
-            <div className={styles.playground}>
-                <div id="top" className={`${styles.eye} ${styles.top}`} />
-                <div id="bottom" className={`${styles.eye} ${styles.bottom}`}>
-                    <Pupil color={'hotRed'} />
+        <div>
+            <div className={styles.root}>
+                <Task />
+                <div className={styles.playground}>
+                    <div id="top" className={`${styles.eye} ${styles.top}`} />
+                    <div id="bottom" className={`${styles.eye} ${styles.bottom}`}>
+                        <Pupil color={'hotRed'} />
+                    </div>
+                    <ConfettiFx
+                        maxParticles={400}
+                        dissolve={315}
+                        show={lessonSolved}
+                        style={{ display: lessonSolved ? 'block' : 'none' }}
+                    />
                 </div>
-                <ConfettiFx
-                    maxParticles={400}
-                    dissolve={315}
-                    show={lessonSolved}
-                    style={{ display: lessonSolved ? 'block' : 'none' }}
-                />
             </div>
+            <LessonsFooter previousUrl={LESSON_02} nextUrl={LESSON_04} />
         </div>
     );
 }
