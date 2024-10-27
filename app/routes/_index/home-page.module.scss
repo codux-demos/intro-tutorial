@@ -12,7 +12,10 @@ $cover-fade-in-animation: fadeInAnimation linear 500ms forwards 300ms;
     }
 }
 
-.root {}
+.root {
+    margin: auto;
+    width: fit-content;
+}
 
 .gridContainer {
     display: grid;
@@ -33,6 +36,19 @@ $cover-fade-in-animation: fadeInAnimation linear 500ms forwards 300ms;
     &:hover {
         z-index: 1;
     }
+}
+
+.cardTitleFlipped {
+    background-color: rgba(40, 43, 45, 0.3);
+    font: $card-title-hover;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    animation: $cover-fade-in-animation;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 18px;
 }
 
 .gridItemLarge {

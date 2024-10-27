@@ -4,11 +4,9 @@ import { IntroductionCard } from '~/components/introduction-card/introduction-ca
 import { LESSONS } from './lessons';
 import { Link } from '@remix-run/react';
 import CoduxLogo from '../../../src/assets/codux-logo.svg?react';
-import Facebook from '../../../src/assets/facebook.svg?react';
 import XLogo from '../../../src/assets/x.svg?react';
 import DiscordLogo from '../../../src/assets/discord.svg?react';
 import YoutubeLogo from '../../../src/assets/youtube.svg?react';
-import MediumLogo from '../../../src/assets/medium.svg?react';
 
 export const meta: MetaFunction = () => {
     return [{ title: 'Intro Tutorial' }, { name: 'description', content: 'Welcome to Remix!' }];
@@ -40,9 +38,13 @@ export default function HomePage() {
                                     >{`LESSON ${item.lessonNumber}`}</p>
                                 </div>
                                 <div className={styles.flipCardBack}>
+                                    <p className={styles.cardTitleFlipped}>{item.title}</p>
                                     <button className={styles.startLessonButton}>
                                         Start Lesson
                                     </button>
+                                    <p
+                                        className={styles.cardNumber}
+                                    >{`LESSON ${item.lessonNumber}`}</p>
                                 </div>
                             </div>
                         </div>
@@ -58,10 +60,8 @@ export default function HomePage() {
                 </div>
                 <div className={styles.socials}>
                     <XLogo />
-                    <Facebook />
                     <DiscordLogo />
                     <YoutubeLogo />
-                    <MediumLogo />
                 </div>
             </footer>
         </div>
