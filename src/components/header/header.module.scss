@@ -1,0 +1,18 @@
+@import '../../globals/variables.module.scss';
+
+.root {
+    display: flex;
+    background-color: $charcoal-black;
+    color: $white;
+    padding: 15px 18px;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.boldText {
+    font-weight: 800;
+}
