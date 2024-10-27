@@ -1,10 +1,10 @@
 import { useCallback, useState } from 'react';
-import img1 from '../../../assets/phto-1.png';
-import img2 from '../../../assets/phto-2.png';
-import img3 from '../../../assets/phto-3.png';
-import img4 from '../../../assets/phto-4.png';
-import img5 from '../../../assets/phto-5.png';
-import img6 from '../../../assets/phto-6.png';
+import img1 from '~/assets/img-1.png';
+import img2 from '~/assets/img-2.png';
+import img3 from '~/assets/img-3.png';
+import img4 from '~/assets/img-4.png';
+import img5 from '~/assets/img-5.png';
+import img6 from '~/assets/img-6.png';
 import { Image } from '~/components/common/image/image';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useRequestAnimationFrame } from '~/components/hooks';

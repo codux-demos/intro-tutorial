@@ -14,6 +14,7 @@
 .hamburger,
 .more,
 .branch,
+.pages,
 .styles {
   filter: drop-shadow(0 0 2px $symbol-shadow);
   vertical-align: -5px;
@@ -36,8 +37,8 @@
 
 .component {
   vertical-align: -1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
   width: 14px;
   height: 14px;
 }

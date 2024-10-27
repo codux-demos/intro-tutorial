@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { Task03 as Task } from '~/components/tasks/03/task-03';
-import styles from './lesson-03.module.scss';
 import { Pupil } from './pupil/pupil';
+import styles from './lesson-03.module.scss';
 
 export default function Lesson03() {
     const [lessonSolved, setLessonSolved] = useState(false);

@@ -26,5 +26,10 @@
   "styleFilesConfig": {
     "commonStyleFilePattern": "**/variables.module.scss"
   },
-  "svgLoader": "svgr"
+  "svgLoader": "svgr",
+  "resolve": {
+    "alias": {
+      "~/*": "./src/*"
+    }
+  }
 }

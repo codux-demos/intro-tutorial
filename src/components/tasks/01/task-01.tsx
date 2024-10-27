@@ -10,22 +10,21 @@ export const Task01 = () => {
             <div className={styles.title}>Let's Start!</div>
             <ol start={0} className={styles.desc}>
                 <li>
-                    In this tutorial, you&apos;ll learn how to view and visually
-                    edit <b>React</b> components using
+                    In this tutorial, you&apos;ll learn how to view and visually edit <b>React</b>{' '}
+                    components using
                     <b>&nbsp;Codux</b>.
                 </li>
                 <li>
                     Switch to <TaskSymbol name="preview" /> <b>Preview Mode</b>
-                    &nbsp;and hover over the shapes to erase them. Can you see
-                    what’s behind?
+                    &nbsp;and hover over the shapes to erase them. Can you see what’s behind?
                 </li>
                 <li>
                     To reload and bring back the shapes, just click&nbsp;
                     <TaskSymbol name="reload" /> <b>Reload Preview</b>.
                 </li>
                 <li>
-                    When ready, go back to the <TaskSymbol name="home" />
-                    <b>Home</b> screen to find your next lessons.
+                    When ready, go to <TaskSymbol name="pages" />
+                    <b>Pages</b> panel on the left sidebar to find your next lessons.
                 </li>
             </ol>
         </div>
