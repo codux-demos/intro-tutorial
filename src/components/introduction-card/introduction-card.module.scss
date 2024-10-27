@@ -1,28 +1,27 @@
 @import '../../globals/variables.module.scss';
 
 .root {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: $charcoal-black;
-    height: 100%;
-    color: $white;
-    padding: 0 60px 30px;
+  display: flex;
+  background-color: $charcoal-black;
+  height: 100%;
+  color: $white;
+  padding: 30px 60px 60px;
+  align-items: center;
 }
 
 .body {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .title {
-    font: $header;
-    line-height: 70px;
-    margin-bottom: 30px;
+  font: $header;
+  line-height: 70px;
+  margin-bottom: 30px;
 }
 
 .description {
-    font: $description;
-    line-height: 28px;
-    margin-bottom: 30px;
-    width: 436px;
+  font: $description;
+  line-height: 28px;
+  margin-bottom: 30px;
+  width: 436px;
 }
