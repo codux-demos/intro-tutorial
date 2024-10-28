@@ -22,7 +22,7 @@ const animationColors = [
     'turquoiseGreen',
     'aeroBlue',
     'goldYellow',
-    'danaPink',
+    'babyPink',
     'hotPink',
     'pastelPink',
     'hotRed',

@@ -24,7 +24,7 @@ export default function Lesson08() {
                     <div className={`${styles.section} ${styles.circles}`} id="circles">
                         <Box color="darkLavender" className={styles.circle} />
                         <Box color="hotPink" className={styles.circle} />
-                        <Box color="danaPink" className={styles.circle} />
+                        <Box color="babyPink" className={styles.circle} />
                     </div>
                     <div className={`${styles.section} ${styles.tags}`}>
                         <Box
@@ -45,7 +45,7 @@ export default function Lesson08() {
                             align="left"
                             iconColor="charcoalBlack"
                             icon="circle"
-                            color="danaPink"
+                            color="babyPink"
                             className={styles.tag}
                         />
                     </div>
