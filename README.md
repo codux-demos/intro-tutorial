@@ -14,3 +14,25 @@ This repo provides an interactive introduction to Codux. The project features va
 - Learn how to edit, render and compose apps that make use of **`React`**-based components.
 - Create components with **`TypeScript`**, **`SCSS`** and **`CSS Modules`** support.
 - Visually edit in real-time and in an isolated environment.
+
+## Development
+
+Run the dev server:
+
+```shellscript
+npm run dev
+```
+
+## Deployment
+
+First, build your app for production:
+
+```sh
+npm run build
+```
+
+Then run the app in production mode:
+
+```sh
+npm start
+```

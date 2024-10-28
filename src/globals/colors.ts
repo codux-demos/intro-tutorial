@@ -12,7 +12,7 @@ export type ColorName =
     | 'turquoiseGreen'
     | 'aeroBlue'
     | 'goldYellow'
-    | 'danaPink'
+    | 'babyPink'
     | 'hotPink'
     | 'pastelPink'
     | 'hotRed'

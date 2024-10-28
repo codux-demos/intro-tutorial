@@ -11,26 +11,26 @@ export const Task08 = () => {
             <div className={styles.title}>Flex Layout</div>
             <ol start={0} className={styles.desc}>
                 <li>
-                    With <b>Flex Layout</b>, you can align and stack elements
-                    inside another element. Let’s see how you can move the
-                    circles into their holes using flex properties.
+                    With <b>Flex Layout</b>, you can align and stack elements inside another
+                    element. Let’s see how you can move the circles into their holes using flex
+                    properties.
                 </li>
                 <li>
-                    Edit <TaskSymbol name="component" />
-                    <b>Lesson08</b> and select
-                    <br />
-                    <TaskTag type="tree">div.section.circles</TaskTag>on the{' '}
-                    <br />
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                </li>
+                <li>
+                    Select
+                    <TaskTag type="tree">div.section.circles</TaskTag>on the <br />
                     <b> Elements Panel</b>.
                 </li>
                 <li>
                     Open the <TaskSymbol name="styles" />
-                    <b>Styles Panel</b>. Take a look at the different flex
-                    properties under <b>Layout</b>.
+                    <b>Styles Panel</b>. Take a look at the different flex properties under{' '}
+                    <b>Layout</b>.
                 </li>
                 <li>
-                    To put the circles into their holes, change the{' '}
-                    <b>Flex Direction</b> and <b>Justify</b> properties.
+                    To put the circles into their holes, change the <b>Flex Direction</b> and{' '}
+                    <b>Justify</b> properties.
                 </li>
             </ol>
         </div>
