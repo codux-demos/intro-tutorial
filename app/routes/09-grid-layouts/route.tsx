@@ -6,7 +6,7 @@ import { useRequestAnimationFrame } from '~/components/hooks';
 import { Task09 as Task } from '~/components/tasks/09/task-09';
 import styles from './lesson-09.module.scss';
 import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
-import { LESSON_08, LESSON_10 } from '~/router/config';
+import { LESSON_08 } from '~/router/config';
 
 const boxes: ColorName[] = [
     'turquoiseGreen',
@@ -154,7 +154,7 @@ export default function Lesson09() {
                     />
                 </div>
             </div>
-            <LessonsFooter previousUrl={LESSON_08} nextUrl={LESSON_10} />
+            <LessonsFooter previousUrl={LESSON_08} />
         </div>
     );
 }

@@ -64,11 +64,4 @@ export const LESSONS = [
         url: '09-grid-layouts',
         lessonCoverImage: 'url(../../../src/assets/lesson-09-cover.svg)',
     },
-    {
-        lessonNumber: '10',
-        title: 'Working With Git',
-        backgroundColor: style.orangeRed,
-        url: '10-work-with-git',
-        lessonCoverImage: 'url(../../../src/assets/lesson-01-cover.svg)',
-    },
 ];
