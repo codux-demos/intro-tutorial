@@ -34,9 +34,8 @@ export const Task05 = () => {
                     change margins as they share the same selector.
                 </li>
                 <li>
-                    Next, let's adjust the padding of the button below. Select the button and then
-                    scroll to <b>Padding</b>. Set it to
-                    <b> 15px</b>.
+                    Next, let&apos;s adjust the padding of the button below. Select the button, open
+                    spacing section and set <b>Padding</b> to<b> 15px</b>.
                 </li>
             </ol>
         </div>
