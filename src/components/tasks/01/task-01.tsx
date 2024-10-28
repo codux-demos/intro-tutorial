@@ -16,7 +16,7 @@ export const Task01 = () => {
                 </li>
                 <li>
                     Make sure you are on 
-                    <TaskSymbol name="editMode" /> <b>Preview Mode</b>
+                    <TaskSymbol name="preview" /> <b>Preview Mode</b>
                     &nbsp;and hover over the shapes to erase them. Can you see what’s behind?
                 </li>
                 <li>
