@@ -18,7 +18,11 @@ export const Task08 = () => {
                 <li>
                     Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
-                <li>Select one of the circles on the right.</li>
+                <li>
+                    Select
+                    <TaskTag type="tree">div.section.circles</TaskTag>on the <br />
+                    <b> Elements Panel</b>.
+                </li>
                 <li>
                     Open the <TaskSymbol name="styles" />
                     <b>Styles Panel</b>. Take a look at the different flex properties under{' '}
