@@ -52,10 +52,10 @@ export default function HomePage() {
                 ))}
             </div>
             <footer className={styles.footer}>
-                <div className={styles.footerSection}>
+                <div className={styles.poweredBy}>
                     <CoduxLogo />
                     <p>
-                        Powered by <span className={styles.boldText}>Codux</span>.
+                        Powered by <strong>Codux</strong>.
                     </p>
                 </div>
                 <div className={styles.socials}>
