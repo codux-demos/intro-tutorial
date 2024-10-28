@@ -28,6 +28,7 @@ export const Task02 = () => {
                     {' '}
                     Now, drag the <TaskTag type="tree">div.row</TaskTag> elements on the{' '}
                     <b>Elements Panel</b> as needed to re-arrange the numbers in the correct order.
+                    You can also drag it on stage.
                 </li>
             </ol>
         </div>

@@ -17,12 +17,12 @@ export const Task06 = () => {
                 <li>
                     Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
-                <li>Select the red quote to the right.</li>
+                <li>Select the red quote on the right.</li>
                 <li>
                     To apply new style, open the
                     <br />
                     <TaskSymbol name="styles" />
-                    <b>Styles Panel</b> and click on{' '}
+                    <b>{' '}Styles Panel</b> and click on{' '}
                     <span style={{ fontSize: '13px', color: '#0000EE' }}>+ Add</span>
                     <br /> next to classes, to add a new class.
                 </li>

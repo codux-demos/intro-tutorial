@@ -26,7 +26,7 @@ export const Task01 = () => {
                 <li>
                     When ready, open
                     <TaskSymbol name="pages" />
-                    <b>Pages</b> panel on the left sidebar, or click NEXT to find your next lesson.
+                    <b>Pages</b> Panel on the left sidebar, or click NEXT to find your next lesson.
                 </li>
             </ol>
         </div>

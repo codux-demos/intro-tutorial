@@ -21,12 +21,12 @@ export const Task09 = () => {
                 <li>
                     Open the Elements Panel and select
                     <br />
-                    <TaskTag type="tree">div.grid</TaskTag>.
+                    <TaskTag type="tree">div.grid</TaskTag>
                 </li>
                 <li>
                     Open the
                     <TaskSymbol name="styles" />
-                    <b>Styles Panel</b> and then add a column (1fr).
+                    <b>{' '}Styles Panel</b> and then add a column (1fr).
                 </li>
                 <li>Now, find the white box on the stage and select it.</li>
                 <li>

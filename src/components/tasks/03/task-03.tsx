@@ -19,9 +19,10 @@ export const Task03 = () => {
                 <li>
                     Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
-                <li>Click on the eye to the right to select it.</li>
+                <li>Select the top eye.</li>
                 <li>
-                    Now, click <TaskSymbol name="add" /> and open the Add Panel and find the
+                    Now, click <TaskSymbol name="add" />
+                    to open the Add Elements Panel and find the
                     <TaskSymbol name="component" />
                     <b>Pupil</b> component.
                 </li>
