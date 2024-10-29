@@ -1,29 +1,12 @@
 @import '../../../src/globals/variables.module.scss';
+@import '../../../src//styles/lesson.module.scss';
 
-.root {
+.root .playground {
+    position: relative;
     display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    background-color: $lesson-bg-color;
-    font-family: $font-family-text;
-    padding: $lesson-padding;
-    gap: $lesson-gap;
-    height: 641px;
-
-    .playground {
-        overflow: hidden;
-        border-radius: $playground-border-radius;
-        width: $playground-width;
-        height: $playground-height;
-
-        // lesson specific
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
+    flex-direction: column;
 }
 
-// lesson specific
 .eye {
     display: flex;
     align-items: center;

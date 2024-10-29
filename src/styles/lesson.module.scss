@@ -1,0 +1,18 @@
+@import '../globals/variables.module.scss';
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: $lesson-bg-color;
+    font-family: $font-family-text;
+    padding: $lesson-padding;
+
+
+    .playground {
+        overflow: hidden;
+        border-radius: $playground-border-radius;
+        width: $playground-width;
+        height: $playground-height;
+    }
+}
