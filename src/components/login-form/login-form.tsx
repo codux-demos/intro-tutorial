@@ -13,7 +13,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ className }) => (
         <h2 className={styles.header1}>
             Welcome <br /> Back :)
         </h2>
-        <FloatingInput label="Username" id="username" />
+        <FloatingInput label="Username" id="username" error />
         <br />
         <FloatingInput type="password" label="Password" id="password" />
         <div className={styles.rememberMe}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './floating-input.module.scss';
 import classNames from 'classnames';
 
@@ -7,6 +7,7 @@ export interface FloatingInputProps extends React.InputHTMLAttributes<HTMLInputE
     label: string;
     id?: string;
     type?: string;
+    error?: boolean;
 }
 
 export const FloatingInput: React.FC<FloatingInputProps> = ({
@@ -14,12 +15,36 @@ export const FloatingInput: React.FC<FloatingInputProps> = ({
     label,
     id,
     type = 'text',
+    error,
+    value: initialValue,
     ...props
-}) => (
-    <div className={classNames(styles.inputContainer, className)}>
-        <input className={styles.floatingInput} type={type} id={id} name={id} {...props} />
-        <label className={styles.label} htmlFor={id}>
-            {label}
-        </label>
-    </div>
-);
+}) => {
+    const [value, setValue] = useState(initialValue);
+    const [isFocused, setIsFocused] = useState(false);
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value);
+
+    const handleBlur = () => setIsFocused(false);
+
+    const handleFocus = () => setIsFocused(true);
+
+    return (
+        <div className={classNames(styles.inputContainer, className)}>
+            <input
+                className={classNames(styles.floatingInput, error && styles.error)}
+                type={type}
+                id={id}
+                name={id}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                onFocus={handleFocus}
+                value={value}
+                {...props}
+            />
+            <label className={classNames(styles.label, isFocused && styles.active)} htmlFor={id}>
+                {label}
+            </label>
+            <span className={styles.errorMessage}>This field is required</span>
+        </div>
+    );
+};
