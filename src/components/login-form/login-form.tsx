@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './login-form.module.scss';
 import classNames from 'classnames';
+import { FloatingInput } from './floating-input';
+import { RoundCheckbox } from './round-checkbox';
 
 export interface LoginFormProps {
     className?: string;
@@ -11,24 +13,13 @@ export const LoginForm: React.FC<LoginFormProps> = ({ className }) => (
         <h2 className={styles.header1}>
             Welcome <br /> Back :)
         </h2>
-        <div className={styles.inputContainer}>
-            <input className={styles.floatingInput} type="text" id="username" name="username" />
-            <label className={styles.label} htmlFor="username">
-                Username:
-            </label>
-        </div>
+        <FloatingInput label="Username" id="username" />
         <br />
-        <div className={styles.inputContainer}>
-            <input className={styles.floatingInput} type="password" id="password" name="password" />
-            <label className={styles.label} htmlFor="password">
-                Password:
-            </label>
+        <FloatingInput type="password" label="Password" id="password" />
+        <div className={styles.rememberMe}>
+            <RoundCheckbox name="rememberMe" />
+            <span>Remember me next time!</span>
         </div>
-        <label className={styles.roundCheckboxContainer}>
-            <input className={styles.roundCheckbox} type="checkbox" name="rememberMe" />
-            <span className={styles.checkmark}></span>
-        </label>
-        <span>Remember me next time!</span>
         <button className={styles.confirmButton} type="submit">
             Sign In
         </button>
