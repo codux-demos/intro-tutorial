@@ -7,6 +7,8 @@ import { Task06 as Task } from '~/components/tasks/06/task-06';
 import styles from './lesson-06.module.scss';
 import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_05, LESSON_07 } from '~/router/config';
+import styles0 from './route.module.scss';
+import classNames from 'classnames';
 
 export default function Lesson06() {
     const [lessonSolved, setLessonSolved] = useState(false);
@@ -21,7 +23,7 @@ export default function Lesson06() {
         <div>
             <div className={styles.root}>
                 <Task />
-                <div className={`${styles.playground}`} id="playground">
+                <div className={classNames(styles.playground, styles0.newClass)} id="playground">
                     <div className={styles.quote}>
                         “Creativity is <span>nothing but a mind set</span> free.”
                     </div>
@@ -42,7 +44,7 @@ export default function Lesson06() {
 function isSolved(): boolean {
     const elem = document.getElementById('playground');
     const stageBgColor = rgba2hex(
-        getComputedStyle(elem!).getPropertyValue('background-color')
+        getComputedStyle(elem!).getPropertyValue('background-color'),
     ).toUpperCase();
     const desiredColor = vars.charcoalBlack!.toUpperCase();
     return stageBgColor === desiredColor;

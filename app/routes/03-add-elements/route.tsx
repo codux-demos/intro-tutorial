@@ -5,6 +5,7 @@ import styles from './lesson-03.module.scss';
 import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_02, LESSON_04 } from '~/router/config';
 import { Pupil } from '~/components/pupil/pupil';
+import { Pupil as Pupil0 } from '../../../src/components/pupil/pupil';
 
 export default function Lesson03() {
     const [lessonSolved, setLessonSolved] = useState(false);
@@ -18,7 +19,9 @@ export default function Lesson03() {
             <div className={styles.root}>
                 <Task />
                 <div className={styles.playground}>
-                    <div id="top" className={`${styles.eye} ${styles.top}`} />
+                    <div id="top" className={`${styles.eye} ${styles.top}`}>
+                        <Pupil0 />
+                    </div>
                     <div id="bottom" className={`${styles.eye} ${styles.bottom}`}>
                         <Pupil color={'hotRed'} />
                     </div>
