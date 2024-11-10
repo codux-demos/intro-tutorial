@@ -8,33 +8,8 @@ const app = defineRemixApp({
 
 const NEW_PAGE_TEMPLATE = `
 import React from 'react';
-
-const boxes = [
-    '#ffffff',
-    '#dcd9bf',
-    '#f5f5f5',
-    '#000000',
-    '#282b2d',
-    '#b6c1f0',
-    '#cc6fd6',
-    '#6a55a2',
-    '#6a55a2bc',
-    '#a09d2a',
-    '#268040',
-    '#92d0ab',
-    '#7fc2f4',
-    '#ffb615',
-    '#ffd9e0',
-    '#f486c9',
-    '#fa9dbc',
-    '#ff2f2f',
-    '#ff5b2b',
-    '#cccccc',
-    '#3899ec',
-    '#495cef',
-    '#e7eaff',
-    '#fcfcfc',
-];
+import { boxes } from '../../constants';
+import vars from '~/globals/variables.module.scss';
 
 export default function NewPage() {
     return (
@@ -44,7 +19,7 @@ export default function NewPage() {
                     key={idx}
                     className="box"
                     style={{
-                        backgroundColor: randomItemFromArray(boxes),
+                        backgroundColor: vars[randomItemFromArray(boxes)],
                         width: \`\${randomNumberInRange(50, 180)}px\`,
                         height: '60px',
                         transform: \`rotate(\${randomNumberInRange(-45, 45)}deg)\`,
@@ -72,6 +47,8 @@ function randomNumberInRange(min: number, max: number): number {
 
 export default {
     ...app,
+    // Overriding the newSourceCode property to provide a custom
+    // page template when a page is created.
     getNewPageInfo(options) {
         const newPageInfo = app.getNewPageInfo?.(options);
 
