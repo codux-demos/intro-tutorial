@@ -55,7 +55,7 @@ export default function NewPage() {
                 />
             ))}
             <h1>Awesome!</h1>
-            <h2>You have just created your first page.</h2>
+            <h2>You have just created your own page.</h2>
             <h2>Now, the sky is the limit ✨</h2>
         </main>
     );
