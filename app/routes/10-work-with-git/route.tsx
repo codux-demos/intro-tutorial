@@ -1,4 +1,3 @@
-import Cloud from '../../../src/assets/cloud.svg?react';
 import { Task10 as Task } from '~/components/tasks/10/task-10';
 import styles from './lesson-10.module.scss';
 import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
@@ -10,8 +9,7 @@ export default function Lesson10() {
             <div className={styles.root}>
                 <Task />
                 <div className={styles.playground}>
-                    <div className={styles.arcs} />
-                    <Cloud className={styles.cloud} />
+                    <div className={styles.sparkles} />
                 </div>
             </div>
             <LessonsFooter previousUrl={LESSON_09} />
