@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import type { ColorName } from '~/globals/colors';
 import { Box } from '~/components/common/box/box';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { CursorFx } from '~/components/fx/cursor-fx/cursor-fx';
@@ -7,32 +6,7 @@ import { Task01 as Task } from '~/components/tasks/01/task-01';
 import styles from './lesson-01.module.scss';
 import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_02 } from '~/router/config';
-
-const boxes: ColorName[] = [
-    'lavender',
-    'turquoiseGreen',
-    'dirtyWhite',
-    'aeroBlue',
-    'hotRed',
-    'hotPink',
-    'goldYellow',
-    'orangeRed',
-    'aeroBlue',
-    'richGreen',
-    'darkLavender',
-    'oliveGreen',
-    'orangeRed',
-    'pastelPink',
-    'dirtyWhite',
-    'richGreen',
-    'oliveGreen',
-    'orangeRed',
-    'turquoiseGreen',
-    'aeroBlue',
-    'darkLavender',
-    'hotRed',
-    'hotPink',
-];
+import { boxes } from 'app/constants';
 
 export default function Lesson01() {
     // on mouse enter fade-out box
