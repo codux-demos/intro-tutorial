@@ -56,6 +56,10 @@ $card-width: 342px;
   transform: rotateY(180deg);
 }
 
+.overlayOpen {
+  transform: rotateY(180deg);
+}
+
 .flipCardFront,
 .flipCardBack {
   position: absolute;

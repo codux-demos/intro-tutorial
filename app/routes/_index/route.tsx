@@ -8,6 +8,7 @@ import XLogo from '../../../src/assets/x.svg?react';
 import DiscordLogo from '../../../src/assets/discord.svg?react';
 import YoutubeLogo from '../../../src/assets/youtube.svg?react';
 import { useState } from 'react';
+import classNames from 'classnames';
 
 export const meta: MetaFunction = () => {
     return [{ title: 'Intro Tutorial' }, { name: 'description', content: 'Welcome to Remix!' }];
@@ -21,7 +22,7 @@ export default function HomePage() {
                     <IntroductionCard />
                 </div>
                 {LESSONS.map((lesson, index) => (
-                    <Lesson lesson={lesson} key={index} />
+                    <Lesson key={index} lesson={lesson} />
                 ))}
             </div>
             <footer className={styles.footer}>
@@ -48,7 +49,7 @@ export default function HomePage() {
 }
 
 function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
-    const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+    const [isOverlayVisible, setIsOverlayVisible] = useState<boolean>(false);
 
     function openOVerlay() {
         if (lesson.url) {
@@ -72,7 +73,11 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
                 } as React.CSSProperties
             }
         >
-            <div className={styles.flipCardInner}>
+            <div
+                className={classNames(styles.flipCardInner, {
+                    [styles.overlayOpen]: !!isOverlayVisible,
+                })}
+            >
                 <div className={styles.flipCardFront}>
                     <p className={styles.cardTitle}>{lesson.title}</p>
                     <p className={styles.cardFooter}>{`LESSON ${lesson.lessonNumber}`}</p>
