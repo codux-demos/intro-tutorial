@@ -16,8 +16,6 @@
 
 .formHeader {
   font: $card-title;
-  text-align: center;
-  padding-top: 20px;
 }
 
 .rememberMe {
@@ -28,7 +26,6 @@
 }
 
 .rememberMe > span {
-  font-family: $font-family-text;
   font-size: 12px;
   font-weight: 700;
 }
@@ -36,7 +33,6 @@
 .confirmButton {
   border: 2px solid $charcoal-black;
   border-radius: 50px;
-  font-weight: 500;
   font-size: 20px;
   padding: 12px 65px;
   cursor: pointer;

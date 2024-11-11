@@ -53,9 +53,9 @@ export const LoginForm: React.FC<LoginFormProps> = ({
             >
                 Sign In
             </button>
-            <span className={styles.forgotPassword} onClick={handleForgotPasswordClick}>
+            <button className={styles.forgotPassword} onClick={handleForgotPasswordClick}>
                 Forgot your password?
-            </span>
+            </button>
             <ForgotPasswordDialog
                 className={styles.forgotPasswordDialog}
                 open={dialogIsOpen}
