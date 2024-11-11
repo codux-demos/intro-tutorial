@@ -1,6 +1,16 @@
 import style from '~/globals/variables.module.scss';
+import { PagesOverlay } from './pages-overlay';
 
-export const LESSONS = [
+interface Lesson {
+    lessonNumber: string;
+    title: string;
+    backgroundColor: string;
+    lessonCoverImage: string;
+    url?: string;
+    lessonContent?: React.ComponentType;
+}
+
+export const LESSONS: Lesson[] = [
     {
         lessonNumber: '01',
         title: "Let's Get Started",
@@ -63,5 +73,19 @@ export const LESSONS = [
         backgroundColor: style.dirtyWhite,
         url: '09-grid-layouts',
         lessonCoverImage: 'url(../../../src/assets/lesson-09-cover.svg)',
+    },
+    {
+        lessonNumber: '10',
+        title: 'Working With Git',
+        backgroundColor: style.orangeRed,
+        url: '10-work-with-git',
+        lessonCoverImage: 'url(../../../src/assets/lesson-10-cover.svg)',
+    },
+    {
+        lessonNumber: '11',
+        title: 'Adding Pages',
+        backgroundColor: style.darkGreen,
+        lessonCoverImage: 'url(../../../src/assets/lesson-11-cover.svg)',
+        lessonContent: PagesOverlay,
     },
 ];
