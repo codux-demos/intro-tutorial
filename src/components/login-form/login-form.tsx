@@ -31,7 +31,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({
     };
 
     return (
-        <form className={classNames(className, styles.formContainer)} onSubmit={handleSubmit}>
+        <form className={classNames(styles.formContainer, className)} onSubmit={handleSubmit}>
             <h2 className={styles.formHeader}>
                 Welcome <br /> Back :)
             </h2>
