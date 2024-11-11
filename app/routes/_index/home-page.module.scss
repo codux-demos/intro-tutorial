@@ -25,16 +25,30 @@ $card-width: 342px;
   }
 }
 
-.cardTitleFlipped {
+.header {
   background-color: rgba(40, 43, 45, 0.3);
-  font: variables.$card-title-hover;
-  color: variables.$white;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 18px;
+  padding: 18px 8px;
+  width: 100%;
+  color: variables.$white;
+}
+
+.lessonContentHeader {
+  background: unset;
+}
+
+.dismiss {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.cardTitleFlipped {
+  font: variables.$card-title-hover;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .gridItemLarge {
@@ -48,7 +62,8 @@ $card-width: 342px;
   position: relative;
 }
 
-.gridItem:hover .flipCardInner {
+.gridItem:hover .flipCardInner,
+.overlayOpen {
   transform: rotateY(180deg);
 }
 
@@ -94,13 +109,17 @@ $card-width: 342px;
   cursor: pointer;
 }
 
-.cardNumber {
+.cardFooter {
   font: variables.$card-number;
   color: variables.$black;
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 16px;
+}
+
+.cardFooter:is(button) {
+  cursor: pointer;
 }
 
 .footer {
