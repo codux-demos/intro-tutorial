@@ -1,0 +1,10 @@
+@import '../tasks/task.module.scss';
+
+.task {
+  background-color: unset;
+
+  .title {
+    padding-top: 0;
+    transform: translateY(-7px);
+  }
+}
