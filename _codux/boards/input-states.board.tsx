@@ -7,7 +7,7 @@ export default createBoard({
     Board: () => (
         <div className={styles.container}>
             <FloatingInput label="Username" />
-            <FloatingInput label="Password" error />
+            <FloatingInput label="Password" error="Wrong password" />
         </div>
     ),
     environmentProps: {

@@ -1,9 +1,11 @@
 .container {
   display: flex;
   gap: 40px;
+  flex-wrap: nowrap;
 }
 
 .card {
   width: 340px;
   height: 450px;
+  flex-shrink: 0;
 }

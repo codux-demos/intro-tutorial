@@ -7,7 +7,7 @@ export interface FloatingInputProps extends React.InputHTMLAttributes<HTMLInputE
     label: string;
     id?: string;
     type?: string;
-    error?: boolean;
+    error?: string;
 }
 
 export const FloatingInput: React.FC<FloatingInputProps> = ({
@@ -46,7 +46,7 @@ export const FloatingInput: React.FC<FloatingInputProps> = ({
             >
                 {label}
             </label>
-            <span className={styles.errorMessage}>This field is required</span>
+            <span className={styles.errorMessage}>{error}</span>
         </div>
     );
 };

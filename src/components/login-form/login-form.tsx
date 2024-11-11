@@ -3,12 +3,13 @@ import styles from './login-form.module.scss';
 import classNames from 'classnames';
 import { FloatingInput } from './floating-input';
 import { RoundCheckbox } from './round-checkbox';
-import { ForgotPasswordDialog } from '../forgot-password-dialog/forgot-password-dialog';
+import { ForgotPasswordDialogView } from '../forgot-password-dialog/forgot-password-dialog-view';
+import { DialogBackdrop } from '../forgot-password-dialog/dialog-backdrop';
 
 export interface LoginFormProps {
     className?: string;
-    errorInUsername?: boolean;
-    errorInPassword?: boolean;
+    errorInUsername?: string;
+    errorInPassword?: string;
     username?: string;
     password?: string;
 }
@@ -49,18 +50,19 @@ export const LoginForm: React.FC<LoginFormProps> = ({
             <button
                 className={styles.confirmButton}
                 type="submit"
-                disabled={errorInUsername || errorInPassword}
+                disabled={!!errorInUsername || !!errorInPassword}
             >
                 Sign In
             </button>
             <button className={styles.forgotPassword} onClick={handleForgotPasswordClick}>
                 Forgot your password?
             </button>
-            <ForgotPasswordDialog
-                className={styles.forgotPasswordDialog}
-                open={dialogIsOpen}
-                onClose={handleClose}
-            />
+            <DialogBackdrop open={dialogIsOpen} onClose={handleClose}>
+                <ForgotPasswordDialogView
+                    className={styles.forgotPasswordDialog}
+                    onClose={handleClose}
+                />
+            </DialogBackdrop>
         </form>
     );
 };
