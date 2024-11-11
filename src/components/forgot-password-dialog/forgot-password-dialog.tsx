@@ -28,6 +28,13 @@ export const ForgotPasswordDialog: React.FC<ForgotPasswordDialogProps> = ({
                     Don't Worry
                 </h2>
                 <FloatingInput label="Your Email" id="email" type="email" />
+                <div className={styles.dialogDescription}>
+                    Enter the email address linked to your account and we’ll send you an email to
+                    reset your password.
+                </div>
+                <button className={styles.resetPasswordButton} onClick={onClose}>
+                    Reset Password
+                </button>
             </div>
         </div>
     );
