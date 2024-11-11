@@ -1,0 +1,18 @@
+@import '../../../src/globals/variables.module.scss';
+
+.pagesOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  padding: 24px;
+  margin: 0px 32px;
+  gap: 16px;
+  text-wrap: pretty;
+
+  h1 {
+    font: $card-title;
+    color: $black;
+  }
+}
