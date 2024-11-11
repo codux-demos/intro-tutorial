@@ -18,7 +18,7 @@ export const ForgotPasswordDialog: React.FC<ForgotPasswordDialogProps> = ({
 
     return (
         <div className={classNames(styles.dialogOverlay, className)} onClick={onClose}>
-            <div className={styles.dialogContent} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.dialogContainer} onClick={(e) => e.stopPropagation()}>
                 <button className={styles.dialogCloseButton} onClick={onClose}>
                     &times;
                 </button>
@@ -27,7 +27,7 @@ export const ForgotPasswordDialog: React.FC<ForgotPasswordDialogProps> = ({
                     <br />
                     Don't Worry
                 </h2>
-                <FloatingInput label="Your Email" id="email" type="email" />
+                <FloatingInput label="Your Email" id="email" type="email" value="hello@mate.com" />
                 <div className={styles.dialogDescription}>
                     Enter the email address linked to your account and we’ll send you an email to
                     reset your password.

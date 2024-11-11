@@ -22,10 +22,10 @@
 
 .errorMessage {
   color: $hot-red;
-  font-size: 12px;
+  font-size: 11px;
   position: absolute;
-  top: 52px;
-  right: 5px;
+  top: 53px;
+  right: 0;
   display: none;
 }
 
@@ -43,5 +43,5 @@
 }
 
 .error ~ .errorMessage {
-  display: block;
+  display: unset;
 }
