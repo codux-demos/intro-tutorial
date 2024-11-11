@@ -29,16 +29,30 @@ $card-width: 342px;
   }
 }
 
-.cardTitleFlipped {
+.header {
   background-color: rgba(40, 43, 45, 0.3);
-  font: $card-title-hover;
-  color: $white;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 18px;
+  padding: 18px 8px;
+  width: 100%;
+  color: $white;
+}
+
+.lessonContentHeader {
+  background: unset;
+}
+
+.dismiss {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.cardTitleFlipped {
+  font: $card-title-hover;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .gridItemLarge {

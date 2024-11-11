@@ -7,6 +7,7 @@ import CoduxLogo from '../../../src/assets/codux-logo.svg?react';
 import XLogo from '../../../src/assets/x.svg?react';
 import DiscordLogo from '../../../src/assets/discord.svg?react';
 import YoutubeLogo from '../../../src/assets/youtube.svg?react';
+import DismissSymbol from '../../../src/assets/dismiss-symbol.svg?react';
 import { useState } from 'react';
 import classNames from 'classnames';
 
@@ -49,18 +50,18 @@ export default function HomePage() {
 }
 
 function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
-    const [isLessonContentVisible, setIsLessonContentVisible] = useState<boolean>(false);
+    const [isShowingContent, setContentVisibility] = useState<boolean>(false);
 
-    function openOVerlay() {
+    function openContent() {
         if (lesson.url) {
             return;
         }
 
-        setIsLessonContentVisible(true);
+        setContentVisibility(true);
     }
 
-    function closeOverlay() {
-        setIsLessonContentVisible(false);
+    function closeContent() {
+        setContentVisibility(false);
     }
 
     const lessonCard = (
@@ -75,7 +76,7 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
         >
             <div
                 className={classNames(styles.flipCardInner, {
-                    [styles.overlayOpen]: !!isLessonContentVisible,
+                    [styles.overlayOpen]: !!isShowingContent,
                 })}
             >
                 <div className={styles.flipCardFront}>
@@ -83,17 +84,27 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
                     <p className={styles.cardFooter}>{`LESSON ${lesson.lessonNumber}`}</p>
                 </div>
                 <div className={styles.flipCardBack}>
-                    {isLessonContentVisible && lesson.lessonContent && <lesson.lessonContent />}
-                    {!isLessonContentVisible && (
-                        <>
-                            <p className={styles.cardTitleFlipped}>{lesson.title}</p>
-                            <button onClick={openOVerlay} className={styles.startLessonButton}>
-                                Start Lesson
+                    <header
+                        className={classNames(styles.header, {
+                            [styles.lessonContentHeader]: isShowingContent,
+                        })}
+                    >
+                        {isShowingContent ? (
+                            <button onClick={closeContent} className={styles.dismiss}>
+                                <DismissSymbol />
                             </button>
-                        </>
+                        ) : (
+                            <p className={styles.cardTitleFlipped}>{lesson.title}</p>
+                        )}
+                    </header>
+                    {isShowingContent && lesson.lessonContent && <lesson.lessonContent />}
+                    {!isShowingContent && (
+                        <button onClick={openContent} className={styles.startLessonButton}>
+                            Start Lesson
+                        </button>
                     )}
-                    {isLessonContentVisible ? (
-                        <button onClick={closeOverlay} className={styles.cardFooter}>
+                    {isShowingContent ? (
+                        <button onClick={closeContent} className={styles.cardFooter}>
                             CLOSE LESSON
                         </button>
                     ) : (

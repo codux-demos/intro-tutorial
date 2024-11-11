@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './pages-overlay.module.scss';
 import { TaskSymbol } from '~/components/common/task-symbol/task-symbol';
 
@@ -11,7 +10,7 @@ export const PagesOverlay = () => {
                 site's structure.
             </p>
             <p>
-                Go to the <strong>Pages Panel</strong> <TaskSymbol name="pages" /> Click the
+                Go to the <strong>Pages Panel</strong> <TaskSymbol name="pages" /> Click the{' '}
                 <strong>New Page</strong> <TaskSymbol name="addPage" /> icon and enter a name to set
                 URL.
             </p>
