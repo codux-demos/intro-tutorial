@@ -49,18 +49,18 @@ export default function HomePage() {
 }
 
 function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
-    const [isOverlayVisible, setIsOverlayVisible] = useState<boolean>(false);
+    const [isLessonContentVisible, setIsLessonContentVisible] = useState<boolean>(false);
 
     function openOVerlay() {
         if (lesson.url) {
             return;
         }
 
-        setIsOverlayVisible(true);
+        setIsLessonContentVisible(true);
     }
 
     function closeOverlay() {
-        setIsOverlayVisible(false);
+        setIsLessonContentVisible(false);
     }
 
     const lessonCard = (
@@ -75,7 +75,7 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
         >
             <div
                 className={classNames(styles.flipCardInner, {
-                    [styles.overlayOpen]: !!isOverlayVisible,
+                    [styles.overlayOpen]: !!isLessonContentVisible,
                 })}
             >
                 <div className={styles.flipCardFront}>
@@ -83,12 +83,16 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
                     <p className={styles.cardFooter}>{`LESSON ${lesson.lessonNumber}`}</p>
                 </div>
                 <div className={styles.flipCardBack}>
-                    {isOverlayVisible && lesson.overlay}
-                    {!isOverlayVisible && <p className={styles.cardTitleFlipped}>{lesson.title}</p>}
-                    <button onClick={openOVerlay} className={styles.startLessonButton}>
-                        Start Lesson
-                    </button>
-                    {isOverlayVisible ? (
+                    {isLessonContentVisible && lesson.lessonContent && <lesson.lessonContent />}
+                    {!isLessonContentVisible && (
+                        <>
+                            <p className={styles.cardTitleFlipped}>{lesson.title}</p>
+                            <button onClick={openOVerlay} className={styles.startLessonButton}>
+                                Start Lesson
+                            </button>
+                        </>
+                    )}
+                    {isLessonContentVisible ? (
                         <button onClick={closeOverlay} className={styles.cardFooter}>
                             CLOSE LESSON
                         </button>

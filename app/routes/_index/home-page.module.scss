@@ -52,10 +52,7 @@ $card-width: 342px;
   position: relative;
 }
 
-.gridItem:hover .flipCardInner {
-  transform: rotateY(180deg);
-}
-
+.gridItem:hover .flipCardInner,
 .overlayOpen {
   transform: rotateY(180deg);
 }
@@ -85,7 +82,6 @@ $card-width: 342px;
   background-position: center;
   background-size: cover;
   color: $white;
-  position: relative;
 }
 
 .cardTitle {

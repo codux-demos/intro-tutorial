@@ -5,9 +5,9 @@ interface Lesson {
     lessonNumber: string;
     title: string;
     backgroundColor: string;
-    url?: string;
     lessonCoverImage: string;
-    overlay?: React.ReactNode;
+    url?: string;
+    lessonContent?: React.ComponentType;
 }
 
 export const LESSONS: Lesson[] = [
@@ -86,6 +86,6 @@ export const LESSONS: Lesson[] = [
         title: 'Adding Pages',
         backgroundColor: style.darkGreen,
         lessonCoverImage: 'url(../../../src/assets/lesson-11-cover.svg)',
-        overlay: <PagesOverlay />,
+        lessonContent: PagesOverlay,
     },
 ];
