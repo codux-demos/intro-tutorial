@@ -3,7 +3,7 @@ import { ForgotPasswordDialog } from '../../../src/components/forgot-password-di
 
 export default createBoard({
     name: 'ForgotPasswordDialog',
-    Board: () => <ForgotPasswordDialog />,
+    Board: () => <ForgotPasswordDialog open />,
     environmentProps: {
         windowWidth: 340,
         windowHeight: 450,

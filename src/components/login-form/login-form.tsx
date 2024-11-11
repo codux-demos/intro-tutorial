@@ -7,9 +7,19 @@ import { ForgotPasswordDialog } from '../forgot-password-dialog/forgot-password-
 
 export interface LoginFormProps {
     className?: string;
+    errorInUsername?: boolean;
+    errorInPassword?: boolean;
+    username?: string;
+    password?: string;
 }
 
-export const LoginForm: React.FC<LoginFormProps> = ({ className }) => {
+export const LoginForm: React.FC<LoginFormProps> = ({
+    className,
+    errorInUsername,
+    errorInPassword,
+    username,
+    password,
+}) => {
     const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
     const handleClose = () => setDialogIsOpen(false);
@@ -21,23 +31,32 @@ export const LoginForm: React.FC<LoginFormProps> = ({ className }) => {
     };
 
     return (
-        <form className={classNames(className, styles.form1)} onSubmit={handleSubmit}>
-            <h2 className={styles.header1}>
+        <form className={classNames(className, styles.formContainer)} onSubmit={handleSubmit}>
+            <h2 className={styles.formHeader}>
                 Welcome <br /> Back :)
             </h2>
-            <FloatingInput label="Username" error className={styles.formInput} />
-            <FloatingInput type="password" label="Password" className={styles.formInput} />
+            <FloatingInput label="Username" error={errorInUsername} value={username} />
+            <FloatingInput
+                type="password"
+                label="Password"
+                error={errorInPassword}
+                value={password}
+            />
             <div className={styles.rememberMe}>
                 <RoundCheckbox name="rememberMe" />
                 <span>Remember me next time!</span>
             </div>
-            <button className={styles.confirmButton} type="submit">
+            <button
+                className={styles.confirmButton}
+                type="submit"
+                disabled={errorInUsername || errorInPassword}
+            >
                 Sign In
             </button>
             <span className={styles.forgotPassword} onClick={handleForgotPasswordClick}>
                 Forgot your password?
             </span>
-            <ForgotPasswordDialog isOpen={dialogIsOpen} onClose={handleClose} />
+            <ForgotPasswordDialog open={dialogIsOpen} onClose={handleClose} />
         </form>
     );
 };

@@ -1,6 +1,6 @@
 @import '../../globals/variables.module.scss';
 
-.form1 {
+.formContainer {
   background-color: #e8e7da;
   color: $font-color;
   padding: 0 40px;
@@ -14,14 +14,10 @@
   height: 100vh;
 }
 
-.header1 {
+.formHeader {
   font: $card-title;
   text-align: center;
   padding-top: 20px;
-}
-
-.formInput {
-  width: 100%;
 }
 
 .rememberMe {
@@ -44,6 +40,12 @@
   font-size: 20px;
   padding: 12px 65px;
   cursor: pointer;
+}
+
+.confirmButton:disabled {
+  color: rgba(0, 0, 0, 0.5);
+  background: rgba(40, 43, 45, 0.1);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .forgotPassword {

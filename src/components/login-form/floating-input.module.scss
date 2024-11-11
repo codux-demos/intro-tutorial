@@ -2,12 +2,14 @@
 
 .inputContainer {
   position: relative;
+  width: 100%;
 }
 
 .floatingInput {
   padding: 10px 10px 16px 0;
   border-bottom: 2px solid;
   width: 100%;
+  font-size: 18px;
 }
 
 .label {
@@ -24,7 +26,7 @@
   color: $hot-red;
   font-size: 11px;
   position: absolute;
-  top: 53px;
+  top: 54px;
   right: 0;
   display: none;
 }
