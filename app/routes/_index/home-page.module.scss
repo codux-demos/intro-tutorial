@@ -23,10 +23,6 @@ $card-width: 342px;
   &:hover {
     z-index: 1;
   }
-
-  &:last-of-type {
-    grid-column: 3 / 4;
-  }
 }
 
 .header {
