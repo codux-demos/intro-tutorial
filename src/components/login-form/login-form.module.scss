@@ -38,6 +38,10 @@
   cursor: pointer;
 }
 
+.confirmButton:not(:disabled):hover {
+  background: #92d0ab;
+}
+
 .confirmButton:disabled {
   color: rgba(0, 0, 0, 0.5);
   background: rgba(40, 43, 45, 0.1);
