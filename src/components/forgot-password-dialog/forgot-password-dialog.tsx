@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import styles from './forgot-password-dialog.module.scss';
 import { FloatingInput } from '../login-form/floating-input';
+import { RainbowLoader } from '../rainbow-loader/rainbow-loader';
 
 export interface ForgotPasswordDialogProps {
     className?: string;
@@ -29,9 +30,19 @@ export const ForgotPasswordDialog: React.FC<ForgotPasswordDialogProps> = ({
         return () => document.removeEventListener('keydown', handleKeyDown);
     }, [onClose]);
 
+    const confirmResetPassword = () => {
+        setTimeout(() => {
+            <RainbowLoader />;
+            onClose?.();
+        }, 3000);
+    };
+
     return (
-        <div className={classNames(styles.dialogOverlay, className)} onClick={onClose}>
-            <div className={styles.dialogContainer} onClick={(e) => e.stopPropagation()}>
+        <div className={styles.dialogOverlay} onClick={onClose}>
+            <div
+                className={classNames(styles.dialogContainer, className)}
+                onClick={(e) => e.stopPropagation()}
+            >
                 <button className={styles.dialogCloseButton} onClick={onClose}>
                     &times;
                 </button>
@@ -45,7 +56,7 @@ export const ForgotPasswordDialog: React.FC<ForgotPasswordDialogProps> = ({
                     Enter the email address linked to your account and we’ll send you an email to
                     reset your password.
                 </div>
-                <button className={styles.resetPasswordButton} onClick={onClose}>
+                <button className={styles.resetPasswordButton} onClick={confirmResetPassword}>
                     Reset Password
                 </button>
             </div>

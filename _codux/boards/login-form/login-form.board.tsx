@@ -1,11 +1,19 @@
 import { createBoard } from '@wixc3/react-board';
 import { LoginForm } from '../../../src/components/login-form/login-form';
+import styles from './login-form.board.module.scss';
 
 export default createBoard({
     name: 'LoginForm',
-    Board: () => <LoginForm />,
+    Board: () => {
+        return (
+            <div className={styles.container}>
+                <LoginForm />
+                <LoginForm errorInUsername errorInPassword />
+            </div>
+        );
+    },
     environmentProps: {
-        windowWidth: 340,
-        windowHeight: 450,
+        windowHeight: 480,
+        windowWidth: 768,
     },
 });

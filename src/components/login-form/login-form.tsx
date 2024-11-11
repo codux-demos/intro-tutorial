@@ -56,7 +56,11 @@ export const LoginForm: React.FC<LoginFormProps> = ({
             <span className={styles.forgotPassword} onClick={handleForgotPasswordClick}>
                 Forgot your password?
             </span>
-            <ForgotPasswordDialog open={dialogIsOpen} onClose={handleClose} />
+            <ForgotPasswordDialog
+                className={styles.forgotPasswordDialog}
+                open={dialogIsOpen}
+                onClose={handleClose}
+            />
         </form>
     );
 };
