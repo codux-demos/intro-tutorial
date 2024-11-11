@@ -1,16 +1,10 @@
 @import '../../globals/variables.module.scss';
 
 .roundCheckboxContainer {
-  display: inline-block;
   position: relative;
   cursor: pointer;
   width: 24px;
   height: 24px;
-}
-
-.roundCheckboxContainer .roundCheckbox {
-  opacity: 0;
-  position: absolute;
 }
 
 .checkmark {
@@ -19,7 +13,6 @@
   left: 0;
   width: 26px;
   height: 26px;
-  background-color: transparent;
   border-radius: 50%;
   border: 2px solid $charcoal-black;
   transition: 0.3s;
