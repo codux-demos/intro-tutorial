@@ -10,8 +10,8 @@ export const PagesOverlay = () => {
                 site's structure.
             </p>
             <p>
-                Go to the <strong>Pages Panel</strong> <TaskSymbol name="pages" /> Click the{' '}
-                <strong>New Page</strong> <TaskSymbol name="addPage" /> icon and enter a name to set
+                Go to the <TaskSymbol name="pages" /> {' '} <strong>Pages Panel</strong> Click the{' '}
+                <TaskSymbol name="addPage" /> <strong>New Page</strong> icon and enter a name to set
                 URL.
             </p>
         </div>
