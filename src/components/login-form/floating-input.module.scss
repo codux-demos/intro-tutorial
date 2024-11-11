@@ -13,7 +13,6 @@
 }
 
 .label {
-  font-family: $font-family-text;
   font-weight: 700;
   position: absolute;
   top: 10px;
@@ -26,7 +25,7 @@
   color: $hot-red;
   font-size: 11px;
   position: absolute;
-  top: 54px;
+  top: 100%;
   right: 0;
   display: none;
 }

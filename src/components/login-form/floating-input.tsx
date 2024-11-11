@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useId, useState } from 'react';
 import styles from './floating-input.module.scss';
 import classNames from 'classnames';
 
@@ -13,7 +13,7 @@ export interface FloatingInputProps extends React.InputHTMLAttributes<HTMLInputE
 export const FloatingInput: React.FC<FloatingInputProps> = ({
     className,
     label,
-    id,
+    id = useId(),
     type = 'text',
     error,
     value: initialValue,
@@ -24,9 +24,8 @@ export const FloatingInput: React.FC<FloatingInputProps> = ({
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value);
 
-    const handleBlur = () => setIsFocused(false);
-
-    const handleFocus = () => setIsFocused(true);
+    const handleFocusChange: React.FocusEventHandler<HTMLInputElement> = (e) =>
+        setIsFocused(e.type === 'focus');
 
     return (
         <div className={classNames(styles.inputContainer, className)}>
@@ -34,16 +33,16 @@ export const FloatingInput: React.FC<FloatingInputProps> = ({
                 className={classNames(styles.floatingInput, error && styles.error)}
                 type={type}
                 id={id}
-                name={id}
+                name={label}
                 onChange={handleChange}
-                onBlur={handleBlur}
-                onFocus={handleFocus}
+                onBlur={handleFocusChange}
+                onFocus={handleFocusChange}
                 value={value}
                 {...props}
             />
             <label
-                className={classNames(styles.label, (isFocused || !!value) && styles.active)}
-                htmlFor={id}
+                className={classNames(styles.label, { [styles.active]: !!isFocused || !!value })}
+                htmlFor={label}
             >
                 {label}
             </label>
