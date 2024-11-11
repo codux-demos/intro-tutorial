@@ -1,4 +1,4 @@
-@import '../../../globals/variables.module.scss';
+@use '../../../globals/variables.module.scss';
 
 :root:hover .cursor {
   display: block;
@@ -17,6 +17,6 @@
   position: absolute;
   width: 1px;
   height: 1px;
-  background: $gold-yellow;
+  background: variables.$gold-yellow;
   border-radius: 50%;
 }
