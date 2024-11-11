@@ -41,7 +41,10 @@ export const FloatingInput: React.FC<FloatingInputProps> = ({
                 value={value}
                 {...props}
             />
-            <label className={classNames(styles.label, isFocused && styles.active)} htmlFor={id}>
+            <label
+                className={classNames(styles.label, (isFocused || !!value) && styles.active)}
+                htmlFor={id}
+            >
                 {label}
             </label>
             <span className={styles.errorMessage}>This field is required</span>
