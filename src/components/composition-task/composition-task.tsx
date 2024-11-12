@@ -24,7 +24,7 @@ export const CompositionTask: React.FC<CompositionTaskProps> = ({ className }) =
                     target="blank"
                     className={styles.link}
                 >
-                    Learn more about what can be done with Boards
+                    Learn more about Boards
                 </a>
             </ol>
         </div>
