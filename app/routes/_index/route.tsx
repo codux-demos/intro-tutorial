@@ -71,6 +71,7 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
                 {
                     '--lesson-cover-image': lesson.lessonCoverImage,
                     '--lesson-bg-color': lesson.backgroundColor,
+                    '--footer-text-color': lesson.footerTextColor,
                 } as React.CSSProperties
             }
         >
@@ -80,8 +81,11 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
                 })}
             >
                 <div className={styles.flipCardFront}>
+                    <header className={classNames(styles.header, styles.lessonName)}>
+                        <p className={styles.cardTitleFlipped}>{lesson.title}</p>
+                    </header>
                     <p className={styles.cardTitle}>{lesson.title}</p>
-                    <p className={styles.cardFooter}>{`LESSON ${lesson.lessonNumber}`}</p>
+                    <p className={styles.frontCardFooter}>{`LESSON ${lesson.lessonNumber}`}</p>
                 </div>
                 <div className={styles.flipCardBack}>
                     <header
@@ -108,7 +112,7 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
                             CLOSE LESSON
                         </button>
                     ) : (
-                        <p className={styles.cardFooter}>{`LESSON ${lesson.lessonNumber}`}</p>
+                        <p className={styles.backCardFooter}>{`LESSON ${lesson.lessonNumber}`}</p>
                     )}
                 </div>
             </div>

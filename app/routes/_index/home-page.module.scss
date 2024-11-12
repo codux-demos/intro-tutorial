@@ -29,13 +29,18 @@ $card-width: 342px;
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 18px 8px;
+  padding: 24px;
   width: 100%;
   color: variables.$white;
 }
 
-.lessonContentHeader {
+.lessonContentHeader,
+.lessonName {
   background: unset;
+}
+
+.lessonName {
+  color: variables.$charcoal-black;
 }
 
 .dismiss {
@@ -111,15 +116,20 @@ $card-width: 342px;
   border-width: 0px;
 }
 
-.cardFooter {
+.frontCardFooter,
+.backCardFooter {
   font: variables.$card-number;
-  color: variables.$black;
+  color: variables.$charcoal-black;
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 16px;
   background-color: unset;
   border: 0;
+}
+
+.backCardFooter {
+  color: var(--footer-text-color);
 }
 
 .cardFooter:is(button) {
