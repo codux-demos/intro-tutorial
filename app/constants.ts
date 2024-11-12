@@ -1,0 +1,27 @@
+import { ColorName } from '~/globals/colors';
+
+export const boxes: ColorName[] = [
+    'lavender',
+    'turquoiseGreen',
+    'dirtyWhite',
+    'aeroBlue',
+    'hotRed',
+    'hotPink',
+    'goldYellow',
+    'orangeRed',
+    'aeroBlue',
+    'richGreen',
+    'darkLavender',
+    'oliveGreen',
+    'orangeRed',
+    'pastelPink',
+    'dirtyWhite',
+    'richGreen',
+    'oliveGreen',
+    'orangeRed',
+    'turquoiseGreen',
+    'aeroBlue',
+    'darkLavender',
+    'hotRed',
+    'hotPink',
+];

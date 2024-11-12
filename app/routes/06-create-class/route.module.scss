@@ -1,4 +1,4 @@
-@import '../../../src/globals/variables.module.scss';
+@use '../../../src/globals/variables.module.scss';
 .newClass {
-  background: $charcoal-black;
+  background: variables.$charcoal-black;
 }
