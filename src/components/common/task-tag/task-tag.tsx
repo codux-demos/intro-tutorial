@@ -1,16 +1,15 @@
+import { PropsWithChildren } from 'react';
 import styles from './task-tag.module.scss';
 import { TaskSymbol } from '../task-symbol/task-symbol';
-import { ReactNode } from 'react';
 
 type TypeName = 'stage' | 'stage-comp' | 'tree' | 'selector';
 
 export interface TaskTagProps {
     type: TypeName;
     chevron?: boolean;
-    children: ReactNode;
 }
 
-export const TaskTag = ({ chevron = false, type, children }: TaskTagProps) => {
+export const TaskTag = ({ chevron = false, type, children }: TaskTagProps & PropsWithChildren) => {
     return (
         <span className={styles[type]}>
             {chevron && <TaskSymbol name="chevron" />}

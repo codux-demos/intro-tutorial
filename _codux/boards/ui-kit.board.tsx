@@ -1,13 +1,14 @@
 import { createBoard, Variant } from '@wixc3/react-board';
 import { TaskTag } from '~/components/common/task-tag/task-tag';
 import { Box } from '~/components/common/box/box';
-import styles from './ui-k.board.module.scss';
+import styles from './ui-kit.board.module.scss';
 import taskStyles from '../../src/components/tasks/task.module.scss';
 import { Pupil } from '../../src/components/pupil/pupil';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useEffect, useState } from 'react';
 import { SocialIcon } from '~/components/social-icon/social-icon';
 import { TaskSymbol } from '~/components/common/task-symbol/task-symbol';
+import classNames from 'classnames';
 
 export default createBoard({
     name: 'UI Kit',
@@ -26,26 +27,26 @@ export default createBoard({
                         across your project through the Add Elements panel, under the{' '}
                         <b>UI Kit section</b>.{' '}
                     </p>
-                    <ol>
+                    <ol className={styles.taskList}>
+                        <br />
                         <li>
-                            <br />
-                            1. Make <TaskTag type="tree" children="div.menuIcon" /> a part of the UI
+                            Make <TaskTag type="tree" children="div.menuIcon" /> a part of the UI
                             Kit: Right click on it, select <b>‘Create Variant’</b> and give it a
                             name.
                         </li>
+                        <br />
                         <li>
-                            <br />
-                            2. Open the <TaskSymbol name="add" />
+                            Open the <TaskSymbol name="add" />
                             Add Elements Panel and add the variant from the <b>UI Kit.</b>
                         </li>
                         <br />
                     </ol>
                     <div id="drop-area" className={styles.dropArea}></div>
                 </div>
-                <div className={styles.uiKitContent}>
-                    <div className={styles.navSection}>
+                <div className={styles.uiKits}>
+                    <div className={classNames(styles.uiKitContent, styles.navSection)}>
                         <h2 className={styles.sectionTitle}>NAVIGATION</h2>
-                        <div className={styles.uiKitSection}>
+                        <section className={styles.uiKitSection}>
                             <div className={styles.sectionItem}>
                                 <h3 className={styles.uiTitle}>Menu</h3>
                                 <div data-menu className={taskStyles.menuIcon}>
@@ -65,11 +66,11 @@ export default createBoard({
                             <Variant name="Start Button">
                                 <button className={taskStyles.startLessonButton}>Start</button>
                             </Variant>
-                        </div>
+                        </section>
                     </div>
-                    <div className={styles.typographySection}>
+                    <div className={classNames(styles.typographySection, styles.uiKitContent)}>
                         <h2 className={styles.sectionTitle}>TYPOGRAPHY</h2>
-                        <div className={styles.uiKitSection}>
+                        <section className={styles.uiKitSection}>
                             <div className={styles.sectionItem}>
                                 <h3 className={styles.uiTitle}>Title</h3>
                                 <Variant name="Title">
@@ -88,14 +89,16 @@ export default createBoard({
                                     </Variant>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
-                    <div className={styles.graphicsSection}>
+                    <div className={classNames(styles.graphicsSection, styles.uiKitContent)}>
                         <h2 className={styles.sectionTitle}>GRAPHICS</h2>
-                        <div className={styles.uiKitSection}>
+                        <section className={styles.uiKitSection}>
                             <div className={styles.sectionItem}>
                                 <h3 className={styles.uiTitle}>Elements</h3>
-                                <Pupil />
+                                <Variant name="Pupil">
+                                    <Pupil />
+                                </Variant>
                             </div>
                             <div className={styles.sectionItem}>
                                 <h3 className={styles.uiTitle}>Icons</h3>
@@ -144,7 +147,7 @@ export default createBoard({
                                     </Variant>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
                 <ConfettiFx
