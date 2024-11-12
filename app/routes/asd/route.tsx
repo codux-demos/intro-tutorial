@@ -1,12 +1,4 @@
-import defineRemixApp, { RouteExtraInfo } from '@wixc3/define-remix-app';
-import { type IReactApp } from '@wixc3/app-core';
 
-const app = defineRemixApp({
-    appPath: '../app',
-    routingPattern: 'folder(route)',
-});
-
-const NEW_PAGE_TEMPLATE = `
 import React from 'react';
 import { boxes } from '../../constants';
 import vars from '~/globals/variables.module.scss';
@@ -30,22 +22,3 @@ function randomItemFromArray<T>(array: T[]): T {
 function randomNumberInRange(min: number, max: number): number {
     return Math.random() * (max - min) + min;
 }
-`;
-
-export default {
-    ...app,
-    // Overriding the newSourceCode property to provide a custom
-    // page template when a page is created.
-    getNewPageInfo(options) {
-        const newPageInfo = app.getNewPageInfo?.(options);
-
-        if (!newPageInfo) {
-            return;
-        }
-
-        return {
-            ...newPageInfo,
-            newPageSourceCode: NEW_PAGE_TEMPLATE,
-        };
-    },
-} as IReactApp<RouteExtraInfo>;
