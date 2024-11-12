@@ -3,14 +3,14 @@ import classNames from 'classnames';
 import styles from './forgot-password-dialog-view.module.scss';
 import { FloatingInput } from '../login-form/floating-input';
 
-export interface ForgotPasswordDialogViewProps {
+export interface ForgotPasswordViewProps {
     onClose?: () => void;
     email?: string;
     autofocus?: boolean;
 }
 
-export const ForgotPasswordDialogView: React.FC<
-    ForgotPasswordDialogViewProps & React.FormHTMLAttributes<HTMLFormElement>
+export const ForgotPasswordView: React.FC<
+    ForgotPasswordViewProps & React.FormHTMLAttributes<HTMLFormElement>
 > = ({ className, onClose, onSubmit, email, autofocus, ...props }) => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();

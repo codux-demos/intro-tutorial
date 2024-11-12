@@ -1,7 +1,7 @@
 import { createBoard } from '@wixc3/react-board';
 import styles from './composition.board.module.scss';
 import { CompositionTask } from '~/components/composition-task/composition-task';
-import { LoginFormState } from '~/components/login-form-state/login-form-state';
+import { LoginForm } from '~/components/login-form/login-form';
 
 export default createBoard({
     name: 'Login Form States',
@@ -9,15 +9,14 @@ export default createBoard({
         return (
             <div className={styles.container}>
                 <CompositionTask className={styles.card} />
-                <LoginFormState state="login" className={styles.card} />
-                <LoginFormState
-                    state="login"
+                <LoginForm className={styles.card} />
+                <LoginForm
                     errorInUsername="Wrong username"
                     errorInPassword="Wrong password"
                     className={styles.card}
                 />
-                <LoginFormState state="loading" className={styles.card} />
-                <LoginFormState state="forgot-password" className={styles.card} />
+                <LoginForm isLoading className={styles.card} />
+                <LoginForm isForgotPassword className={styles.card} />
             </div>
         );
     },
