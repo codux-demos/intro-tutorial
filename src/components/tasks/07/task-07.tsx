@@ -5,7 +5,7 @@ export const Task07 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>
-                <b>07</b> / 10
+                <b>07</b> / 09
             </div>
             <div className={styles.title}>Components</div>
             <ol start={0} className={styles.desc}>
@@ -19,7 +19,7 @@ export const Task07 = () => {
                 <li>Select one of the circles on the right.</li>
                 <li>
                     Open the <TaskSymbol name="props" />
-                    <b>{' '}Properties Panel</b> on the right. Change the <b>iconDirection</b> property
+                    <b> Properties Panel</b> on the right. Change the <b>iconDirection</b> property
                     and see what happens.
                 </li>
                 <li>

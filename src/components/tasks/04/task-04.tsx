@@ -6,7 +6,7 @@ export const Task04 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>
-                <b>04</b> / 10
+                <b>04</b> / 09
             </div>
             <div className={styles.title}>Computed Styles Panel</div>
             <ol start={0} className={styles.desc}>

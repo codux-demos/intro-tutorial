@@ -6,7 +6,7 @@ export const Task06 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>
-                <b>06</b> / 10
+                <b>06</b> / 09
             </div>
             <div className={styles.title}>Create Class</div>
             <ol start={0} className={styles.desc}>
@@ -17,9 +17,10 @@ export const Task06 = () => {
                 <li>
                     Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
-                <li>select
-                    
-                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel</b>.</li>
+                <li>
+                    select
+                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel</b>.
+                </li>
                 <li>
                     To apply new style, open the
                     <br />

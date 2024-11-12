@@ -6,7 +6,7 @@ export const Task09 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>
-                <b>09</b> / 10
+                <b>09</b> / 09
             </div>
             <div className={styles.title}>Grid Layout</div>
             <ol start={0} className={styles.desc}>
@@ -31,8 +31,8 @@ export const Task09 = () => {
                 <li>Now, find the white box on the stage and select it.</li>
                 <li>
                     To move the white box to be in the right place, scroll to
-                    <b> Grid Child</b> and make the<b> rows</b> and <b>columns</b> start at <b>4</b> and
-                    end at
+                    <b> Grid Child</b> and make the<b> rows</b> and <b>columns</b> start at <b>4</b>{' '}
+                    and end at
                     <b> 5</b>.
                 </li>
             </ol>
