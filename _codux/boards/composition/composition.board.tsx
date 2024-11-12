@@ -4,7 +4,7 @@ import { CompositionTask } from '~/components/composition-task/composition-task'
 import { LoginFormState } from '~/components/login-form-state/login-form-state';
 
 export default createBoard({
-    name: 'Composition',
+    name: 'Login Form States',
     Board: () => {
         return (
             <div className={styles.container}>
