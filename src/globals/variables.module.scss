@@ -7,12 +7,14 @@ $charcoal-black: #282b2d;
 $lavender: #b6c1f0;
 $lilac: #cc6fd6;
 $dark-lavender: #6a55a2;
+$dark-lavender-80: #6a55a2bc;
 $olive-green: #a09d2a;
 $rich-green: #268040;
+$dark-green: #269d5f;
 $turquoise-green: #92d0ab;
 $aero-blue: #7fc2f4;
 $gold-yellow: #ffb615;
-$dana-pink: #ffd9e0;
+$baby-pink: #ffd9e0;
 $hot-pink: #f486c9;
 $pastel-pink: #fa9dbc;
 $hot-red: #ff2f2f;
@@ -48,6 +50,13 @@ $playground-bg-color: $charcoal-black;
 $playground-border-radius: 1.25rem;
 $playground-width: 400px;
 $playground-height: 560px;
+// Home page
+$header: normal 800 3.625rem/5.715rem $font-family-display;
+$description: normal 400 18px $font-family-display;
+$card-title: normal 800 40px $font-family-display;
+$card-title-hover: normal 400 16px/14px $font-family-text;
+$card-number: normal 400 12px $font-family-text;
+$card-button-text: normal 400 15px/26px $font-family-text;
 
 :export {
   white: $white;
@@ -60,12 +69,14 @@ $playground-height: 560px;
   darkLavender: $dark-lavender;
   oliveGreen: $olive-green;
   richGreen: $rich-green;
+  darkGreen: $dark-green;
   turquoiseGreen: $turquoise-green;
   aeroBlue: $aero-blue;
   goldYellow: $gold-yellow;
-  danaPink: $dana-pink;
+  babyPink: $baby-pink;
   hotPink: $hot-pink;
   pastelPink: $pastel-pink;
   hotRed: $hot-red;
   orangeRed: $orange-red;
+  darkLavender80: $dark-lavender-80;
 }

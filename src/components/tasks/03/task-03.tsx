@@ -1,6 +1,7 @@
 import styles from './task-03.module.scss';
 import { TaskSymbol } from '../../common/task-symbol/task-symbol';
 import { TaskTag } from '../../common/task-tag/task-tag';
+import EditModeSymbol from '../../../assets/edit-mode.svg?react';
 
 export const Task03 = () => {
     return (
@@ -11,18 +12,17 @@ export const Task03 = () => {
             <div className={styles.title}>Add Elements</div>
             <ol start={0} className={styles.desc}>
                 <li>
-                    The <b>Add Elements Panel</b> lets you add new HTML elements
-                    and components. You can find it on the <b>Elements Panel</b>
-                    . Let’s add the missing pupil to fix this bauhaus poster.
+                    The <b>Add Elements Panel</b> lets you add new HTML elements and components. You
+                    can find it on the <b>Elements Panel</b>. Let’s add the missing pupil to fix
+                    this bauhaus poster.
                 </li>
                 <li>
-                    On the <b>Elements Panel</b>, hover over <br />{' '}
-                    <TaskSymbol name="component" />
-                    <b>Lesson03</b> and <TaskSymbol name="edit" /> edit it.
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
+                <li>Select the top eye.</li>
                 <li>
-                    Now, click <TaskSymbol name="add" /> <b>Add</b> and in the{' '}
-                    <b>Add Elements Panel</b> find the
+                    Now, click <TaskSymbol name="add" />
+                    to open the Add Elements Panel and find the
                     <TaskSymbol name="component" />
                     <b>Pupil</b> component.
                 </li>
@@ -30,8 +30,8 @@ export const Task03 = () => {
                     Finally, drag it from the <b>Add Elements Panel</b> into{' '}
                     <TaskTag type="tree">div.eye.top</TaskTag>
                     on the <br />
-                    <b>Elements Panel</b>. You can also drag it directly into
-                    the top eye, on the stage.
+                    <b>Elements Panel</b>. You can also drag it directly into the top eye, on the
+                    stage.
                 </li>
             </ol>
         </div>

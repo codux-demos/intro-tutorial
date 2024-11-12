@@ -1,0 +1,27 @@
+@use '../../globals/variables.module.scss';
+
+.root {
+  display: flex;
+  background-color: variables.$charcoal-black;
+  height: 100%;
+  color: variables.$white;
+  padding: 30px 60px 60px;
+  align-items: center;
+}
+
+.body {
+  flex-grow: 1;
+}
+
+.title {
+  font: variables.$header;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+.description {
+  font: variables.$description;
+  line-height: 28px;
+  margin-bottom: 30px;
+  width: 436px;
+}

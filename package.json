@@ -1,34 +1,49 @@
 {
   "name": "codux-intro-tutorial",
   "private": true,
-  "version": "1.0.0",
+  "sideEffects": false,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc"
   },
   "dependencies": {
+    "@remix-run/node": "^2.14.0",
+    "@remix-run/react": "^2.14.0",
+    "@remix-run/serve": "^2.14.0",
+    "@wixc3/define-remix-app": "^4.5.1",
     "classnames": "^2.5.1",
+    "isbot": "^5.1.17",
     "react": "^18.3.1",
     "react-canvas-confetti": "^2.0.7",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "remix-utils": "^7.7.0"
   },
   "devDependencies": {
-    "@types/node": "^22.7.5",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^8.8.1",
-    "@typescript-eslint/parser": "^8.8.1",
-    "@vitejs/plugin-react": "^4.3.2",
+    "@remix-run/dev": "^2.12.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.13.0",
+    "@typescript-eslint/parser": "^8.13.0",
+    "@vitejs/plugin-react": "^4.3.3",
     "@wixc3/react-board": "^4.3.3",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.12",
-    "sass": "^1.79.4",
-    "typescript": "~5.6.3",
-    "vite": "^5.4.8",
-    "vite-plugin-svgr": "^4.2.0"
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.14.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "sass": "^1.80.6",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-plugin-svgr": "^4.3.0",
+    "vite-tsconfig-paths": "^5.1.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
