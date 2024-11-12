@@ -1,0 +1,50 @@
+@import '../../globals/variables.module.scss';
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.floatingInput {
+  padding: 10px 10px 4px 0;
+  background: unset;
+  border: none;
+  border-bottom: 2px solid;
+  width: 100%;
+  font-size: 18px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.label {
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.errorMessage {
+  color: $hot-red;
+  font-size: 11px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+}
+
+.active {
+  top: -8px;
+  font-size: 10px;
+}
+
+.error,
+.error ~ .label {
+  color: $hot-red;
+}
+
+.error ~ .errorMessage {
+  display: unset;
+}
