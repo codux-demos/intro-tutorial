@@ -76,13 +76,6 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '10',
-        title: 'Working With Git',
-        backgroundColor: style.orangeRed,
-        url: '10-work-with-git',
-        lessonCoverImage: 'url(../../../src/assets/lesson-10-cover.svg)',
-    },
-    {
-        lessonNumber: '11',
         title: 'Adding Pages',
         backgroundColor: style.darkGreen,
         lessonCoverImage: 'url(../../../src/assets/lesson-11-cover.svg)',
