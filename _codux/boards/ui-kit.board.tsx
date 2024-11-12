@@ -14,8 +14,16 @@ export default createBoard({
     name: 'UI Kit',
     Board: () => {
         const [lessonSolved, setLessonSolved] = useState(false);
+
         useEffect(() => {
-            setLessonSolved(isSolved());
+            const solved = isSolved();
+            setLessonSolved(solved);
+
+            if (solved) {
+                setTimeout(() => {
+                    setLessonSolved(false);
+                }, 4000);
+            }
         }, []);
 
         return (
@@ -150,13 +158,7 @@ export default createBoard({
                         </section>
                     </div>
                 </div>
-                <ConfettiFx
-                    maxParticles={200}
-                    show={lessonSolved}
-                    style={{
-                        display: lessonSolved ? 'block' : 'none',
-                    }}
-                />
+                {lessonSolved && <ConfettiFx maxParticles={200} show={lessonSolved} />}
             </div>
         );
     },

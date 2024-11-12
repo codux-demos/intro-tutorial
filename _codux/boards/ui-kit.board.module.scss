@@ -25,10 +25,11 @@
 .dropArea {
   width: 174px;
   border: 1px dashed black;
-  place-content: center;
-  text-align: center;
   padding: 4px 0;
   height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropArea:empty::before {
