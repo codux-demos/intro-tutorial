@@ -1,12 +1,13 @@
 import styles from './task-tag.module.scss';
 import { TaskSymbol } from '../task-symbol/task-symbol';
+import { ReactNode } from 'react';
 
 type TypeName = 'stage' | 'stage-comp' | 'tree' | 'selector';
 
 export interface TaskTagProps {
     type: TypeName;
     chevron?: boolean;
-    children: string;
+    children: ReactNode;
 }
 
 export const TaskTag = ({ chevron = false, type, children }: TaskTagProps) => {
