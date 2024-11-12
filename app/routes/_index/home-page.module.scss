@@ -43,6 +43,8 @@ $card-width: 342px;
   display: block;
   margin-left: auto;
   cursor: pointer;
+  background-color: unset;
+  border: 0;
 }
 
 .cardTitleFlipped {
@@ -107,6 +109,7 @@ $card-width: 342px;
   background-color: variables.$white;
   color: variables.$black;
   cursor: pointer;
+  border-width: 0px;
 }
 
 .cardFooter {
@@ -116,6 +119,8 @@ $card-width: 342px;
   bottom: 0;
   width: 100%;
   padding: 16px;
+  background-color: unset;
+  border: 0;
 }
 
 .cardFooter:is(button) {
