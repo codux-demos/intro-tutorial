@@ -1,0 +1,70 @@
+@use '../../../src/globals/variables.module.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: variables.$lesson-bg-color;
+  font-family: variables.$font-family-text;
+  padding: variables.$lesson-padding;
+  gap: variables.$lesson-gap;
+  height: 641px;
+
+  .playground {
+    overflow: hidden;
+    // workaround to fix background bleed (when border-radius)
+    background: linear-gradient(
+      variables.$playground-bg-color,
+      variables.$playground-bg-color 95%,
+      variables.$lesson-bg-color 95%
+    );
+    border-radius: variables.$playground-border-radius;
+    width: variables.$playground-width;
+    height: variables.$playground-height;
+
+    // lesson specific
+    position: relative;
+  }
+}
+
+// lesson specific
+.arcs {
+  position: absolute;
+  width: 702px;
+  height: 702px;
+  left: 50px;
+  top: 50px;
+  background: radial-gradient(
+    variables.$charcoal-black 80px,
+    variables.$olive-green 80px,
+    variables.$olive-green 110px,
+    variables.$dirty-white 110px,
+    variables.$dirty-white 140px,
+    variables.$turquoise-green 140px,
+    variables.$turquoise-green 170px,
+    variables.$rich-green 170px,
+    variables.$rich-green 200px,
+    variables.$aero-blue 200px,
+    variables.$aero-blue 230px,
+    variables.$dark-lavender 230px,
+    variables.$dark-lavender 260px,
+    variables.$hot-pink 260px,
+    variables.$hot-pink 290px,
+    variables.$pastel-pink 290px,
+    variables.$pastel-pink 320px,
+    variables.$hot-red 320px,
+    variables.$hot-red 350px,
+    rgba(0, 0, 0, 0) 350px,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.cloud {
+  position: absolute;
+  fill: variables.$baby-pink;
+  width: variables.$playground-width;
+  height: 260px;
+  left: 0px;
+  top: 300px;
+  z-index: 1;
+}

@@ -1,0 +1,54 @@
+@import '../../globals/variables.module.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: $charcoal-black;
+}
+
+svg {
+  width: 80%;
+  align-self: end;
+  margin-top: 35px;
+}
+
+svg > path {
+  animation: rise 1s forwards;
+  transform-origin: bottom right;
+  opacity: 0;
+}
+
+svg > path:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+
+svg > path:nth-of-type(3) {
+  animation-delay: 1s;
+}
+
+svg > path:nth-of-type(4) {
+  animation-delay: 1.5s;
+}
+
+svg > path:nth-of-type(5) {
+  animation-delay: 2s;
+}
+
+.loaderText {
+  font-size: 14px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+@keyframes rise {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}

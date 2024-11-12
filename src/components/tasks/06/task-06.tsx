@@ -19,8 +19,7 @@ export const Task06 = () => {
                 </li>
                 <li>
                     select
-                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel</b>.
-                </li>
+                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel</b>.</li>
                 <li>
                     To apply new style, open the
                     <br />

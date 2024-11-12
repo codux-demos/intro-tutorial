@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: nowrap;
+  padding: 90px 40px 50px;
+}
+
+.card {
+  width: 340px;
+  height: 450px;
+  flex-shrink: 0;
+}

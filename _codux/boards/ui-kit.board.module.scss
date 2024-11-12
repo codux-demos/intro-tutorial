@@ -1,0 +1,100 @@
+@import '../../src/globals/variables.module.scss';
+
+.root {
+  display: flex;
+  height: 100vh;
+  padding: 53px 45px 52px;
+  gap: 58px;
+}
+
+.task {
+  width: 250px;
+  font: 15px/26px $font-family-text;
+}
+
+.boardTitle {
+  font: $task-font-title;
+  margin-bottom: 36px;
+}
+
+.taskList {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.dropArea {
+  width: 174px;
+  border: 1px dashed black;
+  padding: 4px 0;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropArea:empty::before {
+  content: 'Drop variant here';
+  color: #a7a7a7;
+}
+
+.uiKits {
+  display: flex;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  height: 34px;
+  align-content: center;
+  margin-bottom: 7px;
+  padding-left: 30px;
+}
+
+.uiKitSection {
+  background-color: #f5f5f5;
+  padding-top: 30px;
+  padding-left: 30px;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.uiTitle {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.uiKitContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.navSection {
+  width: 226px;
+}
+
+.typographySection {
+  width: 335px;
+}
+
+.paragraphBox {
+  width: 250px;
+}
+
+.graphicsSection {
+  width: 240px;
+}
+
+.sectionItem {
+  margin-bottom: 30px;
+}
+
+.iconContainer {
+  display: flex;
+  column-gap: 4px;
+}
+
+.socialContainer {
+  height: 30px;
+  display: flex;
+  column-gap: 15px;
+}

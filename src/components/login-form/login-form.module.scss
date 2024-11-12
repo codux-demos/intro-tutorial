@@ -1,0 +1,62 @@
+@import '../../globals/variables.module.scss';
+
+.formContainer {
+  background-color: #e8e7da;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.formHeader {
+  font: $card-title;
+  text-align: center;
+}
+
+.rememberMe {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rememberMe > span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.confirmButton {
+  background: unset;
+  border: 2px solid $charcoal-black;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 12px 65px;
+  cursor: pointer;
+}
+
+.confirmButton:not(:disabled):hover {
+  background: #92d0ab;
+}
+
+.confirmButton:disabled {
+  color: rgba(0, 0, 0, 0.5);
+  background: rgba(40, 43, 45, 0.1);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.forgotPassword {
+  background: unset;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.forgotPasswordDialog {
+  max-width: 340px;
+}
