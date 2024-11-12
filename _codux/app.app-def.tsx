@@ -8,7 +8,6 @@ const app = defineRemixApp({
 
 const NEW_PAGE_TEMPLATE = `
 import React from 'react';
-import { boxes } from '../../constants';
 import vars from '~/globals/variables.module.scss';
 import Boxes from '../../../src/assets/boxes.svg?react';
 
@@ -21,14 +20,6 @@ export default function NewPage() {
             <h2>Now, the sky is the limit ✨</h2>
         </main>
     );
-}
-
-function randomItemFromArray<T>(array: T[]): T {
-    return array[Math.floor(Math.random() * array.length)];
-}
-
-function randomNumberInRange(min: number, max: number): number {
-    return Math.random() * (max - min) + min;
 }
 `;
 
