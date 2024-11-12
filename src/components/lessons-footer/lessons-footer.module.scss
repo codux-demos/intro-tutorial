@@ -1,0 +1,25 @@
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 24px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.navButtons {
+    display: flex;
+    gap: 8px
+}
+
+.boldText {
+    font-weight: 800;
+}

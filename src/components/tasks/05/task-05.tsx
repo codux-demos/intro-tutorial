@@ -6,7 +6,7 @@ export const Task05 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>
-                <b>05</b> / 10
+                <b>05</b> / 09
             </div>
             <div className={styles.title}>Styles Panel</div>
             <ol start={0} className={styles.desc}>
@@ -16,11 +16,13 @@ export const Task05 = () => {
                     <b> selectors</b>. Let's use them to adjust spacing.
                 </li>
                 <li>
-                    To bring the circles closer together, we need to adjust their margins. <br></br>{' '}
-                    Edit
-                    <TaskSymbol name="component" />
-                    <b>Lesson05</b> and select any circle on the stage.
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
                 </li>
+                <li>Select one of the letters on the right.</li>
+                <li>
+                    To bring the circles closer together, we need to adjust their margins. <br></br>{' '}
+                </li>
+
                 <li>
                     Now, open the
                     <TaskSymbol name="styles" />
@@ -32,9 +34,8 @@ export const Task05 = () => {
                     change margins as they share the same selector.
                 </li>
                 <li>
-                    Next, let's adjust the padding of the button below. Select the button and then
-                    scroll to <b>Padding</b>. Set it to
-                    <b> 15px</b>.
+                    Next, let&apos;s adjust the padding of the button below. Select the button, open
+                    spacing section and set <b>Padding</b> to<b> 15px</b>.
                 </li>
             </ol>
         </div>

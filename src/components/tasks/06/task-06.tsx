@@ -6,7 +6,7 @@ export const Task06 = () => {
     return (
         <div className={styles.task}>
             <div className={styles.progress}>
-                <b>06</b> / 10
+                <b>06</b> / 09
             </div>
             <div className={styles.title}>Create Class</div>
             <ol start={0} className={styles.desc}>
@@ -15,17 +15,17 @@ export const Task06 = () => {
                     change the background color by creating a class.
                 </li>
                 <li>
-                    <TaskSymbol name="edit" />
-                    Edit <TaskSymbol name="component" />
-                    <b>Lesson06</b> and select
-                    <br />
-                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                </li>
+                <li>
+                    select
+                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel</b>.
                 </li>
                 <li>
                     To apply new style, open the
                     <br />
                     <TaskSymbol name="styles" />
-                    <b>Styles Panel</b> and click on{' '}
+                    <b> Styles Panel</b> and click on{' '}
                     <span style={{ fontSize: '13px', color: '#0000EE' }}>+ Add</span>
                     <br /> next to classes, to add a new class.
                 </li>

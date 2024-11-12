@@ -1,0 +1,77 @@
+@use '../../../src/globals/variables.module.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: variables.$lesson-bg-color;
+  font-family: variables.$font-family-text;
+  padding: variables.$lesson-padding;
+  gap: variables.$lesson-gap;
+  height: 641px;
+
+  .playground {
+    overflow: hidden;
+    background-color: variables.$playground-bg-color;
+    border-radius: variables.$playground-border-radius;
+    width: variables.$playground-width;
+    height: variables.$playground-height;
+
+    // lesson specific
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 60px 60px 60px 60px;
+    padding: 130px 75px 130px 75px;
+    gap: 20px;
+  }
+}
+
+// lesson specific
+.row {
+  display: flex;
+  justify-content: space-between;
+  color: variables.$charcoal-black;
+  font-size: 1.875rem;
+
+  .box01 {
+    border-radius: variables.$box-border-radius-circle;
+    width: 60px;
+  }
+
+  .box02 {
+    border-radius: variables.$box-border-radius-rounded;
+    width: 180px;
+  }
+
+  .box03 {
+    border-radius: variables.$box-border-radius-rounded;
+    width: 120px;
+  }
+
+  .box04 {
+    border-radius: variables.$box-border-radius-rounded;
+    width: 120px;
+  }
+
+  .box05 {
+    border-radius: variables.$box-border-radius-rounded;
+    width: 250px;
+  }
+
+  .box06 {
+    border-radius: variables.$box-border-radius-circle;
+    width: 60px;
+  }
+
+  .box07 {
+    border-radius: variables.$box-border-radius-rounded;
+    width: 110px;
+  }
+
+  .box08 {
+    border-radius: variables.$box-border-radius-circle;
+    width: 60px;
+  }
+}

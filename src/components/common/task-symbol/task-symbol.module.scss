@@ -1,7 +1,7 @@
-@import '../../../globals/variables.module.scss';
+@use '../../../globals/variables.module.scss';
 
 :root {
-  font-family: $font-family-text;
+  font-family: variables.$font-family-text;
   shape-rendering: geometricPrecision;
 }
 
@@ -14,8 +14,10 @@
 .hamburger,
 .more,
 .branch,
+.pages,
+.addPage,
 .styles {
-  filter: drop-shadow(0 0 2px $symbol-shadow);
+  filter: drop-shadow(0 0 2px variables.$symbol-shadow);
   vertical-align: -5px;
   padding-right: 2px;
   padding-left: 2px;
@@ -26,7 +28,7 @@
 .commit,
 .sync,
 .preview {
-  filter: drop-shadow(0 0 2px $symbol-shadow);
+  filter: drop-shadow(0 0 2px variables.$symbol-shadow);
   vertical-align: -5px;
   padding-right: 2px;
   padding-left: 2px;
@@ -36,8 +38,8 @@
 
 .component {
   vertical-align: -1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
   width: 14px;
   height: 14px;
 }
@@ -56,4 +58,11 @@
   padding-bottom: 2px;
   width: auto;
   height: 12px;
+}
+
+.editMode {
+  position: relative;
+  top: 12px;
+  width: 50px;
+  height: 34px;
 }

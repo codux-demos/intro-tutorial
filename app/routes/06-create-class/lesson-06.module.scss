@@ -1,0 +1,46 @@
+@use '../../../src/globals/variables.module.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: variables.$lesson-bg-color;
+  font-family: variables.$font-family-text;
+  padding: variables.$lesson-padding;
+  gap: variables.$lesson-gap;
+  height: 641px;
+}
+
+.playground {
+  overflow: hidden;
+  border-radius: variables.$playground-border-radius;
+  width: variables.$playground-width;
+  height: variables.$playground-height;
+
+  // lesson specific
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 128px 75px 92px 75px;
+
+  font-style: italic;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
+  color: variables.$orange-red;
+  background-color: variables.$pastel-pink;
+}
+
+// lesson specific
+.quote {
+  span {
+    color: variables.$pastel-pink;
+  }
+}
+
+.author {
+  color: variables.$pastel-pink;
+  font-size: 18px;
+}
