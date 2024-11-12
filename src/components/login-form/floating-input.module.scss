@@ -6,7 +6,7 @@
 }
 
 .floatingInput {
-  padding: 10px 10px 16px 0;
+  padding: 10px 10px 4px 0;
   border-bottom: 2px solid;
   width: 100%;
   font-size: 18px;
@@ -35,10 +35,7 @@
   font-size: 10px;
 }
 
-.error {
-  border-bottom-color: $hot-red;
-}
-
+.error,
 .error ~ .label {
   color: $hot-red;
 }

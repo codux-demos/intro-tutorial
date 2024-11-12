@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import classNames from 'classnames';
-import styles from './dialog-backdrop.module.scss';
+import styles from './dialog.module.scss';
+import { createPortal } from 'react-dom';
 
 export interface DialogBackdropProps extends React.PropsWithChildren {
     className?: string;
@@ -8,7 +9,7 @@ export interface DialogBackdropProps extends React.PropsWithChildren {
     onClose?: () => void;
 }
 
-export const DialogBackdrop: React.FC<DialogBackdropProps> = ({
+export const Dialog: React.FC<DialogBackdropProps> = ({
     className,
     open = false,
     onClose,
@@ -27,9 +28,10 @@ export const DialogBackdrop: React.FC<DialogBackdropProps> = ({
         return () => document.removeEventListener('keydown', handleKeyDown);
     }, [onClose]);
 
-    return (
-        <div className={classNames(styles.dialogBackdrop, className)} onClick={onClose}>
+    return createPortal(
+        <div className={classNames(styles.dialog, className)} onClick={onClose}>
             {children}
-        </div>
+        </div>,
+        document.body
     );
 };

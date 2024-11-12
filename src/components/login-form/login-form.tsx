@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { FloatingInput } from './floating-input';
 import { RoundCheckbox } from './round-checkbox';
 import { ForgotPasswordDialogView } from '../forgot-password-dialog/forgot-password-dialog-view';
-import { DialogBackdrop } from '../forgot-password-dialog/dialog-backdrop';
+import { Dialog } from '../dialog/dialog';
 
 export interface LoginFormProps {
     className?: string;
@@ -57,12 +57,14 @@ export const LoginForm: React.FC<LoginFormProps> = ({
             <button className={styles.forgotPassword} onClick={handleForgotPasswordClick}>
                 Forgot your password?
             </button>
-            <DialogBackdrop open={dialogIsOpen} onClose={handleClose}>
+            <Dialog open={dialogIsOpen} onClose={handleClose}>
                 <ForgotPasswordDialogView
                     className={styles.forgotPasswordDialog}
                     onClose={handleClose}
+                    autofocus={true}
+                    onSubmit={handleClose}
                 />
-            </DialogBackdrop>
+            </Dialog>
         </form>
     );
 };

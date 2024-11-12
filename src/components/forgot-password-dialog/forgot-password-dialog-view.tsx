@@ -4,20 +4,19 @@ import styles from './forgot-password-dialog-view.module.scss';
 import { FloatingInput } from '../login-form/floating-input';
 
 export interface ForgotPasswordDialogViewProps {
-    className?: string;
     onClose?: () => void;
     email?: string;
+    autofocus?: boolean;
 }
 
-export const ForgotPasswordDialogView: React.FC<ForgotPasswordDialogViewProps> = ({
-    className,
-    onClose,
-    email,
-}) => {
+export const ForgotPasswordDialogView: React.FC<
+    ForgotPasswordDialogViewProps & React.FormHTMLAttributes<HTMLFormElement>
+> = ({ className, onClose, email, autofocus, ...props }) => {
     return (
-        <div
+        <form
             className={classNames(styles.dialogContainer, className)}
             onClick={(e) => e.stopPropagation()}
+            {...props}
         >
             <button className={styles.dialogCloseButton} onClick={onClose}>
                 &times;
@@ -27,14 +26,20 @@ export const ForgotPasswordDialogView: React.FC<ForgotPasswordDialogViewProps> =
                 <br />
                 Don't Worry
             </h2>
-            <FloatingInput label="Your Email" id="email" type="email" value={email} />
+            <FloatingInput
+                autoFocus={autofocus}
+                label="Your Email"
+                id="email"
+                type="email"
+                value={email}
+            />
             <p className={styles.dialogDescription}>
                 Enter the email address linked to your account and we’ll send you an email to reset
                 your password.
             </p>
-            <button className={styles.resetPasswordButton} onClick={onClose}>
+            <button className={styles.resetPasswordButton} type="submit">
                 Reset Password
             </button>
-        </div>
+        </form>
     );
 };

@@ -5,6 +5,7 @@
 
   .title {
     padding-top: 0;
+    /* compensation for the top space included with the glyph */
     transform: translateY(-7px);
   }
 }

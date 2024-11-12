@@ -12,8 +12,7 @@ export const CompositionTask: React.FC<CompositionTaskProps> = ({ className }) =
             <ol start={0} className={styles.desc}>
                 <li>Those elements got messed up. Let’s learn how to put them in order.</li>
                 <li>
-                    1. Go to the <b>Elements Panel</b> on the left and edit component{' '}
-                    <b>Lesson06</b>.
+                    Go to the <b>Elements Panel</b> on the left and edit component <b>Lesson06</b>.
                 </li>
                 <li>
                     Find and expand <b>div.playground</b>

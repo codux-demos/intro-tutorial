@@ -2,20 +2,17 @@
 
 .formContainer {
   background-color: #e8e7da;
-  color: $font-color;
   padding: 0 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   gap: 20px;
-  width: 100vw;
-  height: 100vh;
 }
 
 .formHeader {
   font: $card-title;
+  text-align: center;
 }
 
 .rememberMe {
