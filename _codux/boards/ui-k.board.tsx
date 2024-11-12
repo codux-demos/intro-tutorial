@@ -61,6 +61,10 @@ export default createBoard({
                                     </div>
                                 </Variant>
                             </div>
+                            <h3 className={styles.uiTitle}>Button</h3>
+                            <Variant name="Start Button">
+                                <button className={taskStyles.startLessonButton}>Start</button>
+                            </Variant>
                         </div>
                     </div>
                     <div className={styles.typographySection}>

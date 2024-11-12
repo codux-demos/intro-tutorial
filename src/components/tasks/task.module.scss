@@ -84,3 +84,11 @@
   display: flex;
   gap: 8px;
 }
+
+.startLessonButton {
+  font: $card-button-text;
+  padding: 9px 46px 11px;
+  background-color: $white;
+  color: $black;
+  cursor: pointer;
+}
