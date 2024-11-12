@@ -8,20 +8,24 @@ export interface CompositionTaskProps {
 export const CompositionTask: React.FC<CompositionTaskProps> = ({ className }) => {
     return (
         <div className={classNames(styles.task, className)}>
-            <div className={styles.title}>What is a board?</div>
+            <div className={styles.title}>What are boards?</div>
             <ol start={0} className={styles.desc}>
-                <li>Those elements got messed up. Let’s learn how to put them in order.</li>
                 <li>
-                    Go to the <b>Elements Panel</b> on the left and edit component <b>Lesson06</b>.
+                    Boards are a great way to <b>test and edit your components in isolation.</b> It
+                    allows easy access to components and other elements outside your actual site,
+                    where you can:
                 </li>
-                <li>
-                    Find and expand <b>div.playground</b>
-                </li>
-                <li>
-                    Drag <b>div.dragMe</b> so that 5 goes under 3 and 4
-                </li>
-                <br />
-                Ahh, finally some order...
+                <li>Test and edit components variations, edge cases and various screen sizes</li>
+                <li>Mock different permutations and states using properties</li>
+                <li>Create variants to easily reuse across your site</li>
+                <br></br>
+                <a
+                    href="https://help.codux.com/kb/en/article/what-are-boards"
+                    target="blank"
+                    className={styles.link}
+                >
+                    Learn more about can be done with Boards
+                </a>
             </ol>
         </div>
     );
