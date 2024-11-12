@@ -1,4 +1,4 @@
-@import '../../globals/variables.module.scss';
+@use '../../globals/variables.module.scss' as *;
 
 .formContainer {
   background-color: #e8e7da;

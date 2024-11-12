@@ -1,21 +1,21 @@
-@use '../../../src/globals/variables.module.scss';
+@use '../../../src/globals/variables.module.scss' as *;
 
 .root {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  background-color: variables.$lesson-bg-color;
-  font-family: variables.$font-family-text;
-  padding: variables.$lesson-padding;
-  gap: variables.$lesson-gap;
+  background-color: $lesson-bg-color;
+  font-family: $font-family-text;
+  padding: $lesson-padding;
+  gap: $lesson-gap;
   height: 641px;
 
   .playground {
     overflow: hidden;
-    background-color: variables.$playground-bg-color;
-    border-radius: variables.$playground-border-radius;
-    width: variables.$playground-width;
-    height: variables.$playground-height;
+    background-color: $playground-bg-color;
+    border-radius: $playground-border-radius;
+    width: $playground-width;
+    height: $playground-height;
 
     // lesson specific
     background-image: url('../../../src/assets/lesson-01-bg.png');
@@ -31,7 +31,7 @@
 
 .boxes {
   position: absolute;
-  border-radius: variables.$box-border-radius-rounded;
+  border-radius: $box-border-radius-rounded;
 
   // lavender
   &.boxes:nth-child(1) {
@@ -74,7 +74,7 @@
     top: 62px;
 
     z-index: 10;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // redStop
@@ -85,7 +85,7 @@
     top: 94px;
 
     z-index: 13;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // hotPink
@@ -96,7 +96,7 @@
     top: 82px;
 
     z-index: 11;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // garudaGold
@@ -107,7 +107,7 @@
     top: 120px;
 
     z-index: 12;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // orangeRed
@@ -139,7 +139,7 @@
     top: 190px;
 
     z-index: 10;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // darkLavender
@@ -161,7 +161,7 @@
     top: 220px;
 
     z-index: 13;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // orangeRed
@@ -227,7 +227,7 @@
     top: 357px;
 
     z-index: 12;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // turquoiseGreen
@@ -249,7 +249,7 @@
     top: 406px;
 
     z-index: 11;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // darkLavender
@@ -271,7 +271,7 @@
     top: 410px;
 
     z-index: 12;
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
   }
 
   // hotPink

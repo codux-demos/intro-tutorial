@@ -1,4 +1,4 @@
-@use '../../../src/globals/variables.module.scss';
+@use '../../../src/globals/variables.module.scss' as *;
 $card-width: 342px;
 
 .root {
@@ -32,7 +32,7 @@ $card-width: 342px;
   width: 100%;
   padding: 18px 8px;
   width: 100%;
-  color: variables.$white;
+  color: $white;
 }
 
 .lessonContentHeader {
@@ -48,7 +48,7 @@ $card-width: 342px;
 }
 
 .cardTitleFlipped {
-  font: variables.$card-title-hover;
+  font: $card-title-hover;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -93,28 +93,28 @@ $card-width: 342px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: variables.$white;
+  color: $white;
 }
 
 .cardTitle {
-  font: variables.$card-title;
+  font: $card-title;
   font-weight: 800;
   line-height: 50px;
-  color: variables.$black;
+  color: $black;
 }
 
 .startLessonButton {
-  font: variables.$card-button-text;
+  font: $card-button-text;
   padding: 9px 46px 11px;
-  background-color: variables.$white;
-  color: variables.$black;
+  background-color: $white;
+  color: $black;
   cursor: pointer;
   border-width: 0px;
 }
 
 .cardFooter {
-  font: variables.$card-number;
-  color: variables.$black;
+  font: $card-number;
+  color: $black;
   position: absolute;
   bottom: 0;
   width: 100%;

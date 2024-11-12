@@ -1,4 +1,4 @@
-@import '../tasks/task.module.scss';
+@use '../tasks/task.module.scss' as *;
 
 .task {
   background-color: unset;

@@ -1,10 +1,10 @@
-@use '../../globals/variables.module.scss';
+@use '../../globals/variables.module.scss' as *;
 
 .root {
   display: flex;
-  background-color: variables.$charcoal-black;
+  background-color: $charcoal-black;
   height: 100%;
-  color: variables.$white;
+  color: $white;
   padding: 30px 60px 60px;
   align-items: center;
 }
@@ -14,13 +14,13 @@
 }
 
 .title {
-  font: variables.$header;
+  font: $header;
   line-height: 70px;
   margin-bottom: 30px;
 }
 
 .description {
-  font: variables.$description;
+  font: $description;
   line-height: 28px;
   margin-bottom: 30px;
   width: 436px;
