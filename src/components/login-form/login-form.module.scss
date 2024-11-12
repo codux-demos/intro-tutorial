@@ -28,6 +28,7 @@
 }
 
 .confirmButton {
+  background: unset;
   border: 2px solid $charcoal-black;
   border-radius: 50px;
   font-size: 20px;
@@ -46,6 +47,8 @@
 }
 
 .forgotPassword {
+  background: unset;
+  border: none;
   width: 100%;
   text-transform: uppercase;
   text-align: center;

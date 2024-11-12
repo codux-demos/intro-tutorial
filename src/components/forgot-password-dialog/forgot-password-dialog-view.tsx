@@ -11,11 +11,16 @@ export interface ForgotPasswordDialogViewProps {
 
 export const ForgotPasswordDialogView: React.FC<
     ForgotPasswordDialogViewProps & React.FormHTMLAttributes<HTMLFormElement>
-> = ({ className, onClose, email, autofocus, ...props }) => {
+> = ({ className, onClose, onSubmit, email, autofocus, ...props }) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+        e.preventDefault();
+        onSubmit?.(e);
+    };
     return (
         <form
             className={classNames(styles.dialogContainer, className)}
             onClick={(e) => e.stopPropagation()}
+            onSubmit={handleSubmit}
             {...props}
         >
             <button className={styles.dialogCloseButton} onClick={onClose}>

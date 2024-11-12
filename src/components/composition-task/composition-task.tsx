@@ -18,13 +18,13 @@ export const CompositionTask: React.FC<CompositionTaskProps> = ({ className }) =
                 <li>Test and edit components variations, edge cases and various screen sizes</li>
                 <li>Mock different permutations and states using properties</li>
                 <li>Create variants to easily reuse across your site</li>
-                <br></br>
+                <br />
                 <a
                     href="https://help.codux.com/kb/en/article/what-are-boards"
                     target="blank"
                     className={styles.link}
                 >
-                    Learn more about can be done with Boards
+                    Learn more about what can be done with Boards
                 </a>
             </ol>
         </div>

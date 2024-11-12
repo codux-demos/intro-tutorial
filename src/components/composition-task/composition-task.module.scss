@@ -8,7 +8,13 @@
     /* compensation for the top space included with the glyph */
     transform: translateY(-7px);
   }
+
+  .desc {
+    text-wrap: pretty;
+  }
 }
+
 .link {
   text-decoration-line: underline;
+  margin-left: -1rem;
 }

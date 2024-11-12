@@ -6,6 +6,6 @@ export default createBoard({
     Board: () => <ForgotPasswordDialogView />,
     environmentProps: {
         windowWidth: 340,
-        windowHeight: 448,
+        windowHeight: 435,
     },
 });

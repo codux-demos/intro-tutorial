@@ -7,9 +7,14 @@
 
 .floatingInput {
   padding: 10px 10px 4px 0;
+  background: unset;
+  border: none;
   border-bottom: 2px solid;
   width: 100%;
   font-size: 18px;
+  &:focus {
+    outline: none;
+  }
 }
 
 .label {
