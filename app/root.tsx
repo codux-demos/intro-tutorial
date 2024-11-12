@@ -21,6 +21,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
     );
 }
 
+export function ErrorBoundary() {
+    return <div>Error Boundary</div>;
+}
+
 export default function App() {
     return <Outlet />;
 }
