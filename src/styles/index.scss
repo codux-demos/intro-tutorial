@@ -130,7 +130,7 @@ code {
     height: 100%;
 
     rect {
-      translate: -15% -150vh;
+      translate: -15% -200vh;
       animation: fall 3.2s forwards ease-in calc(var(--idx) * 0.03s);
       scale: 1.5;
     }
