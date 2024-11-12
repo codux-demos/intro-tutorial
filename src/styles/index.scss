@@ -120,22 +120,29 @@ code {
   }
 
   .boxes {
-    overflow: visible;
-    position: absolute;
-    left: 50%;
-    top: -250vh;
-    transform: translateX(-50%);
-    height: 300vh;
-    width: 70%;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 
     rect {
-      animation: fall 4.5s forwards ease-in calc(var(--idx) * 0.04s);
+      translate: -15% -150vh;
+      animation: fall 3.2s forwards ease-in calc(var(--idx) * 0.03s);
+      scale: 1.5;
+    }
+
+    rect:nth-of-type(2n) {
+      animation-duration: 3.8s;
     }
   }
 
   @keyframes fall {
     to {
-      transform: translateY(500%);
+      translate: -15% 500vh;
     }
   }
 }
