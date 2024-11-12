@@ -1,7 +1,7 @@
-@import '../../../globals/variables.module.scss';
+@use '../../../globals/variables.module.scss';
 
 :root {
-  font-family: $font-family-text;
+  font-family: variables.$font-family-text;
   shape-rendering: geometricPrecision;
 }
 
@@ -17,7 +17,7 @@
 .pages,
 .addPage,
 .styles {
-  filter: drop-shadow(0 0 2px $symbol-shadow);
+  filter: drop-shadow(0 0 2px variables.$symbol-shadow);
   vertical-align: -5px;
   padding-right: 2px;
   padding-left: 2px;
@@ -28,7 +28,7 @@
 .commit,
 .sync,
 .preview {
-  filter: drop-shadow(0 0 2px $symbol-shadow);
+  filter: drop-shadow(0 0 2px variables.$symbol-shadow);
   vertical-align: -5px;
   padding-right: 2px;
   padding-left: 2px;
