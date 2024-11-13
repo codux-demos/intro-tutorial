@@ -41,7 +41,7 @@ export const LESSONS: Lesson[] = [
         title: 'Computed Styles',
         backgroundColor: style.lavender,
         url: '04-computed-styles',
-        lessonCoverImage: 'url(../../../src/assets/lesson-04-cover.svg)',
+        lessonCoverImage: 'url(../../../src/assets/lesson-04-cover.jpg)',
         footerTextColor: style.white,
     },
     {
@@ -49,7 +49,7 @@ export const LESSONS: Lesson[] = [
         title: 'Styles Panel',
         backgroundColor: style.pastelPink,
         url: '05-styles-panel',
-        lessonCoverImage: 'url(../../../src/assets/lesson-05-cover.jpg)',
+        lessonCoverImage: 'url(../../../src/assets/lesson-05-cover.svg)',
         footerTextColor: style.white,
     },
     {
