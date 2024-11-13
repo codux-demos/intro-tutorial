@@ -15,7 +15,7 @@ export interface LoginFormProps {
     password?: string;
     isLoading?: boolean;
     showForgotPasswordView?: boolean;
-    onForgotPasswordConfirm?: () => void;
+    onForgotPasswordSubmit?: () => void;
 }
 
 export const LoginForm: React.FC<LoginFormProps> = ({
@@ -26,12 +26,12 @@ export const LoginForm: React.FC<LoginFormProps> = ({
     password,
     isLoading,
     showForgotPasswordView,
-    onForgotPasswordConfirm,
+    onForgotPasswordSubmit,
 }) => {
     if (isLoading) return <RainbowLoader className={className} />;
 
     if (showForgotPasswordView)
-        return <ForgotPasswordView className={className} onSubmit={onForgotPasswordConfirm} />;
+        return <ForgotPasswordView className={className} onSubmit={onForgotPasswordSubmit} />;
 
     const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
