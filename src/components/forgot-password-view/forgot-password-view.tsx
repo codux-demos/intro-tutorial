@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './forgot-password-dialog-view.module.scss';
+import styles from './forgot-password-view.module.scss';
 import { FloatingInput } from '../login-form/floating-input';
 
 export interface ForgotPasswordViewProps {

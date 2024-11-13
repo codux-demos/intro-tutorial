@@ -3,7 +3,7 @@ import styles from './login-form.module.scss';
 import classNames from 'classnames';
 import { FloatingInput } from './floating-input';
 import { RoundCheckbox } from './round-checkbox';
-import { ForgotPasswordView } from '../forgot-password-dialog/forgot-password-dialog-view';
+import { ForgotPasswordView } from '../forgot-password-view/forgot-password-view';
 import { Dialog } from '../dialog/dialog';
 import { RainbowLoader } from '../rainbow-loader/rainbow-loader';
 
@@ -15,6 +15,7 @@ export interface LoginFormProps {
     password?: string;
     isLoading?: boolean;
     isForgotPassword?: boolean;
+    onForgotPasswordConfirm?: () => void;
 }
 
 export const LoginForm: React.FC<LoginFormProps> = ({
@@ -25,10 +26,12 @@ export const LoginForm: React.FC<LoginFormProps> = ({
     password,
     isLoading,
     isForgotPassword,
+    onForgotPasswordConfirm,
 }) => {
     if (isLoading) return <RainbowLoader className={className} />;
 
-    if (isForgotPassword) return <ForgotPasswordView className={className} />;
+    if (isForgotPassword)
+        return <ForgotPasswordView className={className} onSubmit={onForgotPasswordConfirm} />;
 
     const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
