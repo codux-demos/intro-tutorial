@@ -3,7 +3,7 @@ import { PagesOverlay } from './pages-overlay';
 
 interface Lesson {
     lessonNumber: string;
-    title: string;
+    title: JSX.Element;
     backgroundColor: string;
     lessonCoverImage: string;
     url?: string;
@@ -14,7 +14,11 @@ interface Lesson {
 export const LESSONS: Lesson[] = [
     {
         lessonNumber: '01',
-        title: "Let's Get Started",
+        title: (
+            <>
+                Let's Get <br /> Started
+            </>
+        ),
         backgroundColor: style.babyPink,
         url: '01-lets-start',
         lessonCoverImage: 'url(../../../src/assets/lesson-01-cover.svg)',
@@ -22,7 +26,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '02',
-        title: 'Elements panel',
+        title: (
+            <>
+                Elements <br /> Panel
+            </>
+        ),
         backgroundColor: style.goldYellow,
         url: '02-elements-panel',
         lessonCoverImage: 'url(../../../src/assets/lesson-02-cover.svg)',
@@ -30,7 +38,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '03',
-        title: 'Adding Elements',
+        title: (
+            <>
+                Add <br /> Elements
+            </>
+        ),
         backgroundColor: style.aeroBlue,
         url: '03-add-elements',
         lessonCoverImage: 'url(../../../src/assets/lesson-03-cover.svg)',
@@ -38,7 +50,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '04',
-        title: 'Computed Styles',
+        title: (
+            <>
+                Computed <br /> Styles
+            </>
+        ),
         backgroundColor: style.lavender,
         url: '04-computed-styles',
         lessonCoverImage: 'url(../../../src/assets/lesson-04-cover.jpg)',
@@ -46,7 +62,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '05',
-        title: 'Styles Panel',
+        title: (
+            <>
+                Styles <br /> Panel
+            </>
+        ),
         backgroundColor: style.pastelPink,
         url: '05-styles-panel',
         lessonCoverImage: 'url(../../../src/assets/lesson-05-cover.svg)',
@@ -54,7 +74,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '06',
-        title: 'Creating Class',
+        title: (
+            <>
+                Creating <br /> Class
+            </>
+        ),
         backgroundColor: style.turquoiseGreen,
         url: '06-create-class',
         lessonCoverImage: 'url(../../../src/assets/lesson-06-cover.svg)',
@@ -62,7 +86,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '07',
-        title: 'Components & Properties',
+        title: (
+            <>
+                Components & <br /> Properties
+            </>
+        ),
         backgroundColor: style.darkLavender80,
         url: '07-components',
         lessonCoverImage: 'url(../../../src/assets/lesson-07-cover.svg)',
@@ -70,7 +98,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '08',
-        title: 'Flex Layouts',
+        title: (
+            <>
+                Flex <br /> Layouts
+            </>
+        ),
         backgroundColor: style.oliveGreen,
         url: '08-flex-layouts',
         lessonCoverImage: 'url(../../../src/assets/lesson-08-cover.svg)',
@@ -78,7 +110,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '09',
-        title: 'Grid Layouts',
+        title: (
+            <>
+                Grid <br /> Layouts
+            </>
+        ),
         backgroundColor: style.dirtyWhite,
         url: '09-grid-layouts',
         lessonCoverImage: 'url(../../../src/assets/lesson-09-cover.svg)',
@@ -86,7 +122,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '10',
-        title: 'Working With Git',
+        title: (
+            <>
+                Working with <br /> Git
+            </>
+        ),
         backgroundColor: style.orangeRed,
         url: '10-work-with-git',
         lessonCoverImage: 'url(../../../src/assets/lesson-10-cover.svg)',
@@ -94,7 +134,11 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '11',
-        title: 'Adding Pages',
+        title: (
+            <>
+                Adding <br /> Pages
+            </>
+        ),
         backgroundColor: style.darkGreen,
         lessonCoverImage: 'url(../../../src/assets/lesson-11-cover.svg)',
         lessonContent: PagesOverlay,
