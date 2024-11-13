@@ -3,8 +3,9 @@ import styles from './login-form.module.scss';
 import classNames from 'classnames';
 import { FloatingInput } from './floating-input';
 import { RoundCheckbox } from './round-checkbox';
-import { ForgotPasswordDialogView } from '../forgot-password-dialog/forgot-password-dialog-view';
+import { ForgotPasswordView } from '../forgot-password-view/forgot-password-view';
 import { Dialog } from '../dialog/dialog';
+import { RainbowLoader } from '../rainbow-loader/rainbow-loader';
 
 export interface LoginFormProps {
     className?: string;
@@ -12,6 +13,9 @@ export interface LoginFormProps {
     errorInPassword?: string;
     username?: string;
     password?: string;
+    isLoading?: boolean;
+    showForgotPasswordView?: boolean;
+    onForgotPasswordSubmit?: () => void;
 }
 
 export const LoginForm: React.FC<LoginFormProps> = ({
@@ -20,6 +24,9 @@ export const LoginForm: React.FC<LoginFormProps> = ({
     errorInPassword,
     username,
     password,
+    isLoading,
+    showForgotPasswordView,
+    onForgotPasswordSubmit,
 }) => {
     const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
@@ -30,6 +37,11 @@ export const LoginForm: React.FC<LoginFormProps> = ({
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
     };
+
+    if (isLoading) return <RainbowLoader className={className} />;
+
+    if (showForgotPasswordView)
+        return <ForgotPasswordView className={className} onSubmit={onForgotPasswordSubmit} />;
 
     return (
         <form className={classNames(styles.formContainer, className)} onSubmit={handleSubmit}>
@@ -58,7 +70,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({
                 Forgot your password?
             </button>
             <Dialog open={dialogIsOpen} onClose={handleClose}>
-                <ForgotPasswordDialogView
+                <ForgotPasswordView
                     className={styles.forgotPasswordDialog}
                     onClose={handleClose}
                     autofocus={true}
