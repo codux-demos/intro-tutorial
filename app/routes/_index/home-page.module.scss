@@ -1,20 +1,12 @@
 @use '../../../src/globals/variables.module.scss';
-$card-width: 342px;
-
-.root {
-  place-items: center;
-}
 
 .gridContainer {
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
 }
 
 .gridItem {
-  height: 450px;
-  width: 100%;
+  aspect-ratio: 3.8/5;
   position: relative;
   perspective: 1000px;
   transition: transform 0.3s;
@@ -58,6 +50,7 @@ $card-width: 342px;
 }
 
 .gridItemLarge {
+  aspect-ratio: unset;
   grid-column: span 2;
 }
 
