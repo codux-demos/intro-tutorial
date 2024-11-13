@@ -82,7 +82,7 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
             >
                 <div className={styles.flipCardFront}>
                     <header className={classNames(styles.header, styles.lessonName)}>
-                        <p className={styles.cardTitleFlipped}>{lesson.title}</p>
+                        <p className={styles.cardTitleFlipped}>{lesson.header}</p>
                     </header>
                     <p className={styles.cardTitle}>{lesson.title}</p>
                     <p className={styles.frontCardFooter}>{`LESSON ${lesson.lessonNumber}`}</p>
@@ -98,7 +98,7 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
                                 <DismissSymbol />
                             </button>
                         ) : (
-                            <p className={styles.cardTitleFlipped}>{lesson.title}</p>
+                            <p className={styles.cardTitleFlipped}>{lesson.header}</p>
                         )}
                     </header>
                     {isShowingContent && lesson.lessonContent && <lesson.lessonContent />}

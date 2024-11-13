@@ -3,6 +3,7 @@ import { PagesOverlay } from './pages-overlay';
 
 interface Lesson {
     lessonNumber: string;
+    header: string;
     title: JSX.Element;
     backgroundColor: string;
     lessonCoverImage: string;
@@ -14,6 +15,7 @@ interface Lesson {
 export const LESSONS: Lesson[] = [
     {
         lessonNumber: '01',
+        header: "Let's Get Started",
         title: (
             <>
                 Let's Get <br /> Started
@@ -26,6 +28,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '02',
+        header: 'Elements Panel',
         title: (
             <>
                 Elements <br /> Panel
@@ -38,6 +41,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '03',
+        header: 'Add Elements',
         title: (
             <>
                 Add <br /> Elements
@@ -50,6 +54,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '04',
+        header: 'Computed Styles',
         title: (
             <>
                 Computed <br /> Styles
@@ -62,6 +67,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '05',
+        header: 'Styles Panel',
         title: (
             <>
                 Styles <br /> Panel
@@ -74,6 +80,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '06',
+        header: 'Creating Class',
         title: (
             <>
                 Creating <br /> Class
@@ -86,6 +93,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '07',
+        header: 'Components & Properties',
         title: (
             <>
                 Components & <br /> Properties
@@ -98,6 +106,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '08',
+        header: 'Flex Layouts',
         title: (
             <>
                 Flex <br /> Layouts
@@ -110,6 +119,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '09',
+        header: 'Grid Layouts',
         title: (
             <>
                 Grid <br /> Layouts
@@ -122,6 +132,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '10',
+        header: 'Working with Git',
         title: (
             <>
                 Working with <br /> Git
@@ -134,6 +145,7 @@ export const LESSONS: Lesson[] = [
     },
     {
         lessonNumber: '11',
+        header: 'Adding Pages',
         title: (
             <>
                 Adding <br /> Pages

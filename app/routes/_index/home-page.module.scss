@@ -21,7 +21,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 24px;
+  padding: 26px;
   width: 100%;
   color: variables.$white;
 }
@@ -96,13 +96,12 @@
 .cardTitle {
   font: variables.$card-title;
   font-weight: 800;
-  line-height: 50px;
   color: variables.$black;
 }
 
 .startLessonButton {
   font: variables.$card-button-text;
-  padding: 9px 46px 11px;
+  padding: 4% 13%;
   background-color: variables.$white;
   color: variables.$black;
   cursor: pointer;
