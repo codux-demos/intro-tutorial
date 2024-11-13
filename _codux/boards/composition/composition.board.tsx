@@ -16,7 +16,7 @@ export default createBoard({
                     className={styles.card}
                 />
                 <LoginForm isLoading className={styles.card} />
-                <LoginForm isForgotPassword className={styles.card} />
+                <LoginForm showForgotPasswordView className={styles.card} />
             </div>
         );
     },
