@@ -28,11 +28,6 @@ export const LoginForm: React.FC<LoginFormProps> = ({
     showForgotPasswordView,
     onForgotPasswordSubmit,
 }) => {
-    if (isLoading) return <RainbowLoader className={className} />;
-
-    if (showForgotPasswordView)
-        return <ForgotPasswordView className={className} onSubmit={onForgotPasswordSubmit} />;
-
     const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
     const handleClose = () => setDialogIsOpen(false);
@@ -42,6 +37,11 @@ export const LoginForm: React.FC<LoginFormProps> = ({
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
     };
+
+    if (isLoading) return <RainbowLoader className={className} />;
+
+    if (showForgotPasswordView)
+        return <ForgotPasswordView className={className} onSubmit={onForgotPasswordSubmit} />;
 
     return (
         <form className={classNames(styles.formContainer, className)} onSubmit={handleSubmit}>
