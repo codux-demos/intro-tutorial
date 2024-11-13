@@ -1,12 +1,10 @@
 import { createBoard } from '@wixc3/react-board';
-import { LoginForm } from '../../../src/components/login-form/login-form';
 import styles from './composition.board.module.scss';
-import { RainbowLoader } from '~/components/rainbow-loader/rainbow-loader';
-import { ForgotPasswordDialogView } from '~/components/forgot-password-dialog/forgot-password-dialog-view';
 import { CompositionTask } from '~/components/composition-task/composition-task';
+import { LoginForm } from '~/components/login-form/login-form';
 
 export default createBoard({
-    name: 'Composition',
+    name: 'Login Form States',
     Board: () => {
         return (
             <div className={styles.container}>
@@ -17,8 +15,8 @@ export default createBoard({
                     errorInPassword="Wrong password"
                     className={styles.card}
                 />
-                <RainbowLoader className={styles.card} />
-                <ForgotPasswordDialogView className={styles.card} />
+                <LoginForm isLoading className={styles.card} />
+                <LoginForm showForgotPasswordView className={styles.card} />
             </div>
         );
     },
