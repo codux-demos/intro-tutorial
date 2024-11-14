@@ -1,21 +1,12 @@
 @use '../../../src/globals/variables.module.scss' as *;
-$card-width: 342px;
-
-.root {
-  place-items: center;
-}
 
 .gridContainer {
-  width: fit-content;
-  margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0px, $card-width));
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .gridItem {
-  height: 450px;
-  width: 100%;
+  aspect-ratio: 3.8/5;
   position: relative;
   perspective: 1000px;
   transition: transform 0.3s;
@@ -30,13 +21,18 @@ $card-width: 342px;
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 18px 8px;
+  padding: 26px;
   width: 100%;
   color: $white;
 }
 
-.lessonContentHeader {
+.lessonContentHeader,
+.lessonName {
   background: unset;
+}
+
+.lessonName {
+  color: variables.$charcoal-black;
 }
 
 .dismiss {
@@ -54,6 +50,7 @@ $card-width: 342px;
 }
 
 .gridItemLarge {
+  aspect-ratio: unset;
   grid-column: span 2;
 }
 
@@ -99,28 +96,32 @@ $card-width: 342px;
 .cardTitle {
   font: $card-title;
   font-weight: 800;
-  line-height: 50px;
   color: $black;
 }
 
 .startLessonButton {
   font: $card-button-text;
-  padding: 9px 46px 11px;
+  padding: 4% 13%;
   background-color: $white;
   color: $black;
   cursor: pointer;
   border-width: 0px;
 }
 
-.cardFooter {
+.frontCardFooter,
+.backCardFooter {
   font: $card-number;
-  color: $black;
+  color: $charcoal-black;
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 16px;
   background-color: unset;
   border: 0;
+}
+
+.backCardFooter {
+  color: var(--footer-text-color);
 }
 
 .cardFooter:is(button) {
