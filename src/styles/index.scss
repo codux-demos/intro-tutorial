@@ -99,27 +99,50 @@ code {
 
   h1,
   h2 {
-    font-size: 48px;
-    font-weight: 800;
     text-wrap: pretty;
+    line-height: 48px;
+    font-family: MadeforDisplay;
+    font-weight: 800;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 40px;
+    letter-spacing: -0.5px;
   }
 
-  .box {
+  h2:not(:last-of-type) {
+    margin-bottom: 58px;
+  }
+
+  .boxes {
     position: fixed;
-    transform-origin: center;
-    border-radius: 48px;
-    animation-name: fall;
-    animation-duration: 0.75s;
-    animation-fill-mode: forwards;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    rect {
+      translate: -15% -200vh;
+      animation: fall 3.2s forwards ease-in calc(var(--idx) * 0.03s);
+      scale: 1.5;
+    }
+
+    rect:nth-of-type(2n) {
+      animation-duration: 3.8s;
+    }
   }
 
   @keyframes fall {
     to {
-      transform: translateY(200vh);
+      translate: -15% 500vh;
     }
   }
 }
