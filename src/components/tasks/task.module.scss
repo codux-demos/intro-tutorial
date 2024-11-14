@@ -28,58 +28,59 @@
     padding-left: 1rem;
     margin-top: 0;
 
-  li:not(:last-of-type) {
-    margin-bottom: 1rem;
+    li:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    li:first-of-type {
+      list-style-type: none;
+      margin-left: -1rem;
+    }
   }
 
-  li:first-of-type {
-    list-style-type: none;
-    margin-left: -1rem;
+  .menuIcon {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+    background-color: #000000;
   }
-}
 
-.menuIcon {
-  width: 60px;
-  height: 60px;
-  position: relative;
-  cursor: pointer;
-  background-color: #000000;
-}
+  .upperMenuIcon,
+  .lowerMenuIcon {
+    width: 16px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+  }
 
-.upperMenuIcon,
-.lowerMenuIcon {
-  width: 16px;
-  height: 4px;
-  background-color: #ffffff;
-  position: absolute;
-}
+  .upperMenuIcon {
+    top: 24px;
+    left: 25px;
+  }
 
-.upperMenuIcon {
-  top: 24px;
-  left: 25px;
-}
+  .lowerMenuIcon {
+    top: 32px;
+    left: 16px;
+  }
 
-.lowerMenuIcon {
-  top: 32px;
-  left: 16px;
-}
+  .roundIcon {
+    width: 60px;
+    border-radius: variables.$box-border-radius-circle;
+    padding: 14px;
+  }
 
-.roundIcon {
-  width: 60px;
-  border-radius: variables.$box-border-radius-circle;
-  padding: 14px;
-}
+  .socialIcon {
+    height: 30px;
+    width: 30px;
+  }
 
-.socialIcon {
-  height: 30px;
-  width: 30px;
-}
-
-.startLessonButton {
-  font: variables.$card-button-text;
-  background-color: variables.$white;
-  color: variables.$black;
-  padding: 9px 46px 11px;
-  cursor: pointer;
-  border: 0;
+  .startLessonButton {
+    font: variables.$card-button-text;
+    background-color: variables.$white;
+    color: variables.$black;
+    padding: 9px 46px 11px;
+    cursor: pointer;
+    border: 0;
+  }
 }
