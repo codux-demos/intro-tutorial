@@ -1,21 +1,21 @@
-@use '../../../src/globals/variables.module.scss';
+@use '../../../src/globals/variables.module.scss' as *;
 
 .root {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  background-color: variables.$lesson-bg-color;
-  font-family: variables.$font-family-text;
-  padding: variables.$lesson-padding;
-  gap: variables.$lesson-gap;
+  background-color: $lesson-bg-color;
+  font-family: $font-family-text;
+  padding: $lesson-padding;
+  gap: $lesson-gap;
   height: 641px;
 
   .playground {
     overflow: hidden;
-    background-color: variables.$playground-bg-color;
-    border-radius: variables.$playground-border-radius;
-    width: variables.$playground-width;
-    height: variables.$playground-height;
+    background-color: $playground-bg-color;
+    border-radius: $playground-border-radius;
+    width: $playground-width;
+    height: $playground-height;
 
     // lesson specific
     position: relative;
@@ -39,7 +39,7 @@
   padding: 55px 50px 50px 50px;
 
   .tag {
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
     padding: 2px;
     height: 80px;
   }
@@ -55,7 +55,7 @@
   z-index: 1;
 
   .circle {
-    border-radius: variables.$box-border-radius-circle;
+    border-radius: $box-border-radius-circle;
     width: 64px;
     height: 64px;
   }

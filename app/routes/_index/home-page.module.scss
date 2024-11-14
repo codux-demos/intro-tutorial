@@ -1,21 +1,12 @@
-@use '../../../src/globals/variables.module.scss';
-$card-width: 342px;
-
-.root {
-  place-items: center;
-}
+@use '../../../src/globals/variables.module.scss' as *;
 
 .gridContainer {
-  width: fit-content;
-  margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0px, $card-width));
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .gridItem {
-  height: 450px;
-  width: 100%;
+  aspect-ratio: 3.8/5;
   position: relative;
   perspective: 1000px;
   transition: transform 0.3s;
@@ -30,13 +21,18 @@ $card-width: 342px;
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 18px 8px;
+  padding: 26px;
   width: 100%;
-  color: variables.$white;
+  color: $white;
 }
 
-.lessonContentHeader {
+.lessonContentHeader,
+.lessonName {
   background: unset;
+}
+
+.lessonName {
+  color: $charcoal-black;
 }
 
 .dismiss {
@@ -48,12 +44,13 @@ $card-width: 342px;
 }
 
 .cardTitleFlipped {
-  font: variables.$card-title-hover;
+  font: $card-title-hover;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .gridItemLarge {
+  aspect-ratio: unset;
   grid-column: span 2;
 }
 
@@ -93,34 +90,38 @@ $card-width: 342px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: variables.$white;
+  color: $white;
 }
 
 .cardTitle {
-  font: variables.$card-title;
+  font: $card-title;
   font-weight: 800;
-  line-height: 50px;
-  color: variables.$black;
+  color: $black;
 }
 
 .startLessonButton {
-  font: variables.$card-button-text;
-  padding: 9px 46px 11px;
-  background-color: variables.$white;
-  color: variables.$black;
+  font: $card-button-text;
+  padding: 4% 13%;
+  background-color: $white;
+  color: $black;
   cursor: pointer;
   border-width: 0px;
 }
 
-.cardFooter {
-  font: variables.$card-number;
-  color: variables.$black;
+.frontCardFooter,
+.backCardFooter {
+  font: $card-number;
+  color: $charcoal-black;
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 16px;
   background-color: unset;
   border: 0;
+}
+
+.backCardFooter {
+  color: var(--footer-text-color);
 }
 
 .cardFooter:is(button) {

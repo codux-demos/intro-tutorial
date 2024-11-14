@@ -1,29 +1,29 @@
-@use '../../globals/variables.module.scss';
+@use '../../globals/variables.module.scss' as *;
 
 .task {
-  color: variables.$font-color;
-  background-color: variables.$task-bg-color;
+  color: $font-color;
+  background-color: $task-bg-color;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
-  width: variables.$task-width;
+  width: $task-width;
 }
 
 .progress {
-  font: variables.$task-font-progress;
+  font: $task-font-progress;
   letter-spacing: 0.2em;
 }
 
 .title {
-  font: variables.$task-font-title;
+  font: $task-font-title;
   padding-top: 1.5rem;
   padding-bottom: 1.3rem;
 }
 
 .desc {
-  font: variables.$task-font-description;
-  text-align: variables.$task-text-align;
+  font: $task-font-description;
+  text-align: $task-text-align;
   list-style-type: decimal;
   list-style-position: outside;
   padding-left: 1rem;
@@ -67,7 +67,7 @@
 
 .roundIcon {
   width: 60px;
-  border-radius: variables.$box-border-radius-circle;
+  border-radius: $box-border-radius-circle;
   padding: 14px;
 }
 
@@ -77,9 +77,9 @@
 }
 
 .startLessonButton {
-  font: variables.$card-button-text;
-  background-color: variables.$white;
-  color: variables.$black;
+  font: $card-button-text;
+  background-color: $white;
+  color: $black;
   padding: 9px 46px 11px;
   cursor: pointer;
   border: 0;
