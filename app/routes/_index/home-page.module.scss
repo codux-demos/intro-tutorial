@@ -1,4 +1,4 @@
-@use '../../../src/globals/variables.module.scss';
+@use '../../../src/globals/variables.module.scss' as *;
 
 .gridContainer {
   display: grid;
@@ -23,7 +23,7 @@
   width: 100%;
   padding: 26px;
   width: 100%;
-  color: variables.$white;
+  color: $white;
 }
 
 .lessonContentHeader,
@@ -32,7 +32,7 @@
 }
 
 .lessonName {
-  color: variables.$charcoal-black;
+  color: $charcoal-black;
 }
 
 .dismiss {
@@ -44,7 +44,7 @@
 }
 
 .cardTitleFlipped {
-  font: variables.$card-title-hover;
+  font: $card-title-hover;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -90,28 +90,28 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: variables.$white;
+  color: $white;
 }
 
 .cardTitle {
-  font: variables.$card-title;
+  font: $card-title;
   font-weight: 800;
-  color: variables.$black;
+  color: $black;
 }
 
 .startLessonButton {
-  font: variables.$card-button-text;
+  font: $card-button-text;
   padding: 4% 13%;
-  background-color: variables.$white;
-  color: variables.$black;
+  background-color: $white;
+  color: $black;
   cursor: pointer;
   border-width: 0px;
 }
 
 .frontCardFooter,
 .backCardFooter {
-  font: variables.$card-number;
-  color: variables.$charcoal-black;
+  font: $card-number;
+  color: $charcoal-black;
   position: absolute;
   bottom: 0;
   width: 100%;

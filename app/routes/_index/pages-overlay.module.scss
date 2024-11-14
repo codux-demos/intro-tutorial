@@ -1,4 +1,4 @@
-@use '../../../src/globals/variables.module.scss';
+@use '../../../src/globals/variables.module.scss' as *;
 
 .pagesOverlay {
   position: absolute;
@@ -12,7 +12,7 @@
   text-wrap: pretty;
 
   h1 {
-    font: variables.$card-title;
-    color: variables.$black;
+    font: $card-title;
+    color: $black;
   }
 }

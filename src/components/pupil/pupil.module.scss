@@ -1,7 +1,7 @@
-@use '../../globals/variables.module.scss';
+@use '../../globals/variables.module.scss' as *;
 
 .root {
-  font-family: variables.$font-family-text;
+  font-family: $font-family-text;
 }
 
 .pupils {
@@ -14,7 +14,7 @@
 }
 
 .pupil {
-  border-radius: variables.$box-border-radius-circle;
+  border-radius: $box-border-radius-circle;
   grid-column: 1/1;
   grid-row: 1/1;
 
