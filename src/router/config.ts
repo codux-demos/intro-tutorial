@@ -10,7 +10,6 @@ export const LESSON_06 = '/06-create-class';
 export const LESSON_07 = '/07-components';
 export const LESSON_08 = '/08-flex-layouts';
 export const LESSON_09 = '/09-grid-layouts';
-export const LESSON_10 = '/10-work-with-git';
 
 export const ROUTES = {
     home: { path: HOME, to: () => HOME },
@@ -23,7 +22,6 @@ export const ROUTES = {
     lesson07: { path: LESSON_07, to: () => LESSON_07 },
     lesson08: { path: LESSON_08, to: () => LESSON_08 },
     lesson09: { path: LESSON_09, to: () => LESSON_09 },
-    lesson10: { path: LESSON_10, to: () => LESSON_10 },
 };
 
 export type ROUTE_KEYS = keyof typeof ROUTES;

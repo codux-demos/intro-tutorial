@@ -154,7 +154,7 @@ export default function Lesson09() {
                     />
                 </div>
             </div>
-            <LessonsFooter previousUrl={LESSON_08} nextUrl={LESSON_10} />
+            <LessonsFooter previousUrl={LESSON_08} />
         </div>
     );
 }
