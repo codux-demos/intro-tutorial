@@ -69,7 +69,7 @@ function Lesson({ lesson }: { lesson: (typeof LESSONS)[number] }) {
             className={styles.gridItem}
             style={
                 {
-                    '--lesson-cover-image': lesson.lessonCoverImage,
+                    '--lesson-cover-image': `url(${lesson.lessonCoverImage})`,
                     '--lesson-bg-color': lesson.backgroundColor,
                     '--footer-text-color': lesson.footerTextColor,
                 } as React.CSSProperties
