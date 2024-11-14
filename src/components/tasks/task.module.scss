@@ -1,40 +1,86 @@
-@use '../../globals/variables.module.scss';
+@use '../../globals/variables.module.scss' as *;
 
 .task {
-  color: variables.$font-color;
-  background-color: variables.$task-bg-color;
+  color: $font-color;
+  background-color: $task-bg-color;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
-  width: variables.$task-width;
+  width: $task-width;
+}
 
-  .progress {
-    font: variables.$task-font-progress;
-    letter-spacing: 0.2em;
+.progress {
+  font: $task-font-progress;
+  letter-spacing: 0.2em;
+}
+
+.title {
+  font: $task-font-title;
+  padding-top: 1.5rem;
+  padding-bottom: 1.3rem;
+}
+
+.desc {
+  font: $task-font-description;
+  text-align: $task-text-align;
+  list-style-type: decimal;
+  list-style-position: outside;
+  padding-left: 1rem;
+  margin-top: 0;
+
+  li:not(:last-of-type) {
+    margin-bottom: 1rem;
   }
 
-  .title {
-    font: variables.$task-font-title;
-    padding-top: 1.5rem;
-    padding-bottom: 1.3rem;
+  li:first-of-type {
+    list-style-type: none;
+    margin-left: -1rem;
   }
+}
 
-  .desc {
-    font: variables.$task-font-description;
-    text-align: variables.$task-text-align;
-    list-style-type: decimal;
-    list-style-position: outside;
-    padding-left: 1rem;
-    margin-top: 0;
+.menuIcon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  cursor: pointer;
+  background-color: #000000;
+}
 
-    li:not(:last-of-type) {
-      margin-bottom: 1rem;
-    }
+.upperMenuIcon,
+.lowerMenuIcon {
+  width: 16px;
+  height: 4px;
+  background-color: #ffffff;
+  position: absolute;
+}
 
-    li:first-of-type {
-      list-style-type: none;
-      margin-left: -1rem;
-    }
-  }
+.upperMenuIcon {
+  top: 24px;
+  left: 25px;
+}
+
+.lowerMenuIcon {
+  top: 32px;
+  left: 16px;
+}
+
+.roundIcon {
+  width: 60px;
+  border-radius: $box-border-radius-circle;
+  padding: 14px;
+}
+
+.socialIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.startLessonButton {
+  font: $card-button-text;
+  background-color: $white;
+  color: $black;
+  padding: 9px 46px 11px;
+  cursor: pointer;
+  border: 0;
 }

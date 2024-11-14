@@ -1,10 +1,10 @@
-@use '../../globals/variables.module.scss';
+@use '../../globals/variables.module.scss' as *;
 
 .root {
   display: flex;
-  background-color: variables.$charcoal-black;
+  background-color: $charcoal-black;
   height: 100%;
-  color: variables.$white;
+  color: $white;
   padding: 30px;
   align-items: center;
   aspect-ratio: 3.8/2.5;
@@ -15,12 +15,12 @@
 }
 
 .title {
-  font: variables.$header;
+  font: $header;
   margin-bottom: 30px;
 }
 
 .description {
-  font: variables.$description;
+  font: $description;
   margin-bottom: 30px;
   width: 70%;
 }

@@ -1,7 +1,7 @@
-@use '../../../globals/variables.module.scss';
+@use '../../../globals/variables.module.scss' as *;
 
 .root {
-  font-family: variables.$font-family-text;
+  font-family: $font-family-text;
 }
 
 .img {

@@ -1,9 +1,9 @@
-@use '../../globals/variables.module.scss';
+@use '../../globals/variables.module.scss' as *;
 
 .root {
   display: flex;
-  background-color: variables.$black;
-  color: variables.$white;
+  background-color: $charcoal-black;
+  color: $white;
   padding: 15px 18px;
   gap: 12px;
   height: 50px;

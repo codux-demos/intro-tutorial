@@ -1,13 +1,13 @@
-@use '../../../globals/variables.module.scss';
+@use '../../../globals/variables.module.scss' as *;
 
 :root {
-  font-family: variables.$font-family-text;
+  font-family: $font-family-text;
   // css variable being used to set the box's background color (color prop)
   --box-color: #eeeeee;
 }
 
 .box {
-  color: variables.$font-color;
+  color: $font-color;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
