@@ -1,4 +1,15 @@
 import style from '~/globals/variables.module.scss';
+import lesson01CoverImage from '../../../src/assets/lesson-01-cover.png';
+import lesson02CoverImage from '../../../src/assets/lesson-02-cover.png';
+import lesson03CoverImage from '../../../src/assets/lesson-03-cover.png';
+import lesson04CoverImage from '../../../src/assets/lesson-04-cover.png';
+import lesson05CoverImage from '../../../src/assets/lesson-05-cover.png';
+import lesson06CoverImage from '../../../src/assets/lesson-06-cover.png';
+import lesson07CoverImage from '../../../src/assets/lesson-07-cover.png';
+import lesson08CoverImage from '../../../src/assets/lesson-08-cover.png';
+import lesson09CoverImage from '../../../src/assets/lesson-09-cover.png';
+import lesson10CoverImage from '../../../src/assets/lesson-10-cover.png';
+import lesson11CoverImage from '../../../src/assets/lesson-11-cover.png';
 import { PagesOverlay } from './pages-overlay';
 
 interface Lesson {
@@ -23,7 +34,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.babyPink,
         url: '01-lets-start',
-        lessonCoverImage: 'url(../../../src/assets/lesson-01-cover.svg)',
+        lessonCoverImage: lesson01CoverImage,
         footerTextColor: style.charcoalBlack,
     },
     {
@@ -36,7 +47,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.goldYellow,
         url: '02-elements-panel',
-        lessonCoverImage: 'url(../../../src/assets/lesson-02-cover.svg)',
+        lessonCoverImage: lesson02CoverImage,
         footerTextColor: style.white,
     },
     {
@@ -49,7 +60,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.aeroBlue,
         url: '03-add-elements',
-        lessonCoverImage: 'url(../../../src/assets/lesson-03-cover.svg)',
+        lessonCoverImage: lesson03CoverImage,
         footerTextColor: style.white,
     },
     {
@@ -62,7 +73,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.lavender,
         url: '04-computed-styles',
-        lessonCoverImage: 'url(../../../src/assets/lesson-04-cover.jpg)',
+        lessonCoverImage: lesson04CoverImage,
         footerTextColor: style.white,
     },
     {
@@ -75,7 +86,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.pastelPink,
         url: '05-styles-panel',
-        lessonCoverImage: 'url(../../../src/assets/lesson-05-cover.svg)',
+        lessonCoverImage: lesson05CoverImage,
         footerTextColor: style.white,
     },
     {
@@ -88,7 +99,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.turquoiseGreen,
         url: '06-create-class',
-        lessonCoverImage: 'url(../../../src/assets/lesson-06-cover.svg)',
+        lessonCoverImage: lesson06CoverImage,
         footerTextColor: style.white,
     },
     {
@@ -101,7 +112,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.darkLavender80,
         url: '07-components',
-        lessonCoverImage: 'url(../../../src/assets/lesson-07-cover.svg)',
+        lessonCoverImage: lesson07CoverImage,
         footerTextColor: style.white,
     },
     {
@@ -114,7 +125,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.oliveGreen,
         url: '08-flex-layouts',
-        lessonCoverImage: 'url(../../../src/assets/lesson-08-cover.svg)',
+        lessonCoverImage: lesson08CoverImage,
         footerTextColor: style.white,
     },
     {
@@ -127,7 +138,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.dirtyWhite,
         url: '09-grid-layouts',
-        lessonCoverImage: 'url(../../../src/assets/lesson-09-cover.svg)',
+        lessonCoverImage: lesson09CoverImage,
         footerTextColor: style.charcoalBlack,
     },
     {
@@ -140,7 +151,7 @@ export const LESSONS: Lesson[] = [
         ),
         backgroundColor: style.orangeRed,
         url: '10-work-with-git',
-        lessonCoverImage: 'url(../../../src/assets/lesson-10-cover.svg)',
+        lessonCoverImage: lesson10CoverImage,
         footerTextColor: style.charcoalBlack,
     },
     {
@@ -152,7 +163,7 @@ export const LESSONS: Lesson[] = [
             </>
         ),
         backgroundColor: style.darkGreen,
-        lessonCoverImage: 'url(../../../src/assets/lesson-11-cover.svg)',
+        lessonCoverImage: lesson11CoverImage,
         lessonContent: PagesOverlay,
         footerTextColor: style.charcoalBlack,
     },
