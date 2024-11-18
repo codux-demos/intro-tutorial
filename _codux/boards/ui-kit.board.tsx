@@ -170,8 +170,5 @@ export default createBoard({
 });
 
 function isSolved(): boolean {
-    const elem = document.getElementById('drop-area');
-    console.log(elem?.firstElementChild?.getAttribute('data-menu'));
-
-    return !!elem?.firstElementChild?.getAttribute('data-menu');
+    return !!document.getElementById('drop-area')?.firstElementChild?.getAttribute('data-menu');
 }
