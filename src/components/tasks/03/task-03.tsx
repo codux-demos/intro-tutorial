@@ -17,7 +17,7 @@ export const Task03 = () => {
                     this bauhaus poster.
                 </li>
                 <li>
-                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> mode.
                 </li>
                 <li>Select the top eye.</li>
                 <li>
