@@ -16,7 +16,7 @@ export const Task09 = () => {
                     heart using the grid layout.
                 </li>
                 <li>
-                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> mode.
                 </li>
                 <li>
                     Open the Elements Panel and select
