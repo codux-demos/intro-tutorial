@@ -14,7 +14,7 @@ export const Task07 = () => {
                     Let's make a path between the 2 hearts using <b>component properties</b>.
                 </li>
                 <li>
-                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> mode.
                 </li>
                 <li>Select one of the circles on the right.</li>
                 <li>
