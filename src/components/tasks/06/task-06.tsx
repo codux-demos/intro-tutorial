@@ -15,11 +15,12 @@ export const Task06 = () => {
                     change the background color by creating a class.
                 </li>
                 <li>
-                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> mode.
                 </li>
                 <li>
                     select
-                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel</b>.</li>
+                    <TaskTag type="tree">div.playground</TaskTag>on the <b>Elements Panel</b>.
+                </li>
                 <li>
                     To apply new style, open the
                     <br />

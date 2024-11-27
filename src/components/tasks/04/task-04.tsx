@@ -16,7 +16,7 @@ export const Task04 = () => {
                     to edit them. Let's change the size of these image tiles to fix the image.
                 </li>
                 <li>
-                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> mode.
                 </li>
                 <li>
                     Select any
