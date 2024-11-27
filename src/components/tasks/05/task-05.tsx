@@ -16,7 +16,7 @@ export const Task05 = () => {
                     <b> selectors</b>. Let's use them to adjust spacing.
                 </li>
                 <li>
-                    Make sure you are on <TaskSymbol name="editMode" /> <b>Edit Mode.</b>
+                    Make sure you are on <TaskSymbol name="editMode" /> mode.
                 </li>
                 <li>Select one of the letters on the right.</li>
                 <li>
