@@ -1,25 +1,25 @@
 .root {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 24px;
-    padding-top: 25px;
-    padding-bottom: 24px;
-    padding-right: 30px;
-    padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 24px;
+padding: 20px;
 }
 
 .socials {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .navButtons {
-    display: flex;
-    gap: 8px
+  display: flex;
+  gap: 8px;
 }
 
 .boldText {
+    transition: font-weight 0.2s;
+  &:hover {
     font-weight: 800;
+  }
 }
