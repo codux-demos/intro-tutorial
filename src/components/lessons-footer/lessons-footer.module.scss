@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   line-height: 24px;
-padding: 20px;
+  padding: 20px;
 }
 
 .socials {
@@ -18,7 +18,7 @@ padding: 20px;
 }
 
 .boldText {
-    transition: font-weight 0.2s;
+  transition: font-weight 0.2s;
   &:hover {
     font-weight: 800;
   }
