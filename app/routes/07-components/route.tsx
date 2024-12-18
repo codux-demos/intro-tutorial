@@ -63,7 +63,7 @@ export default function Lesson07() {
                 }
             }, 405);
         }
-        // clear interval
+
         return () => clearInterval(animInterval);
     });
 

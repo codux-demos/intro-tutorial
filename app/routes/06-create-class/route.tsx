@@ -1,5 +1,4 @@
 import { useCallback, useState } from 'react';
-// import vars from '../../../src/globals/variables.module.scss';
 import vars from '~/globals/variables.module.scss';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useRequestAnimationFrame } from '~/components/hooks';
