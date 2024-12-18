@@ -1,5 +1,5 @@
-import styles from './task-10.module.scss';
-import { TaskSymbol } from '../../common/task-symbol/task-symbol';
+import styles from './task.module.scss';
+import { TaskSymbol } from '../common/task-symbol/task-symbol';
 
 export const Task10 = () => {
     return (
