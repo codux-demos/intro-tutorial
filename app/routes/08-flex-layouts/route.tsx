@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import { Box } from '~/components/common/box/box';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useRequestAnimationFrame } from '~/components/hooks';
-import { Task08 as Task } from '~/components/tasks/08/task-08';
+import { Task08 as Task } from '~/components/tasks/task-08';
 import styles from './lesson-08.module.scss';
 import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_07, LESSON_09 } from '~/router/config';

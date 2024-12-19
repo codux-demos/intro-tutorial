@@ -1,6 +1,6 @@
-import styles from './task-04.module.scss';
-import { TaskSymbol } from '../../common/task-symbol/task-symbol';
-import { TaskTag } from '../../common/task-tag/task-tag';
+import styles from './task.module.scss';
+import { TaskSymbol } from '../common/task-symbol/task-symbol';
+import { TaskTag } from '../common/task-tag/task-tag';
 
 export const Task04 = () => {
     return (

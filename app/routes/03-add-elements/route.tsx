@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
-import { Task03 as Task } from '~/components/tasks/03/task-03';
+import { Task03 as Task } from '~/components/tasks/task-03';
 import styles from './lesson-03.module.scss';
 import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_02, LESSON_04 } from '~/router/config';

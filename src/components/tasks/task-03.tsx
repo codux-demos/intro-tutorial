@@ -1,7 +1,6 @@
-import styles from './task-03.module.scss';
-import { TaskSymbol } from '../../common/task-symbol/task-symbol';
-import { TaskTag } from '../../common/task-tag/task-tag';
-import EditModeSymbol from '../../../assets/edit-mode.svg?react';
+import styles from './task.module.scss';
+import { TaskSymbol } from '../common/task-symbol/task-symbol';
+import { TaskTag } from '../common/task-tag/task-tag';
 
 export const Task03 = () => {
     return (

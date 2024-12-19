@@ -1,33 +1,14 @@
 @use '../../../src/globals/variables.module.scss' as *;
+@use '../../../src//globals/lessons.module.scss' as *;
 
-.root {
-  display: flex;
-  justify-content: center;
+.playground {
   box-sizing: border-box;
-  background-color: $lesson-bg-color;
-  font-family: $font-family-text;
-  padding: $lesson-padding;
-  gap: $lesson-gap;
-  height: 641px;
-
-  .playground {
-    overflow: hidden;
-    background-color: $playground-bg-color;
-    border-radius: $playground-border-radius;
-    width: $playground-width;
-    height: $playground-height;
-
-    // lesson specific
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 30px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 30px;
 }
 
-// lesson specific
 .grid {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

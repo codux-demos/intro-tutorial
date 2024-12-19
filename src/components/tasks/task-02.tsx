@@ -1,5 +1,5 @@
-import styles from './task-02.module.scss';
-import { TaskTag } from '../../common/task-tag/task-tag';
+import styles from './task.module.scss';
+import { TaskTag } from '../common/task-tag/task-tag';
 import { TaskSymbol } from '~/components/common/task-symbol/task-symbol';
 
 export const Task02 = () => {
