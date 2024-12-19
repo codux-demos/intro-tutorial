@@ -1,8 +1,11 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
+import { Links, Meta, Outlet, Scripts, ScrollRestoration, useLocation } from '@remix-run/react';
 import '../src/styles/index.scss';
-import { Header } from '~/components/header/header';
+import { LessonsHeader } from '~/components/lessons-header/lessons-header';
+import { HomePageHeader } from '~/components/home-page-header/home-page-header';
 
 export function Layout({ children }: { children: React.ReactNode }) {
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
     return (
         <html lang="en">
             <head>
@@ -12,7 +15,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <Links />
             </head>
             <body>
-                <Header />
+                {isHomePage ? <HomePageHeader /> : <LessonsHeader />}
                 {children}
                 <ScrollRestoration />
                 <Scripts />
