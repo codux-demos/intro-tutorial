@@ -1,5 +1,5 @@
-import styles from './task-01.module.scss';
-import { TaskSymbol } from '../../common/task-symbol/task-symbol';
+import styles from './task.module.scss';
+import { TaskSymbol } from '../common/task-symbol/task-symbol';
 
 export const Task01 = () => {
     return (
@@ -16,8 +16,8 @@ export const Task01 = () => {
                 </li>
                 <li>
                     Make sure you are on 
-                    <TaskSymbol name="preview" /> mode
-                    &nbsp;and hover over the shapes to erase them. Can you see what’s behind?
+                    <TaskSymbol name="preview" /> mode &nbsp;and hover over the shapes to erase
+                    them. Can you see what’s behind?
                 </li>
                 <li>
                     To reload and bring back the shapes, just click&nbsp;
