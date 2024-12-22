@@ -8,7 +8,7 @@ import img6 from '~/assets/img-6.png';
 import { Image } from '~/components/common/image/image';
 import { ConfettiFx } from '~/components/fx/confetti-fx/confetti-fx';
 import { useRequestAnimationFrame } from '~/components/hooks';
-import { Task04 as Task } from '~/components/tasks/04/task-04';
+import { Task04 as Task } from '~/components/tasks/task-04';
 import styles from './lesson-04.module.scss';
 import { LessonsFooter } from '~/components/lessons-footer/lessons-footer';
 import { LESSON_03, LESSON_05 } from '~/router/config';

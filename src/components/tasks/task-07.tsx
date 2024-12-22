@@ -1,5 +1,5 @@
-import styles from './task-07.module.scss';
-import { TaskSymbol } from '../../common/task-symbol/task-symbol';
+import styles from './task.module.scss';
+import { TaskSymbol } from '../common/task-symbol/task-symbol';
 
 export const Task07 = () => {
     return (
@@ -19,7 +19,7 @@ export const Task07 = () => {
                 <li>Select one of the circles on the right.</li>
                 <li>
                     Open the <TaskSymbol name="props" />
-                    <b>{' '}Properties Panel</b> on the right. Change the <b>iconDirection</b> property
+                    <b> Properties Panel</b> on the right. Change the <b>iconDirection</b> property
                     and see what happens.
                 </li>
                 <li>
