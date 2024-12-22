@@ -1,13 +1,6 @@
 @use '../../../src/globals/variables.module.scss' as *;
 @use '../../../src//globals/lessons.module.scss' as *;
 
-.playground {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .section {
   display: flex;
   align-items: center;
