@@ -1,31 +1,6 @@
 @use '../../../src/globals/variables.module.scss' as *;
+@use '../../../src//globals/lessons.module.scss' as *;
 
-.root {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  background-color: $lesson-bg-color;
-  font-family: $font-family-text;
-  padding: $lesson-padding;
-  gap: $lesson-gap;
-
-  .playground {
-    overflow: hidden;
-    background-color: $snow-white;
-    border-radius: $playground-border-radius;
-    width: $playground-width;
-    height: $playground-height;
-
-    // lesson specific
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-// lesson specific
 .section {
   display: flex;
   align-items: center;
