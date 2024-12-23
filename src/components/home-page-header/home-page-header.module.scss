@@ -1,7 +1,6 @@
 @use '../../globals/variables.module.scss' as *;
 
 .root {
-  display: flex;
   background-color: $black;
   color: $white;
   padding: 15px 18px;
@@ -15,4 +14,9 @@
   font-weight: 800;
   font-style: italic;
   font-size: 30px;
+
+  // media queries for 480px and below
+  @media (max-width: 480px) {
+    font-size: 5vw;
+  }
 }
