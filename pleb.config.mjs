@@ -1,6 +1,5 @@
 export default {
     pinnedPackages: [
-        { name: 'vite', reason: 'incompatible with @remix-run/dev' },
         { name: 'react', reason: 'we are not ready for react v19 yet' },
         { name: 'react-dom', reason: 'we are not ready for react v19 yet' },
         { name: '@types/react', reason: 'we are not ready for react v19 yet' },
