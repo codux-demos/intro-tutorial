@@ -24,7 +24,11 @@ export const LessonsFooter = ({ nextUrl, previousUrl }: LessonsFooterProps) => (
         </div>
 
         <div className={styles.navButtons}>
-            {previousUrl && <Link to={previousUrl}>PREVIOUS</Link>}
+            {previousUrl && (
+                <Link to={previousUrl} className={styles.boldText}>
+                    PREVIOUS
+                </Link>
+            )}
             {nextUrl && previousUrl && <span>/</span>}
             {nextUrl && (
                 <Link to={nextUrl} className={styles.boldText}>
