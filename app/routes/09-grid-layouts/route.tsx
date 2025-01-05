@@ -131,27 +131,29 @@ export default function Lesson09() {
     useRequestAnimationFrame(checkSolution);
 
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.root}>
-                <Task />
-                <div className={styles.playground}>
-                    <div className={styles.grid} id="grid">
-                        {boxes.map((color, idx) => (
-                            <Box
-                                key={idx}
-                                color={color}
-                                {...(color === 'snowWhite'
-                                    ? { className: styles.glow, id: 'glow' }
-                                    : '')}
-                            />
-                        ))}
+                <div className={styles.lesson}>
+                    <Task />
+                    <div className={styles.playground}>
+                        <div className={styles.grid} id="grid">
+                            {boxes.map((color, idx) => (
+                                <Box
+                                    key={idx}
+                                    color={color}
+                                    {...(color === 'snowWhite'
+                                        ? { className: styles.glow, id: 'glow' }
+                                        : '')}
+                                />
+                            ))}
+                        </div>
+                        <ConfettiFx
+                            maxParticles={400}
+                            dissolve={315}
+                            show={lessonSolved}
+                            style={{ display: lessonSolved ? 'block' : 'none' }}
+                        />
                     </div>
-                    <ConfettiFx
-                        maxParticles={400}
-                        dissolve={315}
-                        show={lessonSolved}
-                        style={{ display: lessonSolved ? 'block' : 'none' }}
-                    />
                 </div>
             </div>
             <LessonsFooter previousUrl={LESSON_08} nextUrl={LESSON_10} />

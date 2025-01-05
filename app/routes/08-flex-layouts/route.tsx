@@ -17,44 +17,46 @@ export default function Lesson08() {
     useRequestAnimationFrame(checkSolution);
 
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.root}>
-                <Task />
-                <div className={styles.playground}>
-                    <div className={`${styles.section} ${styles.circles}`} id="circles">
-                        <Box color="darkLavender" className={styles.circle} />
-                        <Box color="hotPink" className={styles.circle} />
-                        <Box color="babyPink" className={styles.circle} />
+                <div className={styles.lesson}>
+                    <Task />
+                    <div className={styles.playground}>
+                        <div className={`${styles.section} ${styles.circles}`} id="circles">
+                            <Box color="darkLavender" className={styles.circle} />
+                            <Box color="hotPink" className={styles.circle} />
+                            <Box color="babyPink" className={styles.circle} />
+                        </div>
+                        <div className={`${styles.section} ${styles.tags}`}>
+                            <Box
+                                align="left"
+                                iconColor="charcoalBlack"
+                                icon="circle"
+                                color="darkLavender"
+                                className={styles.tag}
+                            />
+                            <Box
+                                align="left"
+                                iconColor="charcoalBlack"
+                                icon="circle"
+                                color="hotPink"
+                                className={styles.tag}
+                            />
+                            <Box
+                                align="left"
+                                iconColor="charcoalBlack"
+                                icon="circle"
+                                color="babyPink"
+                                className={styles.tag}
+                            />
+                        </div>
+                        <ConfettiFx
+                            maxParticles={400}
+                            dissolve={315}
+                            show={lessonSolved}
+                            style={{ display: lessonSolved ? 'block' : 'none' }}
+                        />
                     </div>
-                    <div className={`${styles.section} ${styles.tags}`}>
-                        <Box
-                            align="left"
-                            iconColor="charcoalBlack"
-                            icon="circle"
-                            color="darkLavender"
-                            className={styles.tag}
-                        />
-                        <Box
-                            align="left"
-                            iconColor="charcoalBlack"
-                            icon="circle"
-                            color="hotPink"
-                            className={styles.tag}
-                        />
-                        <Box
-                            align="left"
-                            iconColor="charcoalBlack"
-                            icon="circle"
-                            color="babyPink"
-                            className={styles.tag}
-                        />
-                    </div>
-                    <ConfettiFx
-                        maxParticles={400}
-                        dissolve={315}
-                        show={lessonSolved}
-                        style={{ display: lessonSolved ? 'block' : 'none' }}
-                    />
                 </div>
             </div>
             <LessonsFooter previousUrl={LESSON_07} nextUrl={LESSON_09} />
