@@ -30,7 +30,6 @@ export const Box = ({
     iconDirection,
     iconColor = color,
 }: BoxProps) => {
-    // css variable being used to set the box's background color (color prop)
     const boxColor = { '--box-color': vars[color] } as React.CSSProperties;
 
     return (

@@ -1,30 +1,11 @@
 @use '../../../src/globals/variables.module.scss' as *;
+@use '../../../src//globals/lessons.module.scss' as *;
 
-.root {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  background-color: $lesson-bg-color;
-  font-family: $font-family-text;
-  padding: $lesson-padding;
-  gap: $lesson-gap;
-  height: 641px;
-
-  .playground {
-    overflow: hidden;
-    background-color: $playground-bg-color;
-    border-radius: $playground-border-radius;
-    width: $playground-width;
-    height: $playground-height;
-
-    // lesson specific
-    background-image: url('../../../src/assets/lesson-01-bg.png');
-    background-size: cover;
-    position: relative;
-  }
+.playground {
+  background-image: url('../../../src/assets/lesson-01-bg.png');
+  background-size: cover;
 }
 
-// lesson specific
 .fadeOut {
   opacity: 0;
 }

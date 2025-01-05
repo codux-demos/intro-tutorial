@@ -1,6 +1,6 @@
-import styles from './task-09.module.scss';
-import { TaskSymbol } from '../../common/task-symbol/task-symbol';
-import { TaskTag } from '../../common/task-tag/task-tag';
+import styles from './task.module.scss';
+import { TaskSymbol } from '../common/task-symbol/task-symbol';
+import { TaskTag } from '../common/task-tag/task-tag';
 
 export const Task09 = () => {
     return (
@@ -31,8 +31,8 @@ export const Task09 = () => {
                 <li>Now, find the white box on the stage and select it.</li>
                 <li>
                     To move the white box to be in the right place, scroll to
-                    <b> Grid Child</b> and make the<b> rows</b> and <b>columns</b> start at <b>4</b> and
-                    end at
+                    <b> Grid Child</b> and make the<b> rows</b> and <b>columns</b> start at <b>4</b>{' '}
+                    and end at
                     <b> 5</b>.
                 </li>
             </ol>
