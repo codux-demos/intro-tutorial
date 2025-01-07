@@ -9,10 +9,12 @@
   aspect-ratio: 3.8/5;
   position: relative;
   perspective: 1000px;
-  transition: transform 0.3s;
+  z-index: 0;
+  transition: transform 0.3s, z-index 1s step-end;
 
   &:hover {
     z-index: 1;
+    transition: transform 0.3s, z-index 1s step-start;
   }
 }
 
