@@ -20,7 +20,8 @@ export const Task01 = () => {
                     them. Can you see what’s behind?
                 </li>
                 <li>
-                    To reload and bring back the shapes, just click&nbsp;
+                    To reload and bring back the shapes, just click
+                    <br />
                     <TaskSymbol name="reload" /> <b>Reload Preview</b>.
                 </li>
                 <li>

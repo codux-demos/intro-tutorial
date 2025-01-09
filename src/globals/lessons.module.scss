@@ -1,10 +1,5 @@
 @use './variables.module.scss' as *;
 
-.lesson {
-  display: flex;
-  gap: $lesson-gap;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -21,6 +16,11 @@
   flex-grow: 1;
   overflow-y: auto;
   place-items: center;
+}
+
+.lesson {
+  display: flex;
+  gap: $lesson-gap;
 }
 
 .playground {
