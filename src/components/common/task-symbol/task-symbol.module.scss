@@ -27,13 +27,20 @@
 
 .commit,
 .sync,
-.preview {
+.preview,
+.responsivePreview {
   filter: drop-shadow(0 0 2px $symbol-shadow);
   vertical-align: -5px;
   padding-right: 2px;
   padding-left: 2px;
   width: 60px;
   height: 20px;
+}
+
+.responsivePreview {
+  width: 6vw;
+  height: 2vw;
+  vertical-align: -0.5vw;
 }
 
 .component {

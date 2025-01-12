@@ -1,0 +1,19 @@
+@use '../../globals/variables.module.scss' as *;
+
+.root {
+  display: flex;
+  background-color: $black;
+  color: $white;
+  padding: 15px 18px;
+  gap: 12px;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  line-height: 18px;
+}
+
+.boldText {
+  font-weight: 800;
+}
