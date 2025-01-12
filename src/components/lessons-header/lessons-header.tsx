@@ -1,8 +1,8 @@
 import { Link } from '@remix-run/react';
 import CoduxLogo from '../../../src/assets/codux-logo.svg?react';
-import styles from './header.module.scss';
+import styles from './lessons-header.module.scss';
 
-export const Header = () => {
+export const LessonsHeader = () => {
     return (
         <header className={styles.root}>
             <Link to="/">

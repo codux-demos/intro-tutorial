@@ -5,9 +5,12 @@
   background-color: $charcoal-black;
   height: 100%;
   color: $white;
-  padding: 30px;
   align-items: center;
   aspect-ratio: 3.8/2.5;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 4vw;
 }
 
 .body {
@@ -16,11 +19,11 @@
 
 .title {
   font: $header;
-  margin-bottom: 30px;
+  margin-bottom: 2vw;
+  width: 70%;
 }
 
 .description {
   font: $description;
-  margin-bottom: 30px;
   width: 70%;
 }

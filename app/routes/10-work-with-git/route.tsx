@@ -5,11 +5,13 @@ import { LESSON_09 } from '~/router/config';
 
 export default function Lesson10() {
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.root}>
-                <Task />
-                <div className={styles.playground}>
-                    <div className={styles.sparkles} />
+                <div className={styles.lesson}>
+                    <Task />
+                    <div className={styles.playground}>
+                        <div className={styles.sparkles} />
+                    </div>
                 </div>
             </div>
             <LessonsFooter previousUrl={LESSON_09} />
