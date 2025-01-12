@@ -17,20 +17,22 @@ export default function Lesson06() {
     useRequestAnimationFrame(checkSolution);
 
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.root}>
-                <Task />
-                <div className={`${styles.playground}`} id="playground">
-                    <div className={styles.quote}>
-                        “Creativity is <span>nothing but a mind set</span> free.”
+                <div className={styles.lesson}>
+                    <Task />
+                    <div className={`${styles.playground}`} id="playground">
+                        <div className={styles.quote}>
+                            “Creativity is <span>nothing but a mind set</span> free.”
+                        </div>
+                        <div className={styles.author}>Torrie T. Asai</div>
+                        <ConfettiFx
+                            maxParticles={400}
+                            dissolve={315}
+                            show={lessonSolved}
+                            style={{ display: lessonSolved ? 'block' : 'none' }}
+                        />
                     </div>
-                    <div className={styles.author}>Torrie T. Asai</div>
-                    <ConfettiFx
-                        maxParticles={400}
-                        dissolve={315}
-                        show={lessonSolved}
-                        style={{ display: lessonSolved ? 'block' : 'none' }}
-                    />
                 </div>
             </div>
             <LessonsFooter previousUrl={LESSON_05} nextUrl={LESSON_07} />

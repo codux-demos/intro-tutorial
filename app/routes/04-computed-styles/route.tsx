@@ -23,30 +23,32 @@ export default function Lesson04() {
     useRequestAnimationFrame(checkSolution);
 
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.root}>
-                <Task />
-                <div className={styles.playground}>
-                    <div className={styles.column}>
-                        <div className={styles.images}>
-                            <Image src={img1} className={styles.left} />
-                            <Image src={img3} className={styles.left} />
-                            <Image src={img5} className={styles.left} />
+                <div className={styles.lesson}>
+                    <Task />
+                    <div className={styles.playground}>
+                        <div className={styles.column}>
+                            <div className={styles.images}>
+                                <Image src={img1} className={styles.left} />
+                                <Image src={img3} className={styles.left} />
+                                <Image src={img5} className={styles.left} />
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.column}>
-                        <div className={styles.images}>
-                            <Image src={img2} className={styles.right} />
-                            <Image src={img4} className={styles.right} />
-                            <Image src={img6} className={styles.right} />
+                        <div className={styles.column}>
+                            <div className={styles.images}>
+                                <Image src={img2} className={styles.right} />
+                                <Image src={img4} className={styles.right} />
+                                <Image src={img6} className={styles.right} />
+                            </div>
                         </div>
+                        <ConfettiFx
+                            maxParticles={400}
+                            dissolve={315}
+                            show={lessonSolved}
+                            style={{ display: lessonSolved ? 'block' : 'none' }}
+                        />
                     </div>
-                    <ConfettiFx
-                        maxParticles={400}
-                        dissolve={315}
-                        show={lessonSolved}
-                        style={{ display: lessonSolved ? 'block' : 'none' }}
-                    />
                 </div>
             </div>
             <LessonsFooter previousUrl={LESSON_03} nextUrl={LESSON_05} />

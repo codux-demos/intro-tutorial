@@ -32,6 +32,7 @@ export const symbols = {
     div: DivSymbol,
     chevron: ChevronSymbol,
     preview: PreviewSymbol,
+    responsivePreview: PreviewSymbol,
     hamburger: HamburgerSymbol,
     more: MoreSymbol,
     branch: BranchSymbol,
