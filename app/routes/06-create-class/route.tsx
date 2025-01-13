@@ -19,20 +19,25 @@ export default function Lesson06() {
     useRequestAnimationFrame(checkSolution);
 
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.root}>
-                <Task />
-                <div className={classNames(styles.playground, styles0.newClass)} id="playground">
-                    <div className={styles.quote}>
-                        “Creativity is <span>nothing but a mind set</span> free.”
+                <div className={styles.lesson}>
+                    <Task />
+                    <div
+                        className={classNames(styles.playground, styles0.newClass)}
+                        id="playground"
+                    >
+                        <div className={styles.quote}>
+                            “Creativity is <span>nothing but a mind set</span> free.”
+                        </div>
+                        <div className={styles.author}>Torrie T. Asai</div>
+                        <ConfettiFx
+                            maxParticles={400}
+                            dissolve={315}
+                            show={lessonSolved}
+                            style={{ display: lessonSolved ? 'block' : 'none' }}
+                        />
                     </div>
-                    <div className={styles.author}>Torrie T. Asai</div>
-                    <ConfettiFx
-                        maxParticles={400}
-                        dissolve={315}
-                        show={lessonSolved}
-                        style={{ display: lessonSolved ? 'block' : 'none' }}
-                    />
                 </div>
             </div>
             <LessonsFooter previousUrl={LESSON_05} nextUrl={LESSON_07} />
@@ -43,7 +48,7 @@ export default function Lesson06() {
 function isSolved(): boolean {
     const elem = document.getElementById('playground');
     const stageBgColor = rgba2hex(
-        getComputedStyle(elem!).getPropertyValue('background-color'),
+        getComputedStyle(elem!).getPropertyValue('background-color')
     ).toUpperCase();
     const desiredColor = vars.charcoalBlack!.toUpperCase();
     return stageBgColor === desiredColor;

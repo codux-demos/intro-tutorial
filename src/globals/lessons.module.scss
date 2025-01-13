@@ -1,12 +1,25 @@
 @use './variables.module.scss' as *;
 
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .root {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   background-color: $lesson-bg-color;
   font-family: $font-family-text;
-  padding: $lesson-padding;
+
+  flex-grow: 1;
+  overflow-y: auto;
+  place-items: center;
+}
+
+.lesson {
+  display: flex;
   gap: $lesson-gap;
 }
 
